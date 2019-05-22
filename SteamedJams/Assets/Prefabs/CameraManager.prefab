@@ -126,9 +126,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1cf75184d8ae2b4bb39b79c676508f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CameraHooks: []
+  CameraHooks:
+  - {fileID: 0}
   zoomMultiplier: 1.5
   zoomMin: 4
+  zoomMax: 12
   shakeAmount: 0
   shakeLength: 0
   posOffset: {x: 0, y: 0, z: -3}

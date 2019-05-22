@@ -11,9 +11,14 @@ public class CameraMovement : MonoBehaviour
     public float zoomMultiplier;
     public float zoomMin;
     public float zoomMax;
+    [Space (20)]
     public float shakeAmount;
     public float shakeLength;
-    public Vector3 posOffset;
+    [Space(20)]
+    public float swayMax;
+    public float swaySpeed;
+    public float swayRotMax;
+    public float swayRotSpeed;
     [Header("Speed")]
     public float camMovSpeed;
 
@@ -22,10 +27,17 @@ public class CameraMovement : MonoBehaviour
 
     private Vector3 tarPos;
     private float tarZoom;
+    private Vector3 swayTarget;
+    private Vector3 swayRotateTarget;
+    private Vector3 startRotation;
+    private Vector3 currentRot;
 
     // Use this for initialization
     void Start()
     {
+        startRotation = transform.GetChild(0).localEulerAngles;
+        currentRot = startRotation;
+        swayRotateTarget = startRotation;
         GetPlayerObjects();
     }
 
@@ -51,7 +63,8 @@ public class CameraMovement : MonoBehaviour
             CamMov();
             CamZoom();
         }
-        transform.position = Vector3.Lerp(transform.position, new Vector3(tarPos.x, tarZoom * zoomMultiplier, tarPos.z) + posOffset, camMovSpeed * Time.deltaTime);
+        Vector3 offset = new Vector3(0, 0, -tarZoom * 0.5f);
+        transform.position = Vector3.Lerp(transform.position, new Vector3(tarPos.x, tarZoom * zoomMultiplier, tarPos.z) + offset, camMovSpeed * Time.deltaTime);
 
         if (Input.GetKeyDown(KeyCode.P))
             shakeTimer = 0;
@@ -60,7 +73,7 @@ public class CameraMovement : MonoBehaviour
         if (shakeTimer < shakeLength)
             CamShake();
         else
-            transform.GetChild(0).localPosition = Vector3.zero;
+            CamSway();
 
 
     }
@@ -101,5 +114,27 @@ public class CameraMovement : MonoBehaviour
     {
         transform.GetChild(0).localPosition = Random.insideUnitSphere * shakeAmount;
         shakeTimer += Time.deltaTime;
+    }
+
+    private void CamSway()
+    {
+        /*
+        Vector3 swayDif = swayTarget - transform.GetChild(0).localPosition;
+        if (swayDif == Vector3.zero)
+            swayTarget = Random.insideUnitSphere * swayMax;
+        Vector3 targetPos = Vector3.ClampMagnitude(swayDif, Time.deltaTime * swaySpeed);
+        transform.GetChild(0).localPosition += targetPos;
+        */
+        CamSwayRotate();
+    }
+
+    private void CamSwayRotate ()
+    {
+        Vector3 swayDif = swayRotateTarget - currentRot;
+        if (swayDif == Vector3.zero)
+            swayRotateTarget = (Random.insideUnitSphere * swayRotMax)+ startRotation;
+        Vector3 targetRot = Vector3.ClampMagnitude(swayDif, Time.deltaTime * swayRotSpeed);
+        currentRot += targetRot;
+        transform.GetChild(0).localEulerAngles = currentRot;
     }
 }
