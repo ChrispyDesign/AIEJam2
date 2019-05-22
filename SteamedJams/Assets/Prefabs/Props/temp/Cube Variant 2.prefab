@@ -10,7 +10,7 @@ PrefabInstance:
     - target: {fileID: 3629176319284181705, guid: 9baf8328903d6e649a1966a6c69acaa5,
         type: 3}
       propertyPath: m_Name
-      value: Cube
+      value: Cube Variant 2
       objectReference: {fileID: 0}
     - target: {fileID: 3725950033295433823, guid: 9baf8328903d6e649a1966a6c69acaa5,
         type: 3}
@@ -20,7 +20,7 @@ PrefabInstance:
     - target: {fileID: 3725950033295433823, guid: 9baf8328903d6e649a1966a6c69acaa5,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3725950033295433823, guid: 9baf8328903d6e649a1966a6c69acaa5,
         type: 3}

@@ -7,19 +7,27 @@ public class LevelGeneration : MonoBehaviour
 
     [Header("GameObjects")]
     public GameObject playerManager;
+
     [Header("Prefabs")]
     public List<GameObject> obs = new List<GameObject>();
     public List<GameObject> props = new List<GameObject>();
+    public GameObject emptyPropHolder;
+    
     [Header("Variables")]
     public Vector2 propChance;
 
-    private List<Transform> basePropHolders = new List<Transform>();
+    [HideInInspector]
+    public List<Transform> freeBasePropHolders = new List<Transform>();
+
+    public static LevelGeneration activeManager;
 
     // Use this for initialization
     void Start()
     {
+        activeManager = this.GetComponent<LevelGeneration>();
         BasePass();
         PropPass();
+        LastPass();
     }
 
     // Update is called once per frame
@@ -36,7 +44,7 @@ public class LevelGeneration : MonoBehaviour
             //playerManager.GetComponent<PlayerManager>().m_playerStartPositions[i] = GO.transform.GetChild(0);
             for (int j = 0; j < GO.transform.GetChild(0).childCount; j++)
             {
-                basePropHolders.Add(GO.transform.GetChild(0).GetChild(j));
+                freeBasePropHolders.Add(GO.transform.GetChild(0).GetChild(j));
             }
         }
         if (playerManager != null)
@@ -46,12 +54,24 @@ public class LevelGeneration : MonoBehaviour
     void PropPass ()
     {
         float propLikelihood = Random.Range(propChance.x, propChance.y);
-        for (int i = 0; i < basePropHolders.Count; i++)
+        for (int i = 0; i < freeBasePropHolders.Count; i++)
         {
             float chance = Random.Range(0f, 100f);
             int propNo = Random.Range(0, props.Count);
-            if (chance > propLikelihood)
-                Instantiate(props[propNo], basePropHolders[i]);
+            if (chance < propLikelihood)
+            {
+                Instantiate(props[propNo], freeBasePropHolders[i]);
+                freeBasePropHolders.RemoveAt(i);
+                i -= 1;
+            }
+        }
+    }
+
+    void LastPass()
+    {
+        for (int i = 0; i < freeBasePropHolders.Count; i++)
+        {
+            Instantiate(emptyPropHolder, freeBasePropHolders[i]);
         }
     }
 }

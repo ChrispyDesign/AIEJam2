@@ -10,6 +10,7 @@ public class CameraMovement : MonoBehaviour
     [Header("Variables")]
     public float zoomMultiplier;
     public float zoomMin;
+    public float zoomMax;
     public float shakeAmount;
     public float shakeLength;
     public Vector3 posOffset;
@@ -92,6 +93,8 @@ public class CameraMovement : MonoBehaviour
         }
         if (tarZoom < zoomMin)
             tarZoom = zoomMin;
+        if (tarZoom > zoomMax)
+            tarZoom = zoomMax;
     }
 
     private void CamShake()
