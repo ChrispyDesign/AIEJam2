@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: PH_Godmode
+  m_Shader: {fileID: 4800000, guid: 1ad59b43ce409c947880f2169adb928f, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _Texture2DAsset_243BAA7F_Out:
+        m_Texture: {fileID: 2800000, guid: 5d3c09a0b33c6d74bb50bff3bcd7bb85, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2DAsset_C0172633_Out:
+        m_Texture: {fileID: 2800000, guid: f4427bf50ab39234ea389935bf8ff0b8, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - Vector1_AFA38176: 2
+    - Vector1_EE87492E: 0.75
+    - Vector1_F6541C90: 5
+    m_Colors:
+    - Color_5307D939: {r: 0.51298475, g: 0.22801706, b: 0.7924528, a: 0}
+    - Vector2_47A70492: {r: 0, g: -0.5, b: 0, a: 0}
+    - Vector2_8AD1881D: {r: 1, g: 1, b: 0, a: 0}
+    - Vector2_91091F63: {r: 1, g: 1, b: 0, a: 0}
+    - Vector2_B2766D84: {r: -0.25, g: -0.25, b: 0, a: 0}
+    - Vector2_E489E012: {r: 0, g: 0, b: 0, a: 0}
