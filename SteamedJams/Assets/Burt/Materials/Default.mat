@@ -19,6 +19,18 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - Texture2D_2D4353A1:
+        m_Texture: {fileID: 2800000, guid: db26800556d444340a19f69124353261, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_CBD6DDF4:
+        m_Texture: {fileID: 2800000, guid: 9774ba85a59da9447b49c8d17c6d438a, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_CFC22095:
+        m_Texture: {fileID: 2800000, guid: 301e4e5a60fd3b849a23e4c3e140a4c7, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _BumpMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -44,6 +56,8 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
+    - Vector1_244661B1: 1
+    - Vector1_8D02CBAE: 60
     - _AlphaClip: 0
     - _Blend: 0
     - _BumpScale: 1
