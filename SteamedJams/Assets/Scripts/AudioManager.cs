@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -8,8 +9,17 @@ public class AudioManager : MonoBehaviour
 {
     // singleton
     private static AudioManager m_instance;
-
     private AudioSource m_audioSource;
+    [SerializeField] private AudioClip m_startBGM;
+
+    [SerializeField] private Image m_centreIcon;
+    [SerializeField] private RectTransform m_bar;
+    [SerializeField] private Transform m_barAnchorLeft;
+    [SerializeField] private Transform m_barAnchorRight;
+
+    private Queue<GameObject> m_tickPool = new Queue<GameObject>();
+    [SerializeField] private GameObject m_tickPrefab;
+    [SerializeField] private int m_tickPoolSize = 20;
 
     // BGM relevant variables
     [Header("BPM")]
@@ -59,7 +69,26 @@ public class AudioManager : MonoBehaviour
     public void SetWindowOfOpportunity(float windowOfOpportunity) { m_windowOfOpportunity = windowOfOpportunity; }
 
     #endregion
-    
+
+    private void Start()
+    {
+        // initialise object pool
+        for (int i = 0; i < m_tickPoolSize; i++)
+        {
+            GameObject tick = Instantiate(m_tickPrefab, m_bar);
+            tick.SetActive(false);
+            m_tickPool.Enqueue(tick);
+        }
+
+        SetBGM(m_startBGM);
+    }
+
+    private void Update()
+    {
+        float scale = 1 + m_opportunityScalar;
+        m_centreIcon.transform.localScale = new Vector3(scale, scale, 0);
+    }
+
     /// <summary>
     /// 
     /// </summary>
@@ -101,6 +130,7 @@ public class AudioManager : MonoBehaviour
         while (true)
         {
             StartCoroutine(Window());
+            StartCoroutine(Tick());
 
             yield return new WaitForSeconds(m_nextTime - Time.time);
             
@@ -136,5 +166,35 @@ public class AudioManager : MonoBehaviour
             timer += Time.deltaTime;
             yield return null;
         }
+    }
+
+    private IEnumerator Tick()
+    {
+        GameObject tick1 = m_tickPool.Dequeue();
+        GameObject tick2 = m_tickPool.Dequeue();
+
+        Vector3 tick1start = tick1.transform.position = m_barAnchorLeft.transform.position;
+        Vector3 tick2start = tick2.transform.position = m_barAnchorRight.transform.position;
+
+        tick1.SetActive(true);
+        tick2.SetActive(true);
+
+        float timer = 0;
+
+        while (tick1.transform.position.x < m_bar.transform.position.x)
+        {
+            timer += Time.deltaTime / m_interval;
+
+            tick1.transform.position = Vector3.Lerp(tick1start, m_bar.transform.position, timer / 3);
+            tick2.transform.position = Vector3.Lerp(tick2start, m_bar.transform.position, timer / 3);
+
+            yield return null;
+        }
+
+        tick1.SetActive(false);
+        tick2.SetActive(false);
+
+        m_tickPool.Enqueue(tick1);
+        m_tickPool.Enqueue(tick2);
     }
 }
