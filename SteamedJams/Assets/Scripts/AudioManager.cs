@@ -80,7 +80,7 @@ public class AudioManager : MonoBehaviour
             m_tickPool.Enqueue(tick);
         }
 
-        //SetBGM(m_startBGM);
+        // SetBGM(m_startBGM);                              // activate this to test things
     }
 
     private void Update()
