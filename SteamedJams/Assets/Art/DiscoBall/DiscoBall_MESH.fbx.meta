@@ -4,10 +4,14 @@ ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
+    100002: Disco_Ball
     400000: //RootNode
+    400002: Disco_Ball
     2100000: lambert1
     2300000: //RootNode
+    2300002: Disco_Ball
     3300000: //RootNode
+    3300002: Disco_Ball
     4300000: Disco_Ball
   externalObjects: {}
   materials:

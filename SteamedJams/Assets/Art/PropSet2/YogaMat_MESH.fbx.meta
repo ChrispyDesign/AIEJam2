@@ -1,16 +1,16 @@
 fileFormatVersion: 2
-guid: 3a016ffdef25a024e93ae768d3a6cc8a
+guid: c8767de7ec4bb754fa0cc3070c38913b
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: Speaker_Large
+    100000: Yoga_Mat
     100002: //RootNode
-    400000: Speaker_Large
+    400000: Yoga_Mat
     400002: //RootNode
-    2100000: Speakers
-    4300000: Speaker_Large
-    9500000: //RootNode
-    13700000: Speaker_Large
+    2100000: Prop_Set2
+    2300000: Yoga_Mat
+    3300000: Yoga_Mat
+    4300000: Yoga_Mat
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -63,8 +63,8 @@ ModelImporter:
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
-    previousCalculatedGlobalScale: 0.01
-    hasPreviousCalculatedGlobalScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -91,7 +91,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 0
   humanoidOversampling: 1
   additionalBone: 0
   userData: 

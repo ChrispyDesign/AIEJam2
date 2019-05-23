@@ -5,12 +5,18 @@ ModelImporter:
   fileIDToRecycleName:
     100000: //RootNode
     100002: Weights_Small
+    100004: Dumbbells
     400000: //RootNode
     400002: Weights_Small
+    400004: Dumbbells
     2100000: lambert1
+    2100002: Prop_Set2
     2300000: Weights_Small
+    2300002: Dumbbells
     3300000: Weights_Small
+    3300002: Dumbbells
     4300000: Weights_Small
+    4300002: Dumbbells
   externalObjects: {}
   materials:
     importMaterials: 1

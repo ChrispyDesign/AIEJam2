@@ -1,0 +1,4032 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &9142545198993357102
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9142545198993357103}
+  m_Layer: 0
+  m_Name: DiscoFloors
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9142545198993357103
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9142545198993357102}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 5109110928307210438}
+  - {fileID: 8679327388490849640}
+  - {fileID: 1810194793754278831}
+  - {fileID: 1754844217711201955}
+  - {fileID: 6313821454844823023}
+  - {fileID: 8836003499619986273}
+  - {fileID: 340929029569999353}
+  - {fileID: 8038047587896606683}
+  - {fileID: 5695405291155519127}
+  - {fileID: 5286078217123258863}
+  - {fileID: 8547550341601097332}
+  - {fileID: 6274008793052732621}
+  - {fileID: 2022610531469074422}
+  - {fileID: 3498521288550359330}
+  - {fileID: 8018202811742539281}
+  - {fileID: 5563469403828365598}
+  - {fileID: 8001256588685978134}
+  - {fileID: 9014887285727883524}
+  - {fileID: 274457270288016578}
+  - {fileID: 5535224499396403660}
+  - {fileID: 240574908510255007}
+  - {fileID: 133383922212770135}
+  - {fileID: 5672090096276196284}
+  - {fileID: 4252108894849155397}
+  - {fileID: 2673359724232122220}
+  - {fileID: 7948533411632528954}
+  - {fileID: 3696773734471625091}
+  - {fileID: 2086513139555443766}
+  - {fileID: 1708623228342629019}
+  - {fileID: 3511339706997229232}
+  - {fileID: 4126256964765735064}
+  - {fileID: 1453387790035356756}
+  - {fileID: 951207928294935149}
+  - {fileID: 8092694899008662410}
+  - {fileID: 2499654190628891582}
+  - {fileID: 1970433396196953656}
+  - {fileID: 4711618210616330012}
+  - {fileID: 8646858185711223460}
+  - {fileID: 2386148349679408137}
+  - {fileID: 2011721288353252600}
+  - {fileID: 3366748971142424962}
+  - {fileID: 3826926130678473036}
+  - {fileID: 5781467801812274224}
+  - {fileID: 7763657065526051924}
+  - {fileID: 3261166141676595870}
+  - {fileID: 4687744531767199512}
+  - {fileID: 3579289812172787126}
+  - {fileID: 8418829758758083859}
+  - {fileID: 6183937258664443268}
+  - {fileID: 7538398184981919785}
+  - {fileID: 5960199399179004880}
+  - {fileID: 7087280780025887834}
+  - {fileID: 3449306898240948096}
+  - {fileID: 8237577518959639166}
+  - {fileID: 3567712282836682949}
+  - {fileID: 6702595014643711850}
+  - {fileID: 5662070342020726868}
+  - {fileID: 6179642964096791724}
+  - {fileID: 4371308105151414711}
+  - {fileID: 8410326196616524202}
+  - {fileID: 5823668458615567702}
+  - {fileID: 7254163192437175610}
+  - {fileID: 1376782480647790198}
+  - {fileID: 1603126860745858531}
+  - {fileID: 2275052872701862523}
+  - {fileID: 5877154249738420840}
+  - {fileID: 6110779473775531023}
+  - {fileID: 4224480550379360266}
+  - {fileID: 1276004241741014036}
+  - {fileID: 6833773850756619477}
+  - {fileID: 8422846158748093537}
+  - {fileID: 7648301129268202278}
+  - {fileID: 3170921336880643483}
+  - {fileID: 1313163571798291916}
+  - {fileID: 883851887898013364}
+  - {fileID: 2478400120617353163}
+  - {fileID: 8229417954423363490}
+  - {fileID: 4465094637395041697}
+  - {fileID: 4343812135734890922}
+  - {fileID: 8324972747137955911}
+  - {fileID: 7905825900246036224}
+  - {fileID: 4942561995110671102}
+  - {fileID: 4970066805055899460}
+  - {fileID: 5753245195509373642}
+  - {fileID: 8887305754686669039}
+  - {fileID: 5382188740439745579}
+  - {fileID: 8184185841111342229}
+  - {fileID: 7254879117449234821}
+  - {fileID: 6113693133114580704}
+  - {fileID: 6287781705175494576}
+  - {fileID: 691436500391347649}
+  - {fileID: 2483726564649345006}
+  - {fileID: 8168093514498889272}
+  - {fileID: 8371575580258938751}
+  - {fileID: 1666316542125795589}
+  - {fileID: 2048870546127799828}
+  - {fileID: 7076518825818374202}
+  - {fileID: 7011803897774333820}
+  - {fileID: 8889126500617982444}
+  - {fileID: 3464899924824742279}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &91345099461434140
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 9142545198993357103}
+    m_Modifications:
+    - target: {fileID: 4037456427303788452, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_Name
+      value: DiscoFloorTile (30)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -9
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7beb6ee6aa714b24883d1386efe21e00, type: 3}
+--- !u!4 &4126256964765735064 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+    type: 3}
+  m_PrefabInstance: {fileID: 91345099461434140}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &191318970649826190
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 9142545198993357103}
+    m_Modifications:
+    - target: {fileID: 4037456427303788452, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_Name
+      value: DiscoFloorTile (67)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 67
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 5
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7beb6ee6aa714b24883d1386efe21e00, type: 3}
+--- !u!4 &4224480550379360266 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+    type: 3}
+  m_PrefabInstance: {fileID: 191318970649826190}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &217698596865934017
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 9142545198993357103}
+    m_Modifications:
+    - target: {fileID: 4037456427303788452, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_Name
+      value: DiscoFloorTile (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 23
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7beb6ee6aa714b24883d1386efe21e00, type: 3}
+--- !u!4 &4252108894849155397 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+    type: 3}
+  m_PrefabInstance: {fileID: 217698596865934017}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &310677068302684718
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 9142545198993357103}
+    m_Modifications:
+    - target: {fileID: 4037456427303788452, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_Name
+      value: DiscoFloorTile (78)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 78
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 7
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7beb6ee6aa714b24883d1386efe21e00, type: 3}
+--- !u!4 &4343812135734890922 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+    type: 3}
+  m_PrefabInstance: {fileID: 310677068302684718}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &337185809438261811
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 9142545198993357103}
+    m_Modifications:
+    - target: {fileID: 4037456427303788452, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_Name
+      value: DiscoFloorTile (58)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 58
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 7
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7beb6ee6aa714b24883d1386efe21e00, type: 3}
+--- !u!4 &4371308105151414711 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+    type: 3}
+  m_PrefabInstance: {fileID: 337185809438261811}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &428086953156943397
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 9142545198993357103}
+    m_Modifications:
+    - target: {fileID: 4037456427303788452, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_Name
+      value: DiscoFloorTile (77)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 77
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 5
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7beb6ee6aa714b24883d1386efe21e00, type: 3}
+--- !u!4 &4465094637395041697 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+    type: 3}
+  m_PrefabInstance: {fileID: 428086953156943397}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &581563744698243587
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 9142545198993357103}
+    m_Modifications:
+    - target: {fileID: 4037456427303788452, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_Name
+      value: DiscoFloorTile (99)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 99
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 9
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7beb6ee6aa714b24883d1386efe21e00, type: 3}
+--- !u!4 &3464899924824742279 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+    type: 3}
+  m_PrefabInstance: {fileID: 581563744698243587}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &615537025158177446
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 9142545198993357103}
+    m_Modifications:
+    - target: {fileID: 4037456427303788452, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_Name
+      value: DiscoFloorTile (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7beb6ee6aa714b24883d1386efe21e00, type: 3}
+--- !u!4 &3498521288550359330 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+    type: 3}
+  m_PrefabInstance: {fileID: 615537025158177446}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &629701195371611444
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 9142545198993357103}
+    m_Modifications:
+    - target: {fileID: 4037456427303788452, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_Name
+      value: DiscoFloorTile (29)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 29
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 9
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7beb6ee6aa714b24883d1386efe21e00, type: 3}
+--- !u!4 &3511339706997229232 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+    type: 3}
+  m_PrefabInstance: {fileID: 629701195371611444}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &685921883451788097
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 9142545198993357103}
+    m_Modifications:
+    - target: {fileID: 4037456427303788452, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_Name
+      value: DiscoFloorTile (54)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 54
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7beb6ee6aa714b24883d1386efe21e00, type: 3}
+--- !u!4 &3567712282836682949 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+    type: 3}
+  m_PrefabInstance: {fileID: 685921883451788097}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &696892616602750514
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 9142545198993357103}
+    m_Modifications:
+    - target: {fileID: 4037456427303788452, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_Name
+      value: DiscoFloorTile (46)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 46
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7beb6ee6aa714b24883d1386efe21e00, type: 3}
+--- !u!4 &3579289812172787126 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+    type: 3}
+  m_PrefabInstance: {fileID: 696892616602750514}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &813595838418004487
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 9142545198993357103}
+    m_Modifications:
+    - target: {fileID: 4037456427303788452, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_Name
+      value: DiscoFloorTile (26)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 26
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7beb6ee6aa714b24883d1386efe21e00, type: 3}
+--- !u!4 &3696773734471625091 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+    type: 3}
+  m_PrefabInstance: {fileID: 813595838418004487}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &944652220535202504
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 9142545198993357103}
+    m_Modifications:
+    - target: {fileID: 4037456427303788452, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_Name
+      value: DiscoFloorTile (41)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 41
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -7
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7beb6ee6aa714b24883d1386efe21e00, type: 3}
+--- !u!4 &3826926130678473036 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+    type: 3}
+  m_PrefabInstance: {fileID: 944652220535202504}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1442995888039591455
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 9142545198993357103}
+    m_Modifications:
+    - target: {fileID: 4037456427303788452, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_Name
+      value: DiscoFloorTile (72)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 72
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -5
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7beb6ee6aa714b24883d1386efe21e00, type: 3}
+--- !u!4 &3170921336880643483 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+    type: 3}
+  m_PrefabInstance: {fileID: 1442995888039591455}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1532930768029018394
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 9142545198993357103}
+    m_Modifications:
+    - target: {fileID: 4037456427303788452, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_Name
+      value: DiscoFloorTile (44)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 44
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7beb6ee6aa714b24883d1386efe21e00, type: 3}
+--- !u!4 &3261166141676595870 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+    type: 3}
+  m_PrefabInstance: {fileID: 1532930768029018394}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1639017121190242822
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 9142545198993357103}
+    m_Modifications:
+    - target: {fileID: 4037456427303788452, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_Name
+      value: DiscoFloorTile (40)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -9
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7beb6ee6aa714b24883d1386efe21e00, type: 3}
+--- !u!4 &3366748971142424962 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+    type: 3}
+  m_PrefabInstance: {fileID: 1639017121190242822}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1718557994288677892
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 9142545198993357103}
+    m_Modifications:
+    - target: {fileID: 4037456427303788452, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_Name
+      value: DiscoFloorTile (52)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 52
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -5
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7beb6ee6aa714b24883d1386efe21e00, type: 3}
+--- !u!4 &3449306898240948096 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+    type: 3}
+  m_PrefabInstance: {fileID: 1718557994288677892}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1808934614741178253
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 9142545198993357103}
+    m_Modifications:
+    - target: {fileID: 4037456427303788452, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_Name
+      value: DiscoFloorTile (38)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 38
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 7
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7beb6ee6aa714b24883d1386efe21e00, type: 3}
+--- !u!4 &2386148349679408137 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+    type: 3}
+  m_PrefabInstance: {fileID: 1808934614741178253}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1901335970782280783
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 9142545198993357103}
+    m_Modifications:
+    - target: {fileID: 4037456427303788452, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_Name
+      value: DiscoFloorTile (75)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 75
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7beb6ee6aa714b24883d1386efe21e00, type: 3}
+--- !u!4 &2478400120617353163 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+    type: 3}
+  m_PrefabInstance: {fileID: 1901335970782280783}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1905045852459162730
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 9142545198993357103}
+    m_Modifications:
+    - target: {fileID: 4037456427303788452, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_Name
+      value: DiscoFloorTile (91)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 91
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -7
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7beb6ee6aa714b24883d1386efe21e00, type: 3}
+--- !u!4 &2483726564649345006 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+    type: 3}
+  m_PrefabInstance: {fileID: 1905045852459162730}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1925116237445638202
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 9142545198993357103}
+    m_Modifications:
+    - target: {fileID: 4037456427303788452, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_Name
+      value: DiscoFloorTile (34)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 34
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7beb6ee6aa714b24883d1386efe21e00, type: 3}
+--- !u!4 &2499654190628891582 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+    type: 3}
+  m_PrefabInstance: {fileID: 1925116237445638202}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2098188951104380136
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 9142545198993357103}
+    m_Modifications:
+    - target: {fileID: 4037456427303788452, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_Name
+      value: DiscoFloorTile (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7beb6ee6aa714b24883d1386efe21e00, type: 3}
+--- !u!4 &2673359724232122220 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+    type: 3}
+  m_PrefabInstance: {fileID: 2098188951104380136}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2332188124016004391
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 9142545198993357103}
+    m_Modifications:
+    - target: {fileID: 4037456427303788452, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_Name
+      value: DiscoFloorTile (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7beb6ee6aa714b24883d1386efe21e00, type: 3}
+--- !u!4 &1754844217711201955 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+    type: 3}
+  m_PrefabInstance: {fileID: 2332188124016004391}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2384928304801314859
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 9142545198993357103}
+    m_Modifications:
+    - target: {fileID: 4037456427303788452, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_Name
+      value: DiscoFloorTile (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7beb6ee6aa714b24883d1386efe21e00, type: 3}
+--- !u!4 &1810194793754278831 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+    type: 3}
+  m_PrefabInstance: {fileID: 2384928304801314859}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2548913699811888572
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 9142545198993357103}
+    m_Modifications:
+    - target: {fileID: 4037456427303788452, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_Name
+      value: DiscoFloorTile (35)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7beb6ee6aa714b24883d1386efe21e00, type: 3}
+--- !u!4 &1970433396196953656 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+    type: 3}
+  m_PrefabInstance: {fileID: 2548913699811888572}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2588721928506951548
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 9142545198993357103}
+    m_Modifications:
+    - target: {fileID: 4037456427303788452, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_Name
+      value: DiscoFloorTile (39)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 39
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 9
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7beb6ee6aa714b24883d1386efe21e00, type: 3}
+--- !u!4 &2011721288353252600 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+    type: 3}
+  m_PrefabInstance: {fileID: 2588721928506951548}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2600314992207420530
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 9142545198993357103}
+    m_Modifications:
+    - target: {fileID: 4037456427303788452, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_Name
+      value: DiscoFloorTile (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -5
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7beb6ee6aa714b24883d1386efe21e00, type: 3}
+--- !u!4 &2022610531469074422 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+    type: 3}
+  m_PrefabInstance: {fileID: 2600314992207420530}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2623595078043403664
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 9142545198993357103}
+    m_Modifications:
+    - target: {fileID: 4037456427303788452, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_Name
+      value: DiscoFloorTile (95)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 95
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7beb6ee6aa714b24883d1386efe21e00, type: 3}
+--- !u!4 &2048870546127799828 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+    type: 3}
+  m_PrefabInstance: {fileID: 2623595078043403664}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2662513173695555506
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 9142545198993357103}
+    m_Modifications:
+    - target: {fileID: 4037456427303788452, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_Name
+      value: DiscoFloorTile (27)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 27
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 5
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7beb6ee6aa714b24883d1386efe21e00, type: 3}
+--- !u!4 &2086513139555443766 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+    type: 3}
+  m_PrefabInstance: {fileID: 2662513173695555506}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2852310948380189183
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 9142545198993357103}
+    m_Modifications:
+    - target: {fileID: 4037456427303788452, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_Name
+      value: DiscoFloorTile (64)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 64
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7beb6ee6aa714b24883d1386efe21e00, type: 3}
+--- !u!4 &2275052872701862523 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+    type: 3}
+  m_PrefabInstance: {fileID: 2852310948380189183}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3004650965913937808
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 9142545198993357103}
+    m_Modifications:
+    - target: {fileID: 4037456427303788452, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_Name
+      value: DiscoFloorTile (68)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 68
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 7
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7beb6ee6aa714b24883d1386efe21e00, type: 3}
+--- !u!4 &1276004241741014036 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+    type: 3}
+  m_PrefabInstance: {fileID: 3004650965913937808}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3044053419935266376
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 9142545198993357103}
+    m_Modifications:
+    - target: {fileID: 4037456427303788452, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_Name
+      value: DiscoFloorTile (73)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 73
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7beb6ee6aa714b24883d1386efe21e00, type: 3}
+--- !u!4 &1313163571798291916 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+    type: 3}
+  m_PrefabInstance: {fileID: 3044053419935266376}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3106566086925409778
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 9142545198993357103}
+    m_Modifications:
+    - target: {fileID: 4037456427303788452, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_Name
+      value: DiscoFloorTile (62)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 62
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -5
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7beb6ee6aa714b24883d1386efe21e00, type: 3}
+--- !u!4 &1376782480647790198 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+    type: 3}
+  m_PrefabInstance: {fileID: 3106566086925409778}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3183083156210864080
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 9142545198993357103}
+    m_Modifications:
+    - target: {fileID: 4037456427303788452, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_Name
+      value: DiscoFloorTile (31)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -7
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7beb6ee6aa714b24883d1386efe21e00, type: 3}
+--- !u!4 &1453387790035356756 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+    type: 3}
+  m_PrefabInstance: {fileID: 3183083156210864080}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3330586026999291495
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 9142545198993357103}
+    m_Modifications:
+    - target: {fileID: 4037456427303788452, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_Name
+      value: DiscoFloorTile (63)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 63
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7beb6ee6aa714b24883d1386efe21e00, type: 3}
+--- !u!4 &1603126860745858531 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+    type: 3}
+  m_PrefabInstance: {fileID: 3330586026999291495}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3393496591876434561
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 9142545198993357103}
+    m_Modifications:
+    - target: {fileID: 4037456427303788452, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_Name
+      value: DiscoFloorTile (94)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 94
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7beb6ee6aa714b24883d1386efe21e00, type: 3}
+--- !u!4 &1666316542125795589 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+    type: 3}
+  m_PrefabInstance: {fileID: 3393496591876434561}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3436759973485293855
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 9142545198993357103}
+    m_Modifications:
+    - target: {fileID: 4037456427303788452, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_Name
+      value: DiscoFloorTile (28)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 28
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 7
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7beb6ee6aa714b24883d1386efe21e00, type: 3}
+--- !u!4 &1708623228342629019 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+    type: 3}
+  m_PrefabInstance: {fileID: 3436759973485293855}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3575740387116451397
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 9142545198993357103}
+    m_Modifications:
+    - target: {fileID: 4037456427303788452, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_Name
+      value: DiscoFloorTile (90)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -9
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7beb6ee6aa714b24883d1386efe21e00, type: 3}
+--- !u!4 &691436500391347649 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+    type: 3}
+  m_PrefabInstance: {fileID: 3575740387116451397}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3766134781535907120
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 9142545198993357103}
+    m_Modifications:
+    - target: {fileID: 4037456427303788452, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_Name
+      value: DiscoFloorTile (74)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 74
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7beb6ee6aa714b24883d1386efe21e00, type: 3}
+--- !u!4 &883851887898013364 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+    type: 3}
+  m_PrefabInstance: {fileID: 3766134781535907120}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3833886719082940905
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 9142545198993357103}
+    m_Modifications:
+    - target: {fileID: 4037456427303788452, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_Name
+      value: DiscoFloorTile (32)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 32
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -5
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7beb6ee6aa714b24883d1386efe21e00, type: 3}
+--- !u!4 &951207928294935149 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+    type: 3}
+  m_PrefabInstance: {fileID: 3833886719082940905}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4169826117147251411
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 9142545198993357103}
+    m_Modifications:
+    - target: {fileID: 4037456427303788452, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_Name
+      value: DiscoFloorTile (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 21
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -7
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7beb6ee6aa714b24883d1386efe21e00, type: 3}
+--- !u!4 &133383922212770135 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+    type: 3}
+  m_PrefabInstance: {fileID: 4169826117147251411}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4274299365665338395
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 9142545198993357103}
+    m_Modifications:
+    - target: {fileID: 4037456427303788452, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_Name
+      value: DiscoFloorTile (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -9
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7beb6ee6aa714b24883d1386efe21e00, type: 3}
+--- !u!4 &240574908510255007 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+    type: 3}
+  m_PrefabInstance: {fileID: 4274299365665338395}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4307970482696791878
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 9142545198993357103}
+    m_Modifications:
+    - target: {fileID: 4037456427303788452, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_Name
+      value: DiscoFloorTile (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 7
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7beb6ee6aa714b24883d1386efe21e00, type: 3}
+--- !u!4 &274457270288016578 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+    type: 3}
+  m_PrefabInstance: {fileID: 4307970482696791878}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4376606171074376317
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 9142545198993357103}
+    m_Modifications:
+    - target: {fileID: 4037456427303788452, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_Name
+      value: DiscoFloorTile (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7beb6ee6aa714b24883d1386efe21e00, type: 3}
+--- !u!4 &340929029569999353 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+    type: 3}
+  m_PrefabInstance: {fileID: 4376606171074376317}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4644556455038951148
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 9142545198993357103}
+    m_Modifications:
+    - target: {fileID: 4037456427303788452, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_Name
+      value: DiscoFloorTile (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7beb6ee6aa714b24883d1386efe21e00, type: 3}
+--- !u!4 &8679327388490849640 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+    type: 3}
+  m_PrefabInstance: {fileID: 4644556455038951148}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4798628715921533157
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 9142545198993357103}
+    m_Modifications:
+    - target: {fileID: 4037456427303788452, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_Name
+      value: DiscoFloorTile (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7beb6ee6aa714b24883d1386efe21e00, type: 3}
+--- !u!4 &8836003499619986273 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+    type: 3}
+  m_PrefabInstance: {fileID: 4798628715921533157}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4850904862892393323
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 9142545198993357103}
+    m_Modifications:
+    - target: {fileID: 4037456427303788452, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_Name
+      value: DiscoFloorTile (84)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 84
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7beb6ee6aa714b24883d1386efe21e00, type: 3}
+--- !u!4 &8887305754686669039 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+    type: 3}
+  m_PrefabInstance: {fileID: 4850904862892393323}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4853587708063273576
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 9142545198993357103}
+    m_Modifications:
+    - target: {fileID: 4037456427303788452, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_Name
+      value: DiscoFloorTile (98)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 98
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 7
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7beb6ee6aa714b24883d1386efe21e00, type: 3}
+--- !u!4 &8889126500617982444 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+    type: 3}
+  m_PrefabInstance: {fileID: 4853587708063273576}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4980063110736261760
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 9142545198993357103}
+    m_Modifications:
+    - target: {fileID: 4037456427303788452, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_Name
+      value: DiscoFloorTile (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 5
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7beb6ee6aa714b24883d1386efe21e00, type: 3}
+--- !u!4 &9014887285727883524 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+    type: 3}
+  m_PrefabInstance: {fileID: 4980063110736261760}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5208670360178665486
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 9142545198993357103}
+    m_Modifications:
+    - target: {fileID: 4037456427303788452, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_Name
+      value: DiscoFloorTile (33)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 33
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7beb6ee6aa714b24883d1386efe21e00, type: 3}
+--- !u!4 &8092694899008662410 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+    type: 3}
+  m_PrefabInstance: {fileID: 5208670360178665486}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5286391419624756668
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 9142545198993357103}
+    m_Modifications:
+    - target: {fileID: 4037456427303788452, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_Name
+      value: DiscoFloorTile (92)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 92
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -5
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7beb6ee6aa714b24883d1386efe21e00, type: 3}
+--- !u!4 &8168093514498889272 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+    type: 3}
+  m_PrefabInstance: {fileID: 5286391419624756668}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5301858897230946065
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 9142545198993357103}
+    m_Modifications:
+    - target: {fileID: 4037456427303788452, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_Name
+      value: DiscoFloorTile (86)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 86
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7beb6ee6aa714b24883d1386efe21e00, type: 3}
+--- !u!4 &8184185841111342229 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+    type: 3}
+  m_PrefabInstance: {fileID: 5301858897230946065}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5346662526873015334
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 9142545198993357103}
+    m_Modifications:
+    - target: {fileID: 4037456427303788452, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_Name
+      value: DiscoFloorTile (76)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 76
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7beb6ee6aa714b24883d1386efe21e00, type: 3}
+--- !u!4 &8229417954423363490 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+    type: 3}
+  m_PrefabInstance: {fileID: 5346662526873015334}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5356517328439605754
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 9142545198993357103}
+    m_Modifications:
+    - target: {fileID: 4037456427303788452, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_Name
+      value: DiscoFloorTile (53)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 53
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7beb6ee6aa714b24883d1386efe21e00, type: 3}
+--- !u!4 &8237577518959639166 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+    type: 3}
+  m_PrefabInstance: {fileID: 5356517328439605754}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5444803165851483075
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 9142545198993357103}
+    m_Modifications:
+    - target: {fileID: 4037456427303788452, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_Name
+      value: DiscoFloorTile (79)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 79
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 9
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7beb6ee6aa714b24883d1386efe21e00, type: 3}
+--- !u!4 &8324972747137955911 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+    type: 3}
+  m_PrefabInstance: {fileID: 5444803165851483075}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5488237132371979515
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 9142545198993357103}
+    m_Modifications:
+    - target: {fileID: 4037456427303788452, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_Name
+      value: DiscoFloorTile (93)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 93
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7beb6ee6aa714b24883d1386efe21e00, type: 3}
+--- !u!4 &8371575580258938751 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+    type: 3}
+  m_PrefabInstance: {fileID: 5488237132371979515}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5526081837097923118
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 9142545198993357103}
+    m_Modifications:
+    - target: {fileID: 4037456427303788452, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_Name
+      value: DiscoFloorTile (59)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 59
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 9
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7beb6ee6aa714b24883d1386efe21e00, type: 3}
+--- !u!4 &8410326196616524202 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+    type: 3}
+  m_PrefabInstance: {fileID: 5526081837097923118}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5535588275681205911
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 9142545198993357103}
+    m_Modifications:
+    - target: {fileID: 4037456427303788452, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_Name
+      value: DiscoFloorTile (47)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 47
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 5
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7beb6ee6aa714b24883d1386efe21e00, type: 3}
+--- !u!4 &8418829758758083859 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+    type: 3}
+  m_PrefabInstance: {fileID: 5535588275681205911}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5540580715562356709
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 9142545198993357103}
+    m_Modifications:
+    - target: {fileID: 4037456427303788452, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_Name
+      value: DiscoFloorTile (70)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 70
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -9
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7beb6ee6aa714b24883d1386efe21e00, type: 3}
+--- !u!4 &8422846158748093537 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+    type: 3}
+  m_PrefabInstance: {fileID: 5540580715562356709}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5663578368892614128
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 9142545198993357103}
+    m_Modifications:
+    - target: {fileID: 4037456427303788452, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_Name
+      value: DiscoFloorTile (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -9
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7beb6ee6aa714b24883d1386efe21e00, type: 3}
+--- !u!4 &8547550341601097332 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+    type: 3}
+  m_PrefabInstance: {fileID: 5663578368892614128}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5762393717708669216
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 9142545198993357103}
+    m_Modifications:
+    - target: {fileID: 4037456427303788452, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_Name
+      value: DiscoFloorTile (37)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 37
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 5
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7beb6ee6aa714b24883d1386efe21e00, type: 3}
+--- !u!4 &8646858185711223460 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+    type: 3}
+  m_PrefabInstance: {fileID: 5762393717708669216}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5807998715256060845
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 9142545198993357103}
+    m_Modifications:
+    - target: {fileID: 4037456427303788452, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_Name
+      value: DiscoFloorTile (49)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 49
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 9
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7beb6ee6aa714b24883d1386efe21e00, type: 3}
+--- !u!4 &7538398184981919785 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+    type: 3}
+  m_PrefabInstance: {fileID: 5807998715256060845}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5918807846103337122
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 9142545198993357103}
+    m_Modifications:
+    - target: {fileID: 4037456427303788452, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_Name
+      value: DiscoFloorTile (71)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 71
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -7
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7beb6ee6aa714b24883d1386efe21e00, type: 3}
+--- !u!4 &7648301129268202278 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+    type: 3}
+  m_PrefabInstance: {fileID: 5918807846103337122}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6033101446913263568
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 9142545198993357103}
+    m_Modifications:
+    - target: {fileID: 4037456427303788452, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_Name
+      value: DiscoFloorTile (43)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 43
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7beb6ee6aa714b24883d1386efe21e00, type: 3}
+--- !u!4 &7763657065526051924 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+    type: 3}
+  m_PrefabInstance: {fileID: 6033101446913263568}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6174663780190366852
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 9142545198993357103}
+    m_Modifications:
+    - target: {fileID: 4037456427303788452, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_Name
+      value: DiscoFloorTile (80)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -9
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7beb6ee6aa714b24883d1386efe21e00, type: 3}
+--- !u!4 &7905825900246036224 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+    type: 3}
+  m_PrefabInstance: {fileID: 6174663780190366852}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6217553798645611966
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 9142545198993357103}
+    m_Modifications:
+    - target: {fileID: 4037456427303788452, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_Name
+      value: DiscoFloorTile (25)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7beb6ee6aa714b24883d1386efe21e00, type: 3}
+--- !u!4 &7948533411632528954 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+    type: 3}
+  m_PrefabInstance: {fileID: 6217553798645611966}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6272882350123215250
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 9142545198993357103}
+    m_Modifications:
+    - target: {fileID: 4037456427303788452, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_Name
+      value: DiscoFloorTile (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7beb6ee6aa714b24883d1386efe21e00, type: 3}
+--- !u!4 &8001256588685978134 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+    type: 3}
+  m_PrefabInstance: {fileID: 6272882350123215250}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6287462424173546901
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 9142545198993357103}
+    m_Modifications:
+    - target: {fileID: 4037456427303788452, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_Name
+      value: DiscoFloorTile (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7beb6ee6aa714b24883d1386efe21e00, type: 3}
+--- !u!4 &8018202811742539281 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+    type: 3}
+  m_PrefabInstance: {fileID: 6287462424173546901}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6308149494970842207
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 9142545198993357103}
+    m_Modifications:
+    - target: {fileID: 4037456427303788452, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_Name
+      value: DiscoFloorTile (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7beb6ee6aa714b24883d1386efe21e00, type: 3}
+--- !u!4 &8038047587896606683 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+    type: 3}
+  m_PrefabInstance: {fileID: 6308149494970842207}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6433677133268196600
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 9142545198993357103}
+    m_Modifications:
+    - target: {fileID: 4037456427303788452, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_Name
+      value: DiscoFloorTile (97)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 97
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 5
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7beb6ee6aa714b24883d1386efe21e00, type: 3}
+--- !u!4 &7011803897774333820 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+    type: 3}
+  m_PrefabInstance: {fileID: 6433677133268196600}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6499597355317986238
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 9142545198993357103}
+    m_Modifications:
+    - target: {fileID: 4037456427303788452, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_Name
+      value: DiscoFloorTile (96)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 96
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7beb6ee6aa714b24883d1386efe21e00, type: 3}
+--- !u!4 &7076518825818374202 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+    type: 3}
+  m_PrefabInstance: {fileID: 6499597355317986238}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6511353401197838302
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 9142545198993357103}
+    m_Modifications:
+    - target: {fileID: 4037456427303788452, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_Name
+      value: DiscoFloorTile (51)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 51
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -7
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7beb6ee6aa714b24883d1386efe21e00, type: 3}
+--- !u!4 &7087280780025887834 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+    type: 3}
+  m_PrefabInstance: {fileID: 6511353401197838302}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6676990123944364545
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 9142545198993357103}
+    m_Modifications:
+    - target: {fileID: 4037456427303788452, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_Name
+      value: DiscoFloorTile (87)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 87
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 5
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7beb6ee6aa714b24883d1386efe21e00, type: 3}
+--- !u!4 &7254879117449234821 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+    type: 3}
+  m_PrefabInstance: {fileID: 6676990123944364545}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6677742893062862526
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 9142545198993357103}
+    m_Modifications:
+    - target: {fileID: 4037456427303788452, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_Name
+      value: DiscoFloorTile (61)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 61
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -7
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7beb6ee6aa714b24883d1386efe21e00, type: 3}
+--- !u!4 &7254163192437175610 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+    type: 3}
+  m_PrefabInstance: {fileID: 6677742893062862526}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7278814932822179054
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 9142545198993357103}
+    m_Modifications:
+    - target: {fileID: 4037456427303788452, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_Name
+      value: DiscoFloorTile (55)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 55
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7beb6ee6aa714b24883d1386efe21e00, type: 3}
+--- !u!4 &6702595014643711850 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+    type: 3}
+  m_PrefabInstance: {fileID: 7278814932822179054}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7408874553054289745
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 9142545198993357103}
+    m_Modifications:
+    - target: {fileID: 4037456427303788452, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_Name
+      value: DiscoFloorTile (69)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 69
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 9
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7beb6ee6aa714b24883d1386efe21e00, type: 3}
+--- !u!4 &6833773850756619477 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+    type: 3}
+  m_PrefabInstance: {fileID: 7408874553054289745}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7510890850971930548
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 9142545198993357103}
+    m_Modifications:
+    - target: {fileID: 4037456427303788452, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_Name
+      value: DiscoFloorTile (42)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 42
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -5
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7beb6ee6aa714b24883d1386efe21e00, type: 3}
+--- !u!4 &5781467801812274224 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+    type: 3}
+  m_PrefabInstance: {fileID: 7510890850971930548}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7554294286521841362
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 9142545198993357103}
+    m_Modifications:
+    - target: {fileID: 4037456427303788452, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_Name
+      value: DiscoFloorTile (60)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -9
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7beb6ee6aa714b24883d1386efe21e00, type: 3}
+--- !u!4 &5823668458615567702 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+    type: 3}
+  m_PrefabInstance: {fileID: 7554294286521841362}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7604386916563075564
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 9142545198993357103}
+    m_Modifications:
+    - target: {fileID: 4037456427303788452, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_Name
+      value: DiscoFloorTile (65)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 65
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7beb6ee6aa714b24883d1386efe21e00, type: 3}
+--- !u!4 &5877154249738420840 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+    type: 3}
+  m_PrefabInstance: {fileID: 7604386916563075564}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7687940319044134996
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 9142545198993357103}
+    m_Modifications:
+    - target: {fileID: 4037456427303788452, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_Name
+      value: DiscoFloorTile (50)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -9
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7beb6ee6aa714b24883d1386efe21e00, type: 3}
+--- !u!4 &5960199399179004880 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+    type: 3}
+  m_PrefabInstance: {fileID: 7687940319044134996}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7839136051953883019
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 9142545198993357103}
+    m_Modifications:
+    - target: {fileID: 4037456427303788452, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_Name
+      value: DiscoFloorTile (66)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 66
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7beb6ee6aa714b24883d1386efe21e00, type: 3}
+--- !u!4 &6110779473775531023 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+    type: 3}
+  m_PrefabInstance: {fileID: 7839136051953883019}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7845233966222335332
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 9142545198993357103}
+    m_Modifications:
+    - target: {fileID: 4037456427303788452, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_Name
+      value: DiscoFloorTile (88)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 88
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 7
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7beb6ee6aa714b24883d1386efe21e00, type: 3}
+--- !u!4 &6113693133114580704 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+    type: 3}
+  m_PrefabInstance: {fileID: 7845233966222335332}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7909848933163333416
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 9142545198993357103}
+    m_Modifications:
+    - target: {fileID: 4037456427303788452, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_Name
+      value: DiscoFloorTile (57)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 57
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 5
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7beb6ee6aa714b24883d1386efe21e00, type: 3}
+--- !u!4 &6179642964096791724 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+    type: 3}
+  m_PrefabInstance: {fileID: 7909848933163333416}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7914565169076239872
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 9142545198993357103}
+    m_Modifications:
+    - target: {fileID: 4037456427303788452, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_Name
+      value: DiscoFloorTile (48)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 48
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 7
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7beb6ee6aa714b24883d1386efe21e00, type: 3}
+--- !u!4 &6183937258664443268 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+    type: 3}
+  m_PrefabInstance: {fileID: 7914565169076239872}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8004634844818382665
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 9142545198993357103}
+    m_Modifications:
+    - target: {fileID: 4037456427303788452, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_Name
+      value: DiscoFloorTile (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -7
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7beb6ee6aa714b24883d1386efe21e00, type: 3}
+--- !u!4 &6274008793052732621 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+    type: 3}
+  m_PrefabInstance: {fileID: 8004634844818382665}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8017917099926596660
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 9142545198993357103}
+    m_Modifications:
+    - target: {fileID: 4037456427303788452, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_Name
+      value: DiscoFloorTile (89)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 89
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 9
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7beb6ee6aa714b24883d1386efe21e00, type: 3}
+--- !u!4 &6287781705175494576 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+    type: 3}
+  m_PrefabInstance: {fileID: 8017917099926596660}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8041421310251550315
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 9142545198993357103}
+    m_Modifications:
+    - target: {fileID: 4037456427303788452, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_Name
+      value: DiscoFloorTile (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7beb6ee6aa714b24883d1386efe21e00, type: 3}
+--- !u!4 &6313821454844823023 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+    type: 3}
+  m_PrefabInstance: {fileID: 8041421310251550315}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8168405039669781099
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 9142545198993357103}
+    m_Modifications:
+    - target: {fileID: 4037456427303788452, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_Name
+      value: DiscoFloorTile (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7beb6ee6aa714b24883d1386efe21e00, type: 3}
+--- !u!4 &5286078217123258863 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+    type: 3}
+  m_PrefabInstance: {fileID: 8168405039669781099}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8265949326166747055
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 9142545198993357103}
+    m_Modifications:
+    - target: {fileID: 4037456427303788452, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_Name
+      value: DiscoFloorTile (85)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 85
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7beb6ee6aa714b24883d1386efe21e00, type: 3}
+--- !u!4 &5382188740439745579 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+    type: 3}
+  m_PrefabInstance: {fileID: 8265949326166747055}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8419194043854430792
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 9142545198993357103}
+    m_Modifications:
+    - target: {fileID: 4037456427303788452, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_Name
+      value: DiscoFloorTile (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 19
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 9
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7beb6ee6aa714b24883d1386efe21e00, type: 3}
+--- !u!4 &5535224499396403660 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+    type: 3}
+  m_PrefabInstance: {fileID: 8419194043854430792}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8444958248158194330
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 9142545198993357103}
+    m_Modifications:
+    - target: {fileID: 4037456427303788452, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_Name
+      value: DiscoFloorTile (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7beb6ee6aa714b24883d1386efe21e00, type: 3}
+--- !u!4 &5563469403828365598 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+    type: 3}
+  m_PrefabInstance: {fileID: 8444958248158194330}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8544555275718443984
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 9142545198993357103}
+    m_Modifications:
+    - target: {fileID: 4037456427303788452, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_Name
+      value: DiscoFloorTile (56)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 56
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7beb6ee6aa714b24883d1386efe21e00, type: 3}
+--- !u!4 &5662070342020726868 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+    type: 3}
+  m_PrefabInstance: {fileID: 8544555275718443984}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8552514746526795832
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 9142545198993357103}
+    m_Modifications:
+    - target: {fileID: 4037456427303788452, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_Name
+      value: DiscoFloorTile (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -5
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7beb6ee6aa714b24883d1386efe21e00, type: 3}
+--- !u!4 &5672090096276196284 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+    type: 3}
+  m_PrefabInstance: {fileID: 8552514746526795832}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8578734784002176275
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 9142545198993357103}
+    m_Modifications:
+    - target: {fileID: 4037456427303788452, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_Name
+      value: DiscoFloorTile (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7beb6ee6aa714b24883d1386efe21e00, type: 3}
+--- !u!4 &5695405291155519127 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+    type: 3}
+  m_PrefabInstance: {fileID: 8578734784002176275}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8633487618904414542
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 9142545198993357103}
+    m_Modifications:
+    - target: {fileID: 4037456427303788452, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_Name
+      value: DiscoFloorTile (83)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 83
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7beb6ee6aa714b24883d1386efe21e00, type: 3}
+--- !u!4 &5753245195509373642 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+    type: 3}
+  m_PrefabInstance: {fileID: 8633487618904414542}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8721743952191636636
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 9142545198993357103}
+    m_Modifications:
+    - target: {fileID: 4037456427303788452, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_Name
+      value: DiscoFloorTile (45)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7beb6ee6aa714b24883d1386efe21e00, type: 3}
+--- !u!4 &4687744531767199512 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+    type: 3}
+  m_PrefabInstance: {fileID: 8721743952191636636}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8747374718820320408
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 9142545198993357103}
+    m_Modifications:
+    - target: {fileID: 4037456427303788452, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_Name
+      value: DiscoFloorTile (36)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 36
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7beb6ee6aa714b24883d1386efe21e00, type: 3}
+--- !u!4 &4711618210616330012 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+    type: 3}
+  m_PrefabInstance: {fileID: 8747374718820320408}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8975793664393617786
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 9142545198993357103}
+    m_Modifications:
+    - target: {fileID: 4037456427303788452, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_Name
+      value: DiscoFloorTile (81)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 81
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -7
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7beb6ee6aa714b24883d1386efe21e00, type: 3}
+--- !u!4 &4942561995110671102 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+    type: 3}
+  m_PrefabInstance: {fileID: 8975793664393617786}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &9006869777210770624
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 9142545198993357103}
+    m_Modifications:
+    - target: {fileID: 4037456427303788452, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_Name
+      value: DiscoFloorTile (82)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 82
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -5
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7beb6ee6aa714b24883d1386efe21e00, type: 3}
+--- !u!4 &4970066805055899460 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+    type: 3}
+  m_PrefabInstance: {fileID: 9006869777210770624}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &9142545199218133826
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 9142545198993357103}
+    m_Modifications:
+    - target: {fileID: 4037456427303788452, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_Name
+      value: DiscoFloorTile
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7beb6ee6aa714b24883d1386efe21e00, type: 3}
+--- !u!4 &5109110928307210438 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4037456427303355268, guid: 7beb6ee6aa714b24883d1386efe21e00,
+    type: 3}
+  m_PrefabInstance: {fileID: 9142545199218133826}
+  m_PrefabAsset: {fileID: 0}
