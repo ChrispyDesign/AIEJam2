@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-
 [RequireComponent(typeof(AudioUI))]
 [RequireComponent(typeof(AudioSource))]
 public class AudioManager : MonoBehaviour
@@ -18,6 +17,7 @@ public class AudioManager : MonoBehaviour
     [Header("BPM")]
     [Range(0, 200)]
     [SerializeField] private float m_BPM = 128;
+    private AudioClip m_BGM;
     [Header("Time Signature")]
     [SerializeField] private int m_base = 4; // time signature top
     [SerializeField] private int m_step = 4; // time signature bottom
@@ -69,7 +69,7 @@ public class AudioManager : MonoBehaviour
     private void Start()
     {
         if (m_startBGM != null)
-            SetBGM(m_startBGM);
+            SetBGM(m_startBGM, 128);
     }
 
     private void Update()
@@ -79,13 +79,15 @@ public class AudioManager : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.RightArrow))
             StartFeedbackTextRoutine(2);
+
+        Debug.Log(m_isInWindow);
     }
 
     /// <summary>
     /// 
     /// </summary>
     /// <param name="BGM"></param>
-    public void SetBGM(AudioClip BGM)
+    public void SetBGM(AudioClip BGM, float BPM)
     {
         if (m_audioUI == null)
             m_audioUI = GetComponent<AudioUI>();
@@ -93,8 +95,9 @@ public class AudioManager : MonoBehaviour
         if (m_audioSource == null)
             m_audioSource = GetComponent<AudioSource>();
 
-        m_audioSource.clip = BGM;
-        m_audioSource.Play();
+        m_BPM = BPM;
+        m_BGM = BGM;
+
         StartMetronome();
     }
 
@@ -103,7 +106,7 @@ public class AudioManager : MonoBehaviour
     /// </summary>
     private void StartMetronome()
     {
-        StopCoroutine(BGM());
+        StopCoroutine(PlayBGM());
 
         m_currentStep = 1;
         float multiplier = m_base / 4.0f;
@@ -111,16 +114,19 @@ public class AudioManager : MonoBehaviour
         m_interval = tempInterval / multiplier;
         m_nextTime = Time.time;
 
-        StartCoroutine(BGM());
+        StartCoroutine(PlayBGM());
     }
 
     /// <summary>
     /// 
     /// </summary>
     /// <returns></returns>
-    private IEnumerator BGM()
+    private IEnumerator PlayBGM()
     {
         float window = m_windowOfOpportunity;
+        m_audioSource.Stop();
+        m_audioSource.clip = m_BGM;
+        m_audioSource.Play();
 
         while (true)
         {
@@ -167,15 +173,17 @@ public class AudioManager : MonoBehaviour
     {
         if (m_isInWindow)
         {
-            string feedback = "Fail";
-            if (1 - m_opportunityScalar > 0.95f)
-                feedback = "Perfect!";
-            else if (1 - m_opportunityScalar > 0.75f)
-                feedback = "Great!";
-            else if (1 - m_opportunityScalar > 0.5f)
-                feedback = "Nice!";
+            string feedback = "Test";
+            //if (1 - m_opportunityScalar > 0.95f)
+            //    feedback = "Perfect!";
+            //else if (1 - m_opportunityScalar > 0.75f)
+            //    feedback = "Great!";
+            //else if (1 - m_opportunityScalar > 0.5f)
+            //    feedback = "Nice!";
 
             StartCoroutine(m_audioUI.Feedback(player, feedback));
         }
+        else
+            StartCoroutine(m_audioUI.Feedback(player, "Fail"));
     }
 }

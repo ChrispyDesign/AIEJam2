@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60c4fb9698abe234582ad2e05a7286a0, type: 3}
   m_Name: Track004
   m_EditorClassIdentifier: 
-  m_BPM: 124
+  m_BPM: 120
   m_AudioTrack: {fileID: 8300000, guid: 87c0c99615069b344b715054deb71f46, type: 3}

@@ -120,6 +120,8 @@ public class MainMenuManager : MonoBehaviour
                 DeactivateOnStart[i].SetActive(false);
             }
             inPlay = true;
+
+            GameStateManager.GetInstance().StartRound();
         }
     }
 }
