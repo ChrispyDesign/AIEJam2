@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class LevelGeneration : MonoBehaviour
 {
-
+    public bool m_generate = false; //TEMP REMOVE
     [Header("GameObjects")]
     public GameObject playerManager;
 
@@ -37,7 +37,11 @@ public class LevelGeneration : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        if (m_generate)
+        {
+            GenerateMap();
+            m_generate = false;
+        }
     }
 
     void BasePass ()
