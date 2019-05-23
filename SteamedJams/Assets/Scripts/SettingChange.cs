@@ -12,17 +12,20 @@ public class SettingChange : MonoBehaviour
 
     public List<GameObject> settingObjects = new List<GameObject>();
 
-    public enum settings { fullScreen, resolution, graphics, whichSetting}
+    public enum settings { fullScreen, resolution, graphics, sound, whichSetting}
     public enum direction { down, change, up }
 
     public settings settingChoice;
     public direction directionChoice;
+
+    public float soundChangeSpeed = 25;
 
     private Resolution[] resolutions;
 
     private static int selectionObjects;
     private static int resolutionNo;
     private static int graphicsNo;
+    private static float volume;
     // Start is called before the first frame update
     void Start()
     {
@@ -44,6 +47,11 @@ public class SettingChange : MonoBehaviour
         }
         if (settingChoice == settings.graphics)
             text.text = QualitySettings.names[QualitySettings.GetQualityLevel()];
+        if (settingChoice == settings.sound)
+        {
+            volume = AudioListener.volume * 100;
+            text.text = Mathf.RoundToInt(volume) + "%";
+        }
     }
 
     // Update is called once per frame
@@ -127,5 +135,25 @@ public class SettingChange : MonoBehaviour
     {
         if (other.tag == "Player")
             GetComponent<Renderer>().material = on;
+    }
+
+    private void OnTriggerStay(Collider other)
+    {
+        if (other.tag == "Player")
+        {
+            if (settingChoice == settings.sound)
+            {
+                if (directionChoice == direction.down)
+                    volume -= Time.deltaTime * soundChangeSpeed;
+                if (directionChoice == direction.up)
+                    volume += Time.deltaTime * soundChangeSpeed;
+                if (volume < 0)
+                    volume = 0;
+                if (volume > 100)
+                    volume = 100;
+                AudioListener.volume = volume / 100;
+                text.text = Mathf.RoundToInt(volume) + "%";
+            }
+        }
     }
 }

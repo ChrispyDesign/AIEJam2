@@ -37,7 +37,7 @@ public class CameraMovement : MonoBehaviour
     void Start()
     {
         activeCamera = GetComponent<CameraMovement>();
-        startRotation = transform.GetChild(0).localEulerAngles;
+        startRotation = transform.GetChild(0).GetChild(0).localEulerAngles;
         currentRot = startRotation;
         swayRotateTarget = startRotation;
         GetPlayerObjects();
@@ -76,7 +76,7 @@ public class CameraMovement : MonoBehaviour
             CamShake();
         else
             CamSway();
-
+        CamBeat();
 
     }
 
@@ -114,29 +114,22 @@ public class CameraMovement : MonoBehaviour
 
     private void CamShake()
     {
-        transform.GetChild(0).localPosition = Random.insideUnitSphere * shakeAmount;
+        transform.GetChild(0).GetChild(0).localPosition = Random.insideUnitSphere * shakeAmount;
         shakeTimer += Time.deltaTime;
     }
 
     private void CamSway()
     {
-        /*
-        Vector3 swayDif = swayTarget - transform.GetChild(0).localPosition;
-        if (swayDif == Vector3.zero)
-            swayTarget = Random.insideUnitSphere * swayMax;
-        Vector3 targetPos = Vector3.ClampMagnitude(swayDif, Time.deltaTime * swaySpeed);
-        transform.GetChild(0).localPosition += targetPos;
-        */
-        CamSwayRotate();
-    }
-
-    private void CamSwayRotate ()
-    {
         Vector3 swayDif = swayRotateTarget - currentRot;
         if (swayDif == Vector3.zero)
-            swayRotateTarget = (Random.insideUnitSphere * swayRotMax)+ startRotation;
+            swayRotateTarget = (Random.insideUnitSphere * swayRotMax) + startRotation;
         Vector3 targetRot = Vector3.ClampMagnitude(swayDif, Time.deltaTime * swayRotSpeed);
         currentRot += targetRot;
-        transform.GetChild(0).localEulerAngles = currentRot;
+        transform.GetChild(0).GetChild(0).localEulerAngles = currentRot;
+    }
+
+    private void CamBeat ()
+    {
+        transform.GetChild(0).localPosition = transform.GetChild(0).GetChild(0).forward * AudioManager.GetInstance().GetOpportunityScalarRaw();
     }
 }
