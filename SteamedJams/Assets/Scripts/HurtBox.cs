@@ -31,7 +31,7 @@ public class HurtBox : MonoBehaviour
 
             if (otherPlayer && otherPlayer.m_team != m_team)
             {
-                otherPlayer.TakeDamage(m_damage);
+                otherPlayer.TakeDamage(m_damage, m_player);
             }
         }
         if (other.tag == "Pickup")

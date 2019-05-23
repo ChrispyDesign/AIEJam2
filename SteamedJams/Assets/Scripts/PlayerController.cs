@@ -25,6 +25,7 @@ public class PlayerController : MonoBehaviour
     public Team m_team;
     public XboxController m_controller;
     public int m_maxHealth;
+    public ParticleSystem m_bloodSpray;
 
     [Header("Attack")]
     public int m_swordDamage;
@@ -63,7 +64,7 @@ public class PlayerController : MonoBehaviour
     bool m_dodging = false;
     float m_dodgeTimer = 0;
 
-    bool m_invulnerable;
+    bool m_invulnerable;    
 
     //TEMP
     //public Vector3 m_gravity;
@@ -296,11 +297,17 @@ public class PlayerController : MonoBehaviour
     }
     #endregion
 
-    public void TakeDamage(int damage)
+    public void TakeDamage(int damage, PlayerController attacker)
     {
         if (!m_dodging && !m_invulnerable)
         {
             m_health -= damage;
+
+            if (m_bloodSpray)
+            {
+                m_bloodSpray.transform.forward = (transform.position - attacker.transform.position).normalized;
+                m_bloodSpray.Play();
+            }
 
             if (OnDamageTaken != null)
                 OnDamageTaken.Invoke();
