@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8648761781906735308}
+  - component: {fileID: 3222403077253002910}
   m_Layer: 0
   m_Name: OBS_PunchingBag
   m_TagString: Untagged
@@ -31,6 +32,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &3222403077253002910
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8648761781906382060}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.6447696, y: 1.7558033, z: 0.63056016}
+  m_Center: {x: -0.0071046054, y: 0.8779017, z: 0.0071047544}
 --- !u!1 &8648761781906382062
 GameObject:
   m_ObjectHideFlags: 0
