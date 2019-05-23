@@ -31,10 +31,12 @@ public class CameraMovement : MonoBehaviour
     private Vector3 swayRotateTarget;
     private Vector3 startRotation;
     private Vector3 currentRot;
+    public static CameraMovement activeCamera;
 
     // Use this for initialization
     void Start()
     {
+        activeCamera = GetComponent<CameraMovement>();
         startRotation = transform.GetChild(0).localEulerAngles;
         currentRot = startRotation;
         swayRotateTarget = startRotation;
