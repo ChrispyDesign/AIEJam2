@@ -22,6 +22,7 @@ public class LevelGeneration : MonoBehaviour
     public static LevelGeneration activeManager;
 
     PlayerManager m_playerManager;
+    bool m_firstRun = true;
 
     // Use this for initialization
     void Start()
@@ -29,10 +30,8 @@ public class LevelGeneration : MonoBehaviour
         m_playerManager = PlayerManager.Instance;
 
         activeManager = this.GetComponent<LevelGeneration>();
-        BasePass();
-        PlayerPass();
-        PropPass();
-        LastPass();
+
+        GenerateMap();
     }
 
     // Update is called once per frame
@@ -92,5 +91,25 @@ public class LevelGeneration : MonoBehaviour
             m_playerManager.m_players[1].transform.position = freeBasePropHolders[player2Index].transform.position;
             freeBasePropHolders.RemoveAt(player2Index);
         }
+    }
+
+    void GenerateMap()
+    {
+        if (!m_firstRun)
+        {
+            for (int i = 0; i < transform.childCount; i++)
+            {
+                Transform tmp = transform.GetChild(i).GetChild(0);
+                if (tmp)
+                    Destroy(tmp.gameObject);
+            }
+        }
+
+        BasePass();
+        PlayerPass();
+        PropPass();
+        LastPass();
+
+        m_firstRun = false;
     }
 }

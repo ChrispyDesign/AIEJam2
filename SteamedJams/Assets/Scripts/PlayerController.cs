@@ -111,7 +111,7 @@ public class PlayerController : MonoBehaviour
         m_effects = new List<Effect>();
         m_audioManager = AudioManager.GetInstance();
 
-        m_defaultColour = m_renderer.material.color;
+        //m_defaultColour = m_renderer.material.color;
 
         m_health = m_maxHealth;
         m_animator = GetComponent<Animator>();
