@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using XboxCtrlrInput;
 
 public enum Team
 {
@@ -22,6 +23,7 @@ public class PlayerController : MonoBehaviour
 {
     public int m_playerNumber;
     public Team m_team;
+    public XboxController m_controller;
     public int m_maxHealth;
 
     [Header("Attack")]
@@ -37,6 +39,7 @@ public class PlayerController : MonoBehaviour
     public float m_defaultDashSpeed;
     public HurtBox m_dashHurtBox;
     public int m_dashDamage;
+    public float m_dashCooldown;
 
     [Header("Dodge")]
     public float m_dodgeLength;
@@ -53,6 +56,7 @@ public class PlayerController : MonoBehaviour
     float m_speedMultiplier = 1;
 
     float m_dashTimer;
+    float m_dashCooldownTimer;
     Vector3 m_dashDirection;
     public float m_dashSpeed;
 
@@ -70,6 +74,7 @@ public class PlayerController : MonoBehaviour
     public Renderer m_renderer;
     public List<Effect> m_effects;
     Color m_defaultColour;
+    public bool m_useController;
 
     event VoidEvent OnDamageTaken;
 
@@ -124,6 +129,9 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (m_dashCooldownTimer > 0)
+            m_dashCooldownTimer -= Time.deltaTime;
+
         switch (m_currentState)
         {
             case PlayerState.Base:
@@ -149,8 +157,15 @@ public class PlayerController : MonoBehaviour
                 i--;
             }
         }
-
-        Vector3 movement = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
+        Vector3 movement;
+        if (m_useController)
+        {
+            movement = new Vector3(XCI.GetAxisRaw(XboxAxis.LeftStickX, m_controller), 0, XCI.GetAxisRaw(XboxAxis.LeftStickY, m_controller));
+        }
+        else
+        {
+            movement = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
+        }
         if (movement.sqrMagnitude != 0)
         {
             transform.forward = movement;
@@ -163,36 +178,78 @@ public class PlayerController : MonoBehaviour
 
         m_velocity -= m_velocity * m_drag * Time.deltaTime;
 
-        if (Input.GetMouseButtonDown(0) && m_canAttack)
+        if (m_useController)
         {
-            AttackStart();
+            if (XCI.GetButtonDown(XboxButton.A, m_controller) && m_canAttack)
+            {
+                AttackStart();
+            }
+        }
+        else
+        {
+            if (Input.GetMouseButtonDown(0) && m_canAttack)
+            {
+                AttackStart();
+            }
         }
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (m_useController)
         {
-            if (!m_canAttack && !m_swordHurtBox.Collider.enabled)
+            if (XCI.GetButtonDown(XboxButton.B, m_controller) && m_dashCooldownTimer <= 0)
             {
-                AnimatorStateInfo currentAnim = m_animator.GetCurrentAnimatorStateInfo(0);
-                m_animator.Play("ReverseAttack", 0, 1 - currentAnim.normalizedTime);
-                m_canAttack = true;
-            }
+                if (!m_canAttack && !m_swordHurtBox.Collider.enabled)
+                {
+                    AnimatorStateInfo currentAnim = m_animator.GetCurrentAnimatorStateInfo(0);
+                    m_animator.Play("ReverseAttack", 0, 1 - currentAnim.normalizedTime);
+                    m_canAttack = true;
+                }
 
-            m_dashHurtBox.Collider.enabled = true;
-            m_dashDirection = transform.forward;
-            if (true/*!m_audioManager.IsInWindowOfOpportunity()*/)
-            {
-                m_dashTimer = m_dashLength;
-                m_dashSpeed = m_defaultDashSpeed;
-            }
-            else
-            {
-                m_dashTimer = m_dashLength / 2;
-                m_dashSpeed = m_defaultDashSpeed * 2;
-            }
+                m_dashHurtBox.Collider.enabled = true;
+                m_dashDirection = transform.forward;
+                if (true/*!m_audioManager.IsInWindowOfOpportunity()*/)
+                {
+                    m_dashTimer = m_dashLength;
+                    m_dashSpeed = m_defaultDashSpeed;
+                }
+                else
+                {
+                    m_dashTimer = m_dashLength / 2;
+                    m_dashSpeed = m_defaultDashSpeed * 2;
+                }
 
-            m_currentState = PlayerState.Dashing;
+                m_dashCooldownTimer = m_dashCooldown;
+                m_currentState = PlayerState.Dashing;
+            }
         }
-        else if (Input.GetKeyDown(KeyCode.LeftShift))
+        else
+        {
+            if (Input.GetKeyDown(KeyCode.Space) && m_dashCooldownTimer <= 0)
+            {
+                if (!m_canAttack && !m_swordHurtBox.Collider.enabled)
+                {
+                    AnimatorStateInfo currentAnim = m_animator.GetCurrentAnimatorStateInfo(0);
+                    m_animator.Play("ReverseAttack", 0, 1 - currentAnim.normalizedTime);
+                    m_canAttack = true;
+                }
+
+                m_dashHurtBox.Collider.enabled = true;
+                m_dashDirection = transform.forward;
+                if (true/*!m_audioManager.IsInWindowOfOpportunity()*/)
+                {
+                    m_dashTimer = m_dashLength;
+                    m_dashSpeed = m_defaultDashSpeed;
+                }
+                else
+                {
+                    m_dashTimer = m_dashLength / 2;
+                    m_dashSpeed = m_defaultDashSpeed * 2;
+                }
+
+                m_dashCooldownTimer = m_dashCooldown;
+                m_currentState = PlayerState.Dashing;
+            }
+        }
+        if (Input.GetKeyDown(KeyCode.LeftShift))
         {
             if (!m_canAttack && !m_swordHurtBox.Collider.enabled)
             {

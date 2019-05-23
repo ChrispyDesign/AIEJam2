@@ -21,11 +21,16 @@ public class LevelGeneration : MonoBehaviour
 
     public static LevelGeneration activeManager;
 
+    PlayerManager m_playerManager;
+
     // Use this for initialization
     void Start()
     {
+        m_playerManager = PlayerManager.Instance;
+
         activeManager = this.GetComponent<LevelGeneration>();
         BasePass();
+        PlayerPass();
         PropPass();
         LastPass();
     }
@@ -72,6 +77,20 @@ public class LevelGeneration : MonoBehaviour
         for (int i = 0; i < freeBasePropHolders.Count; i++)
         {
             Instantiate(emptyPropHolder, freeBasePropHolders[i]);
+        }
+    }
+
+    void PlayerPass()
+    {
+        if (m_playerManager)
+        {
+            int player1Index = Random.Range(0, freeBasePropHolders.Count);
+            m_playerManager.m_players[0].transform.position = freeBasePropHolders[player1Index].transform.position;
+            freeBasePropHolders.RemoveAt(player1Index);
+
+            int player2Index = Random.Range(0, freeBasePropHolders.Count);
+            m_playerManager.m_players[1].transform.position = freeBasePropHolders[player2Index].transform.position;
+            freeBasePropHolders.RemoveAt(player2Index);
         }
     }
 }

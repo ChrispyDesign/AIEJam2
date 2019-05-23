@@ -327,19 +327,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_playerNumber: 0
   m_team: 0
+  m_controller: 0
   m_maxHealth: 100
   m_swordDamage: 20
   m_swordHurtBox: {fileID: 489954460586375141}
   m_speed: 50
   m_drag: 10
   m_dashLength: 0.2
-  m_defaultDashSpeed: 0
+  m_defaultDashSpeed: 20
   m_dashHurtBox: {fileID: 2378538365099729355}
   m_dashDamage: 10
-  m_dodgeLength: 0
+  m_dashCooldown: 1
+  m_dodgeLength: 2
   m_dashSpeed: 30
   m_health: 0
-  m_renderer: {fileID: 0}
+  m_renderer: {fileID: 9115953796058831501}
   m_effects: []
 --- !u!136 &9115953796058831490
 CapsuleCollider:
