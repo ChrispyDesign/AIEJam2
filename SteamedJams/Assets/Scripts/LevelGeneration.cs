@@ -44,7 +44,8 @@ public class LevelGeneration : MonoBehaviour
     {
         for (int i = 0; i < transform.childCount; i++)
         {
-            GameObject GO = Instantiate(obs[Random.Range(0, obs.Count)], transform.GetChild(i).position, transform.GetChild(i).rotation, transform.GetChild(i));
+            int rotation = Random.Range(0, 5);
+            GameObject GO = Instantiate(obs[Random.Range(0, obs.Count)], transform.GetChild(i).position, Quaternion.Euler(0, rotation * 90, 0), transform.GetChild(i));
             //playerManager.GetComponent<PlayerManager>().m_playerStartPositions[i] = GO.transform.GetChild(0);
             for (int j = 0; j < GO.transform.GetChild(0).childCount; j++)
             {
