@@ -13,7 +13,6 @@ enum PlayerState
 {
     Base,
     Dashing,
-    Dodging
 };
 
 public delegate void VoidEvent();
@@ -42,9 +41,6 @@ public class PlayerController : MonoBehaviour
     public int m_dashDamage;
     public float m_dashCooldown;
 
-    [Header("Dodge")]
-    public float m_dodgeLength;
-
     PlayerState m_currentState = PlayerState.Base;
 
     AudioManager m_audioManager;
@@ -60,9 +56,6 @@ public class PlayerController : MonoBehaviour
     float m_dashCooldownTimer;
     Vector3 m_dashDirection;
     public float m_dashSpeed;
-
-    bool m_dodging = false;
-    float m_dodgeTimer = 0;
 
     bool m_invulnerable;    
 
@@ -143,9 +136,6 @@ public class PlayerController : MonoBehaviour
             case PlayerState.Dashing:
                 DashingState();
                 break;
-            case PlayerState.Dodging:
-                DodgingState();
-                break; 
         }
     }
 
@@ -209,7 +199,7 @@ public class PlayerController : MonoBehaviour
 
                 m_dashHurtBox.Collider.enabled = true;
                 m_dashDirection = transform.forward;
-                if (true/*!m_audioManager.IsInWindowOfOpportunity()*/)
+                if (m_audioManager && !m_audioManager.IsInWindowOfOpportunity())
                 {
                     m_dashTimer = m_dashLength;
                     m_dashSpeed = m_defaultDashSpeed;
@@ -237,7 +227,7 @@ public class PlayerController : MonoBehaviour
 
                 m_dashHurtBox.Collider.enabled = true;
                 m_dashDirection = transform.forward;
-                if (true/*!m_audioManager.IsInWindowOfOpportunity()*/)
+                if (m_audioManager && !m_audioManager.IsInWindowOfOpportunity())
                 {
                     m_dashTimer = m_dashLength;
                     m_dashSpeed = m_defaultDashSpeed;
@@ -251,23 +241,7 @@ public class PlayerController : MonoBehaviour
                 m_dashCooldownTimer = m_dashCooldown;
                 m_currentState = PlayerState.Dashing;
             }
-        }
-        if (Input.GetKeyDown(KeyCode.LeftShift))
-        {
-            if (!m_canAttack && !m_swordHurtBox.Collider.enabled)
-            {
-                AnimatorStateInfo currentAnim = m_animator.GetCurrentAnimatorStateInfo(0);
-                m_animator.Play("ReverseAttack", 0, 1 - currentAnim.normalizedTime);
-                m_canAttack = true;
-            }
-
-            m_dodging = true;
-            m_dodgeTimer = m_dodgeLength;
-
-            m_renderer.material.color = new Color(0, 0, 0);
-
-            m_currentState = PlayerState.Dodging;
-        }   
+        }      
     }
 
     void DashingState()
@@ -283,23 +257,12 @@ public class PlayerController : MonoBehaviour
             m_dashHurtBox.Collider.enabled = false;
             m_currentState = PlayerState.Base;
         }
-    }
-
-    void DodgingState()
-    {
-        m_dodgeTimer -= Time.deltaTime;
-        if (m_dodgeTimer <= 0)
-        {
-            m_dodging = false;
-            m_renderer.material.color = m_defaultColour;
-            m_currentState = PlayerState.Base;
-        }
-    }
+    }  
     #endregion
 
     public void TakeDamage(int damage, PlayerController attacker)
     {
-        if (!m_dodging && !m_invulnerable)
+        if (!m_invulnerable)
         {
             m_health -= damage;
 
@@ -316,20 +279,18 @@ public class PlayerController : MonoBehaviour
 
     public void EnableSwordHurtBox()
     {
-        //m_swordHurtBox.enabled = true;
         m_swordHurtBox.Collider.enabled = true;
     }
 
     public void DisableSwordHurtBox()
     {
-        //m_swordHurtBox.enabled = false;
         m_swordHurtBox.Collider.enabled = false;
     }
 
     void AttackStart()
     {
         m_canAttack = false;
-        if (false/*m_audioManager.IsInWindowOfOpportunity()*/)
+        if (m_audioManager && m_audioManager.IsInWindowOfOpportunity())
         {
             m_swordHurtBox.m_damage = m_swordDamage * 2;
             m_swordHurtBox.transform.localScale = new Vector3(0.2f, 0.2f, 2);
