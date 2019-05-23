@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Character
-  m_Shader: {fileID: 4800000, guid: 99cc557367ff2b445ad9b6cab2791100, type: 3}
+  m_Name: MAT_Default
+  m_Shader: {fileID: 4800000, guid: 933532a4fcc9baf4fa0491de14d08ed7, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -19,12 +19,16 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
-    - Texture2D_9D272770:
-        m_Texture: {fileID: 2800000, guid: 0b67ad41b4eb5bc48879ec6c4cb2842d, type: 3}
+    - Texture2D_2D4353A1:
+        m_Texture: {fileID: 2800000, guid: db26800556d444340a19f69124353261, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - Texture2D_F73EB8A0:
-        m_Texture: {fileID: 2800000, guid: d37a25ed6ec34464595ba2a17252898c, type: 3}
+    - Texture2D_CBD6DDF4:
+        m_Texture: {fileID: 2800000, guid: 9774ba85a59da9447b49c8d17c6d438a, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_CFC22095:
+        m_Texture: {fileID: 2800000, guid: 301e4e5a60fd3b849a23e4c3e140a4c7, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BumpMap:
@@ -52,7 +56,8 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - Vector1_29D3F50D: 0
+    - Vector1_244661B1: 1
+    - Vector1_8D02CBAE: 60
     - _AlphaClip: 0
     - _Blend: 0
     - _BumpScale: 1
@@ -60,7 +65,7 @@ Material:
     - _Cutoff: 0.5
     - _DstBlend: 0
     - _GlossMapScale: 1
-    - _Glossiness: 0.5
+    - _Glossiness: 0.368
     - _GlossyReflections: 1
     - _Metallic: 0
     - _OcclusionStrength: 1

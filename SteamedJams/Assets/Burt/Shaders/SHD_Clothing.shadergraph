@@ -28,7 +28,7 @@
             "typeInfo": {
                 "fullName": "UnityEditor.ShaderGraph.ColorShaderProperty"
             },
-            "JSONnodeData": "{\n    \"m_Value\": {\n        \"r\": 0.7924528121948242,\n        \"g\": 0.19063721597194673,\n        \"b\": 0.6739134788513184,\n        \"a\": 0.0\n    },\n    \"m_Name\": \"Colour Override\",\n    \"m_GeneratePropertyBlock\": true,\n    \"m_Guid\": {\n        \"m_GuidSerialized\": \"593310d1-68c3-4ebc-a448-51b694e176bb\"\n    },\n    \"m_OverrideReferenceName\": \"\",\n    \"m_ColorMode\": 0,\n    \"m_Hidden\": false\n}"
+            "JSONnodeData": "{\n    \"m_Value\": {\n        \"r\": 0.7924528121948242,\n        \"g\": 0.19063721597194673,\n        \"b\": 0.6739134788513184,\n        \"a\": 0.0\n    },\n    \"m_Name\": \"Colour Override\",\n    \"m_GeneratePropertyBlock\": true,\n    \"m_Guid\": {\n        \"m_GuidSerialized\": \"593310d1-68c3-4ebc-a448-51b694e176bb\"\n    },\n    \"m_OverrideReferenceName\": \"_PlayerColour\",\n    \"m_ColorMode\": 0,\n    \"m_Hidden\": false\n}"
         },
         {
             "typeInfo": {

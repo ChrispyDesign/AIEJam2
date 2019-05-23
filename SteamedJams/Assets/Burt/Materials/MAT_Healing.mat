@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Disco
-  m_Shader: {fileID: 4800000, guid: 2a296f1f4c6e11f46a3381ca22ebbeb2, type: 3}
+  m_Name: MAT_Healing
+  m_Shader: {fileID: 4800000, guid: 0b230c071dd8a5044b4d361a55e36003, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -19,18 +19,6 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
-    - Texture2D_31502A64:
-        m_Texture: {fileID: 2800000, guid: 01f1a3c185ba0d8409a947d1431847fe, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - Texture2D_CDA1D3B7:
-        m_Texture: {fileID: 2800000, guid: 01f8a331895d23344b196b131a33d25f, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - Texture2D_FB8D6F73:
-        m_Texture: {fileID: 2800000, guid: f4427bf50ab39234ea389935bf8ff0b8, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
     - _BumpMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -55,7 +43,13 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _Texture2DAsset_E45D2C0A_Out:
+        m_Texture: {fileID: 2800000, guid: 7dd6b7e7426c78a45875510ea21042d5, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     m_Floats:
+    - Vector1_8FFA183F: 0.1
+    - Vector1_EE87492E: 10
     - _AlphaClip: 0
     - _Blend: 0
     - _BumpScale: 1
@@ -75,6 +69,9 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
+    - Color_5307D939: {r: 0, g: 0.9433962, b: 0.1133323, a: 0}
+    - Vector2_8AD1881D: {r: 1, g: 1, b: 0, a: 0}
+    - Vector2_E489E012: {r: 0, g: -1, b: 0, a: 0}
     - _Color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}

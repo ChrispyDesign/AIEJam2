@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Healing
-  m_Shader: {fileID: 4800000, guid: 0b230c071dd8a5044b4d361a55e36003, type: 3}
+  m_Name: MAT_P1
+  m_Shader: {fileID: 4800000, guid: e734a58a5b35fa240a53ebef83e2518f, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -19,6 +19,18 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - Texture2D_9D272770:
+        m_Texture: {fileID: 2800000, guid: e504d771262746b43970927a91cd15c7, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_BBC4AC61:
+        m_Texture: {fileID: 2800000, guid: 0b67ad41b4eb5bc48879ec6c4cb2842d, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_F73EB8A0:
+        m_Texture: {fileID: 2800000, guid: 9774ba85a59da9447b49c8d17c6d438a, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _BumpMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -43,12 +55,9 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _Texture2DAsset_E45D2C0A_Out:
-        m_Texture: {fileID: 2800000, guid: 7dd6b7e7426c78a45875510ea21042d5, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
     m_Floats:
-    - Vector1_EE87492E: 0.75
+    - Vector1_29D3F50D: 0
+    - Vector1_3E68FE7D: 2
     - _AlphaClip: 0
     - _Blend: 0
     - _BumpScale: 1
@@ -68,9 +77,8 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
-    - Color_5307D939: {r: 0, g: 0.9433962, b: 0.1133323, a: 0}
-    - Vector2_8AD1881D: {r: 1, g: 1, b: 0, a: 0}
-    - Vector2_E489E012: {r: 0, g: -1, b: 0, a: 0}
+    - Color_8C6AD8B7: {r: 0.19068259, g: 0.7924528, b: 0.18316127, a: 0}
     - _Color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _PlayerColour: {r: 0.3254717, g: 1, b: 0.46925515, a: 0}
     - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}

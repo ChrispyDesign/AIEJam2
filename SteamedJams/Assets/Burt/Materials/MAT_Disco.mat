@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Environment
-  m_Shader: {fileID: 4800000, guid: 8c8d906ccbd58b344942517560daded4, type: 3}
+  m_Name: MAT_Disco
+  m_Shader: {fileID: 4800000, guid: 2a296f1f4c6e11f46a3381ca22ebbeb2, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -19,16 +19,16 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
-    - Texture2D_9D272770:
-        m_Texture: {fileID: 2800000, guid: 15d9dd36e79b5cf458ec540e6a57f116, type: 3}
+    - Texture2D_31502A64:
+        m_Texture: {fileID: 2800000, guid: 01f1a3c185ba0d8409a947d1431847fe, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - Texture2D_BBC4AC61:
-        m_Texture: {fileID: 2800000, guid: b432ef079a4e99841841defb5f73cc03, type: 3}
+    - Texture2D_CDA1D3B7:
+        m_Texture: {fileID: 2800000, guid: 01f8a331895d23344b196b131a33d25f, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - Texture2D_F73EB8A0:
-        m_Texture: {fileID: 2800000, guid: e504d771262746b43970927a91cd15c7, type: 3}
+    - Texture2D_FB8D6F73:
+        m_Texture: {fileID: 2800000, guid: f4427bf50ab39234ea389935bf8ff0b8, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BumpMap:
@@ -56,10 +56,6 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - Vector1_29D3F50D: 0
-    - Vector1_3B009A2: 90
-    - Vector1_DFC93C14: 0.3
-    - Vector1_E33D7D2F: 0.5
     - _AlphaClip: 0
     - _Blend: 0
     - _BumpScale: 1
@@ -79,7 +75,6 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
-    - Color_8C6AD8B7: {r: 0, g: 0.8651767, b: 1, a: 0}
     - _Color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
