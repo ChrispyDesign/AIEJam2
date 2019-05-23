@@ -71,7 +71,7 @@ Material:
     m_Colors:
     - Color_5307D939: {r: 0, g: 0.9433962, b: 0.1133323, a: 0}
     - Vector2_8AD1881D: {r: 1, g: 1, b: 0, a: 0}
-    - Vector2_E489E012: {r: 0, g: -1, b: 0, a: 0}
+    - Vector2_E489E012: {r: 0, g: -2, b: 0, a: 0}
     - _Color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}

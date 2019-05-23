@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: MAT_PS_Blood
-  m_Shader: {fileID: 4800000, guid: e228bea3c87a07244bae81fd95a3d3d9, type: 3}
+  m_Name: MAT_PS_Portal
+  m_Shader: {fileID: 4800000, guid: 3cb7603295ce5c94c8d2a999a4a012d6, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -20,10 +20,9 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - Texture2D_DF9A26E:
-        m_Texture: {fileID: 2800000, guid: 0b67ad41b4eb5bc48879ec6c4cb2842d, type: 3}
+        m_Texture: {fileID: 2800000, guid: 8a4a1750cd722d741a8695d48532fc66, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - Vector1_4B2C6211: 1
-    m_Colors:
-    - _PlayerColour: {r: 1, g: 0, b: 0.029372692, a: 0}
+    - Vector1_4B2C6211: 3
+    m_Colors: []
