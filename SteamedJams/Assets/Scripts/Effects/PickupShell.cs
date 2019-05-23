@@ -5,7 +5,7 @@ using UnityEngine;
 public class PickupShell : MonoBehaviour
 {
     public int m_maxHealth;
-    public GameObject m_pickup;
+    public Effect m_pickup;
 
     private int m_health;
 
@@ -14,7 +14,7 @@ public class PickupShell : MonoBehaviour
         m_health = m_maxHealth;
     }
 
-    public void TakeDamage(int damage)
+    public void TakeDamage(int damage, PlayerController player)
     {
         m_health -= damage;
         if (m_health <= 0)
@@ -24,7 +24,7 @@ public class PickupShell : MonoBehaviour
                 m_pickup.transform.parent = null;
             }
 
-            m_pickup.SetActive(true);
+            player.AddEffect(m_pickup);
 
             Destroy(gameObject);
         }

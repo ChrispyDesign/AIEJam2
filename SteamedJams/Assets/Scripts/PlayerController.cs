@@ -119,9 +119,11 @@ public class PlayerController : MonoBehaviour
 
         m_swordHurtBox.m_damage = m_swordDamage;
         m_swordHurtBox.m_team = m_team;
+        m_swordHurtBox.m_player = this;
 
         m_dashHurtBox.m_damage = m_dashDamage;
         m_dashHurtBox.m_team = m_team;
+        m_dashHurtBox.m_player = this;
 
         m_dashSpeed = m_defaultDashSpeed;
     }
@@ -341,6 +343,23 @@ public class PlayerController : MonoBehaviour
         m_swordHurtBox.m_damage = m_swordDamage;
         m_swordHurtBox.transform.localScale = new Vector3(0.2f, 0.2f, 1);
         m_swordHurtBox.transform.localPosition = new Vector3(0, 0, 0.5f);
+    }
+
+    public void AddEffect(Effect effect)
+    {
+        if (!effect.Instant)
+        {
+            effect.Player = this;
+            effect.OnPickup();
+            m_effects.Add(effect);
+            Destroy(effect.gameObject);
+        }
+        else
+        {
+            effect.Player = this;
+            effect.OnPickup();
+            Destroy(effect.gameObject);
+        }
     }
 
     private void OnTriggerEnter(Collider other)

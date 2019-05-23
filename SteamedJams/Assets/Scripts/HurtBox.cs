@@ -6,6 +6,7 @@ public class HurtBox : MonoBehaviour
 {
     public int m_damage;
     public Team m_team;
+    public PlayerController m_player;
 
     private Collider m_collider;
 
@@ -39,7 +40,7 @@ public class HurtBox : MonoBehaviour
 
             if (pickup)
             {
-                pickup.TakeDamage(m_damage);
+                pickup.TakeDamage(m_damage, m_player);
             }
         }
     }
