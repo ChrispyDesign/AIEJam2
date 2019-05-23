@@ -15,11 +15,14 @@ enum PlayerState
     Dodging
 };
 
+public delegate void VoidEvent();
+
 [RequireComponent(typeof(CharacterController))]
 public class PlayerController : MonoBehaviour
 {
-    public int m_maxHealth;
+    public int m_playerNumber;
     public Team m_team;
+    public int m_maxHealth;
 
     [Header("Attack")]
     public int m_swordDamage;
@@ -47,6 +50,7 @@ public class PlayerController : MonoBehaviour
 
     CharacterController m_characterController;
     Vector3 m_velocity;
+    float m_speedMultiplier = 1;
 
     float m_dashTimer;
     Vector3 m_dashDirection;
@@ -55,6 +59,8 @@ public class PlayerController : MonoBehaviour
     bool m_dodging = false;
     float m_dodgeTimer = 0;
 
+    bool m_invulnerable;
+
     //TEMP
     //public Vector3 m_gravity;
     //
@@ -62,19 +68,43 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     int m_health;
     public Renderer m_renderer;
+    public List<Effect> m_effects;
     Color m_defaultColour;
+
+    event VoidEvent OnDamageTaken;
+
+    #region Getters/Setters
 
     public int Health
     {
         get { return m_health; }
-        set { m_health = value; }
+        set
+        {
+            m_health = value;
+            m_health = Mathf.Clamp(m_health, 0, m_maxHealth);
+        }
     }
+
+    public float SpeedMultiplier
+    {
+        get { return m_speedMultiplier; }
+        set { m_speedMultiplier = value; }
+    }
+
+    public bool Invulnerable
+    {
+        get { return m_invulnerable; }
+        set { m_invulnerable = value; }
+    }
+
+
+    #endregion
 
     // Start is called before the first frame update
     void Start()
     {
+        m_effects = new List<Effect>();
         m_audioManager = AudioManager.GetInstance();
-        m_audioManager.SetBGM(null);
 
         m_defaultColour = m_renderer.material.color;
 
@@ -111,6 +141,15 @@ public class PlayerController : MonoBehaviour
     #region States
     void BaseState()
     {
+        for (int i = 0; i < m_effects.Count; i++)
+        {
+            if (!m_effects[i].OnEffectUpdate())
+            {
+                m_effects.RemoveAt(i);
+                i--;
+            }
+        }
+
         Vector3 movement = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
         if (movement.sqrMagnitude != 0)
         {
@@ -120,7 +159,7 @@ public class PlayerController : MonoBehaviour
         m_velocity += movement * m_speed * Time.deltaTime;
         //m_velocity += m_gravity * Time.deltaTime;
 
-        m_characterController.Move(m_velocity * Time.deltaTime);
+        m_characterController.Move(m_velocity * m_speedMultiplier * Time.deltaTime);
 
         m_velocity -= m_velocity * m_drag * Time.deltaTime;
 
@@ -131,16 +170,16 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            if (!m_canAttack && !m_swordHurtBox.enabled)
+            if (!m_canAttack && !m_swordHurtBox.Collider.enabled)
             {
                 AnimatorStateInfo currentAnim = m_animator.GetCurrentAnimatorStateInfo(0);
                 m_animator.Play("ReverseAttack", 0, 1 - currentAnim.normalizedTime);
                 m_canAttack = true;
             }
 
-            m_dashHurtBox.enabled = true;
+            m_dashHurtBox.Collider.enabled = true;
             m_dashDirection = transform.forward;
-            if (!m_audioManager.IsInWindowOfOpportunity())
+            if (true/*!m_audioManager.IsInWindowOfOpportunity()*/)
             {
                 m_dashTimer = m_dashLength;
                 m_dashSpeed = m_defaultDashSpeed;
@@ -155,7 +194,7 @@ public class PlayerController : MonoBehaviour
         }
         else if (Input.GetKeyDown(KeyCode.LeftShift))
         {
-            if (!m_canAttack && !m_swordHurtBox.enabled)
+            if (!m_canAttack && !m_swordHurtBox.Collider.enabled)
             {
                 AnimatorStateInfo currentAnim = m_animator.GetCurrentAnimatorStateInfo(0);
                 m_animator.Play("ReverseAttack", 0, 1 - currentAnim.normalizedTime);
@@ -181,7 +220,7 @@ public class PlayerController : MonoBehaviour
         }
         else
         {
-            m_dashHurtBox.enabled = false;
+            m_dashHurtBox.Collider.enabled = false;
             m_currentState = PlayerState.Base;
         }
     }
@@ -200,24 +239,31 @@ public class PlayerController : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
-        if (!m_dodging)
+        if (!m_dodging && !m_invulnerable)
+        {
             m_health -= damage;
+
+            if (OnDamageTaken != null)
+                OnDamageTaken.Invoke();
+        }
     }
 
     public void EnableSwordHurtBox()
     {
-        m_swordHurtBox.enabled = true;
+        //m_swordHurtBox.enabled = true;
+        m_swordHurtBox.Collider.enabled = true;
     }
 
     public void DisableSwordHurtBox()
     {
-        m_swordHurtBox.enabled = false;
+        //m_swordHurtBox.enabled = false;
+        m_swordHurtBox.Collider.enabled = false;
     }
 
     void AttackStart()
     {
         m_canAttack = false;
-        if (m_audioManager.IsInWindowOfOpportunity())
+        if (false/*m_audioManager.IsInWindowOfOpportunity()*/)
         {
             m_swordHurtBox.m_damage = m_swordDamage * 2;
             m_swordHurtBox.transform.localScale = new Vector3(0.2f, 0.2f, 2);
@@ -239,16 +285,26 @@ public class PlayerController : MonoBehaviour
         m_swordHurtBox.transform.localScale = new Vector3(0.2f, 0.2f, 1);
         m_swordHurtBox.transform.localPosition = new Vector3(0, 0, 0.5f);
     }
-    //private void OnTriggerEnter(Collider other)
-    //{
-    //    if (other.tag == "Player")
-    //    {
-    //        PlayerController otherPlayer = other.gameObject.GetComponent<PlayerController>();
 
-    //        if (otherPlayer)
-    //        {
-    //            otherPlayer.TakeDamage(m_dashDamage);
-    //        }
-    //    }
-    //}
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "Pickup")
+        {
+            Effect effect = other.gameObject.GetComponent<Effect>();
+
+            if (!effect.Instant)
+            {
+                effect.Player = this;
+                effect.OnPickup();
+                m_effects.Add(effect);
+                Destroy(effect.gameObject);                       
+            }
+            else
+            {
+                effect.Player = this;
+                effect.OnPickup();
+                Destroy(effect.gameObject);
+            }
+        }
+    }
 }

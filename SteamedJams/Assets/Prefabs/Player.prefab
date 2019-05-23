@@ -41,7 +41,7 @@ CapsuleCollider:
   m_GameObject: {fileID: 2079569753526210797}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   m_Radius: 0.5
   m_Height: 2
   m_Direction: 1
@@ -53,12 +53,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2079569753526210797}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 65c57e3c2bfb4e6429e98b9e626a0bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_damage: 0
+  m_damage: 10
   m_team: 0
 --- !u!1 &2479756261525055066
 GameObject:
@@ -148,7 +148,7 @@ BoxCollider:
   m_GameObject: {fileID: 2479756261525055066}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -159,7 +159,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2479756261525055066}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 65c57e3c2bfb4e6429e98b9e626a0bd8, type: 3}
   m_Name: 
@@ -325,17 +325,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1797329db5b03064ca69393d912f0147, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_maxHealth: 100
+  m_playerNumber: 0
   m_team: 0
+  m_maxHealth: 100
   m_swordDamage: 20
   m_swordHurtBox: {fileID: 489954460586375141}
   m_speed: 50
   m_drag: 10
   m_dashLength: 0.2
-  m_dashSpeed: 30
+  m_defaultDashSpeed: 0
   m_dashHurtBox: {fileID: 2378538365099729355}
   m_dashDamage: 10
+  m_dodgeLength: 0
+  m_dashSpeed: 30
   m_health: 0
+  m_renderer: {fileID: 0}
+  m_effects: []
 --- !u!136 &9115953796058831490
 CapsuleCollider:
   m_ObjectHideFlags: 0
