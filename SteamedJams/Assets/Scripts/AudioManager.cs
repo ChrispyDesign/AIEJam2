@@ -1,27 +1,20 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 
+[RequireComponent(typeof(AudioUI))]
 [RequireComponent(typeof(AudioSource))]
 public class AudioManager : MonoBehaviour
 {
     // singleton
     private static AudioManager m_instance;
+
+    private AudioUI m_audioUI;
     private AudioSource m_audioSource;
-    [SerializeField] private AudioClip m_startBGM;
-
-    [SerializeField] private Image m_centreIcon;
-    [SerializeField] private RectTransform m_bar;
-    [SerializeField] private Transform m_barAnchorLeft;
-    [SerializeField] private Transform m_barAnchorRight;
-
-    private Queue<GameObject> m_tickPool = new Queue<GameObject>();
-    [SerializeField] private GameObject m_tickPrefab;
-    [SerializeField] private int m_tickPoolSize = 20;
 
     // BGM relevant variables
+    [SerializeField] private AudioClip m_startBGM;
     [Header("BPM")]
     [Range(0, 200)]
     [SerializeField] private float m_BPM = 128;
@@ -59,7 +52,10 @@ public class AudioManager : MonoBehaviour
     /// use this to get a scalar factor for how close to the window of opportunity you are
     /// </summary>
     /// <returns>if outside the window of opportunity, returns 0, otherwise returns a multiplier between 0 and 1</returns>
-    public float GetOpportunityScalar() { return m_isInWindow ? m_opportunityScalar : 0.0f; }
+    public float GetOpportunityScalarClamped() { return m_isInWindow ? m_opportunityScalar : 0.0f; }
+
+    public float GetOpportunityScalarRaw() { return m_opportunityScalar; }
+    public float GetIntervalTime() { return m_interval; }
 
     #endregion
 
@@ -72,21 +68,17 @@ public class AudioManager : MonoBehaviour
 
     private void Start()
     {
-        // initialise object pool
-        for (int i = 0; i < m_tickPoolSize; i++)
-        {
-            GameObject tick = Instantiate(m_tickPrefab, m_bar);
-            tick.SetActive(false);
-            m_tickPool.Enqueue(tick);
-        }
-
-        // SetBGM(m_startBGM);                              // activate this to test things
+        if (m_startBGM != null)
+            SetBGM(m_startBGM);
     }
 
     private void Update()
     {
-        float scale = 1 + m_opportunityScalar;
-        m_centreIcon.transform.localScale = new Vector3(scale, scale, 0);
+        if (Input.GetKeyDown(KeyCode.LeftArrow))
+            StartFeedbackTextRoutine(1);
+
+        if (Input.GetKeyDown(KeyCode.RightArrow))
+            StartFeedbackTextRoutine(2);
     }
 
     /// <summary>
@@ -95,6 +87,9 @@ public class AudioManager : MonoBehaviour
     /// <param name="BGM"></param>
     public void SetBGM(AudioClip BGM)
     {
+        if (m_audioUI == null)
+            m_audioUI = GetComponent<AudioUI>();
+
         if (m_audioSource == null)
             m_audioSource = GetComponent<AudioSource>();
 
@@ -130,7 +125,7 @@ public class AudioManager : MonoBehaviour
         while (true)
         {
             StartCoroutine(Window());
-            StartCoroutine(Tick());
+            StartCoroutine(m_audioUI.Tick());
 
             yield return new WaitForSeconds(m_nextTime - Time.time);
             
@@ -168,33 +163,19 @@ public class AudioManager : MonoBehaviour
         }
     }
 
-    private IEnumerator Tick()
+    public void StartFeedbackTextRoutine(int player)
     {
-        GameObject tick1 = m_tickPool.Dequeue();
-        GameObject tick2 = m_tickPool.Dequeue();
-
-        Vector3 tick1start = tick1.transform.position = m_barAnchorLeft.transform.position;
-        Vector3 tick2start = tick2.transform.position = m_barAnchorRight.transform.position;
-
-        tick1.SetActive(true);
-        tick2.SetActive(true);
-
-        float timer = 0;
-
-        while (tick1.transform.position.x < m_bar.transform.position.x)
+        if (m_isInWindow)
         {
-            timer += Time.deltaTime / m_interval;
+            string feedback = "Fail";
+            if (1 - m_opportunityScalar > 0.95f)
+                feedback = "Perfect!";
+            else if (1 - m_opportunityScalar > 0.75f)
+                feedback = "Great!";
+            else if (1 - m_opportunityScalar > 0.5f)
+                feedback = "Nice!";
 
-            tick1.transform.position = Vector3.Lerp(tick1start, m_bar.transform.position, timer / 3);
-            tick2.transform.position = Vector3.Lerp(tick2start, m_bar.transform.position, timer / 3);
-
-            yield return null;
+            StartCoroutine(m_audioUI.Feedback(player, feedback));
         }
-
-        tick1.SetActive(false);
-        tick2.SetActive(false);
-
-        m_tickPool.Enqueue(tick1);
-        m_tickPool.Enqueue(tick2);
     }
 }
