@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 [RequireComponent(typeof(AudioUI))]
 [RequireComponent(typeof(AudioSource))]
@@ -8,6 +9,8 @@ public class AudioManager : MonoBehaviour
 {
     // singleton
     private static AudioManager m_instance;
+
+    [SerializeField] private Material[] m_materials;
 
     private AudioUI m_audioUI;
     private AudioSource m_audioSource;
@@ -27,10 +30,14 @@ public class AudioManager : MonoBehaviour
     private float m_nextTime;
 
     [Header("Window of Opportunity")]
-    [Range(0.001f, 0.5f)]
-    [SerializeField] private float m_windowOfOpportunity = 0.1f;
+    [Range(0.1f, 1)]
+    [SerializeField] private float m_windowOfOpportunity = 0.5f;
+    private float m_window;
     private float m_opportunityScalar;
     private bool m_isInWindow = false;
+
+    [SerializeField] private Text m_songName;
+    [SerializeField] private Text m_songBPM;
 
     #region getters
 
@@ -62,7 +69,7 @@ public class AudioManager : MonoBehaviour
     #region setters
     
     public void SetBPM(float BPM) { m_BPM = BPM; }
-    public void SetWindowOfOpportunity(float windowOfOpportunity) { m_windowOfOpportunity = windowOfOpportunity; }
+    public void SetWindowOfOpportunity(float windowOfOpportunity) { m_window = windowOfOpportunity; }
 
     #endregion
 
@@ -70,6 +77,9 @@ public class AudioManager : MonoBehaviour
     {
         if (m_startBGM != null)
             SetBGM(m_startBGM, 128);
+
+        for (int i = 0; i < m_materials.Length; i++)
+            m_materials[i].SetFloat("_BPM", 0);
     }
 
     private void Update()
@@ -79,8 +89,6 @@ public class AudioManager : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.RightArrow))
             StartFeedbackTextRoutine(2);
-
-        Debug.Log(m_isInWindow);
     }
 
     /// <summary>
@@ -98,6 +106,12 @@ public class AudioManager : MonoBehaviour
         m_BPM = BPM;
         m_BGM = BGM;
 
+        m_songName.text = BGM.name;
+        m_songBPM.text = m_BPM.ToString();
+
+        for (int i = 0; i < m_materials.Length; i++)
+            m_materials[i].SetFloat("_BPM", m_BPM);
+
         StartMetronome();
     }
 
@@ -111,6 +125,7 @@ public class AudioManager : MonoBehaviour
         m_currentStep = 1;
         float multiplier = m_base / 4.0f;
         float tempInterval = 60.0f / m_BPM;
+        m_window = m_windowOfOpportunity * tempInterval;
         m_interval = tempInterval / multiplier;
         m_nextTime = Time.time;
 
@@ -123,17 +138,17 @@ public class AudioManager : MonoBehaviour
     /// <returns></returns>
     private IEnumerator PlayBGM()
     {
-        float window = m_windowOfOpportunity;
         m_audioSource.Stop();
         m_audioSource.clip = m_BGM;
         m_audioSource.Play();
-
+        
         while (true)
         {
-            StartCoroutine(Window());
+            float beatTime = m_nextTime - Time.time;
+            StartCoroutine(Window(beatTime));
             StartCoroutine(m_audioUI.Tick());
 
-            yield return new WaitForSeconds(m_nextTime - Time.time);
+            yield return new WaitForSeconds(beatTime);
             
             m_nextTime += m_interval;
 
@@ -146,44 +161,86 @@ public class AudioManager : MonoBehaviour
         }
     }
 
-    /// <summary>
-    /// 
-    /// </summary>
-    /// <returns></returns>
-    private IEnumerator Window()
+    private IEnumerator Window(float beatTime)
+    {
+        float halfSuccessWindow = m_windowOfOpportunity * 0.5f;
+
+        m_isInWindow = true;
+        StartCoroutine(MeasureOpportunityScalarDown(beatTime * halfSuccessWindow));
+        
+        yield return new WaitForSeconds(beatTime * halfSuccessWindow);
+
+        m_isInWindow = false;
+
+        yield return new WaitForSeconds(beatTime * (1 - m_windowOfOpportunity));
+
+        m_isInWindow = true;
+        StartCoroutine(MeasureOpportunityScalarUp(beatTime * halfSuccessWindow));
+
+        yield return new WaitForSeconds(beatTime * halfSuccessWindow);
+    }
+
+    private IEnumerator MeasureOpportunityScalarDown(float window)
+    {
+        float timer = window;
+
+        while (timer > 0)
+        {
+            m_opportunityScalar = (timer / window);
+
+            timer -= Time.deltaTime;
+            yield return null;
+        }
+    }
+
+    private IEnumerator MeasureOpportunityScalarUp(float window)
     {
         float timer = 0;
-        float time = (m_nextTime - Time.time) * 0.95f;
 
-        while (timer < time)
+        while (timer < window)
         {
-            m_opportunityScalar = Mathf.Sin((timer / time) * Mathf.PI);
-
-            if (m_opportunityScalar < m_windowOfOpportunity / m_interval)
-                m_isInWindow = true;
-            else
-                m_isInWindow = false;
+            m_opportunityScalar = (timer / window);
 
             timer += Time.deltaTime;
             yield return null;
         }
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <returns></returns>
+    //private IEnumerator Window()
+    //{
+    //    float timer = 0;
+    //    float time = (m_nextTime - Time.time) * 0.95f;
+
+    //    while (timer < time)
+    //    {
+    //        m_opportunityScalar = 1 - Mathf.Sin((timer / time) * Mathf.PI);
+    //        //Debug.Log(m_opportunityScalar + "   " + (1 - m_windowOfOpportunity));
+
+    //        if (m_opportunityScalar > 1 - m_windowOfOpportunity)
+    //            m_isInWindow = true;
+    //        else
+    //            m_isInWindow = false;
+
+    //        timer += Time.deltaTime;
+    //        yield return null;
+    //    }
+    //}
+
     public void StartFeedbackTextRoutine(int player)
     {
         if (m_isInWindow)
         {
-            string feedback = "Test";
-            //if (1 - m_opportunityScalar > 0.95f)
-            //    feedback = "Perfect!";
-            //else if (1 - m_opportunityScalar > 0.75f)
-            //    feedback = "Great!";
-            //else if (1 - m_opportunityScalar > 0.5f)
-            //    feedback = "Nice!";
+            string feedback = "Nice";
+            if (m_opportunityScalar > 0.9f)
+                feedback = "Perfect!";
+            else if (m_opportunityScalar > 0.5f)
+                feedback = "Great!";
 
             StartCoroutine(m_audioUI.Feedback(player, feedback));
         }
-        else
-            StartCoroutine(m_audioUI.Feedback(player, "Fail"));
     }
 }

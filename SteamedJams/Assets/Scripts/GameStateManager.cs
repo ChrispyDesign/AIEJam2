@@ -16,9 +16,6 @@ public class GameStateManager : MonoBehaviour
 {
     private static GameStateManager m_instance;
 
-    //[SerializeField] private PlayerController m_player1;
-    //[SerializeField] private PlayerController m_player2;
-
     private GameState m_currentGameState;
 
     [Header("UI Panels")]
@@ -31,6 +28,9 @@ public class GameStateManager : MonoBehaviour
     [SerializeField] private float m_defaultRoundTime = 100;
     private float m_roundTimer;
 
+    [Header("Player Score")]
+    [SerializeField] private Toggle m_player1toggle;
+    [SerializeField] private Toggle m_player2toggle;
     private int m_player1score = 0;
     private int m_player2score = 0;
 
@@ -91,7 +91,9 @@ public class GameStateManager : MonoBehaviour
     /// <returns></returns>
     private IEnumerator Countdown()
     {
-        float countdown = 4;
+        Debug.Log(Time.time);
+        Debug.Log(Time.time - (int)Time.time);
+        float countdown = 4 + (Time.time - (int)Time.time) - 0.5f;
         Text countdownText = m_countdownPanel.GetComponentInChildren<Text>();
 
         while (countdown > 1)
@@ -136,31 +138,43 @@ public class GameStateManager : MonoBehaviour
         CameraMovement.activeCamera.zoomMax = 4;
         Time.timeScale = 0.5f;
 
-        // check highest health
-        //if (m_player1.Health > m_player2.Health)
+        //PlayerController[] players = PlayerManager.Instance.m_players;
+        //PlayerController player1 = players[0];
+        //PlayerController player2 = players[1];
+
+        //// check highest health
+        //if (player1.Health > player2.Health)
+        //{
         //    m_player1score++; // player 1 won
-        //else if (m_player1.Health < m_player2.Health)
+        //    m_player2toggle.isOn = true;
+        //}
+        //else if (player1.Health < player2.Health)
+        //{
         //    m_player2score++; // player 2 won
+        //    m_player2toggle.isOn = true;
+        //}
         //else
         //{
         //    // both won
         //    m_player1score++;
         //    m_player2score++;
+        //    m_player1toggle.isOn = true;
+        //    m_player2toggle.isOn = true;
         //}
 
-        if (m_player1score > 1 && m_player2score > 1)
-        {
-            // draw/sudden death/no winner
-        }
+        //if (m_player1score > 1 && m_player2score > 1)
+        //{
+        //    // draw/sudden death/no winner
+        //}
 
-        if (m_player1score > 1)
-        {
-            // player 1 wins
-        }
-        else if (m_player2score > 1)
-        {
-            // player 2 wins
-        }
+        //if (m_player1score > 1)
+        //{
+        //    // player 1 wins
+        //}
+        //else if (m_player2score > 1)
+        //{
+        //    // player 2 wins
+        //}
 
         yield return new WaitForSecondsRealtime(3);
 

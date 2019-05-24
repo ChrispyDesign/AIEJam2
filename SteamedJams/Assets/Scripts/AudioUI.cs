@@ -20,7 +20,7 @@ public class AudioUI : MonoBehaviour
     [SerializeField] private GameObject m_feedbackTextPrefab;
     [SerializeField] private int m_feedbackPoolSizes = 8;
     [SerializeField] private float m_feedbackDecayTime = 2;
-    [SerializeField] private float m_feedbackSpeed = 2;
+    [SerializeField] private float m_feedbackTextSpeed = 50;
     private Queue<GameObject> m_feedbackIconPool = new Queue<GameObject>();
     private Queue<GameObject> m_feedbackTextPool = new Queue<GameObject>();
 
@@ -126,7 +126,7 @@ public class AudioUI : MonoBehaviour
             float transparency = 1 - (timer / m_feedbackDecayTime);
 
             feedbackIcon.transform.localScale = new Vector3(scale, scale, 0);
-            feedbackText.transform.Translate(new Vector3(0, m_feedbackSpeed, 0));
+            feedbackText.transform.Translate(new Vector3(0, m_feedbackTextSpeed * Time.deltaTime, 0));
 
             Color color = new Color(feedbackColour.r, feedbackColour.g, feedbackColour.b, transparency);
             feedbackIconUI.color = color;
