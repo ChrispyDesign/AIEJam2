@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+using XboxCtrlrInput;
 
 public enum GameState
 {
@@ -77,6 +79,13 @@ public class GameStateManager : MonoBehaviour
     {
         if (m_currentGameState == GameState.Game)
             UpdateGame();
+        else if (m_currentGameState == GameState.Victory)
+        {
+            if (XCI.GetButtonDown(XboxButton.A))
+                StartRound();
+            else if (XCI.GetButtonDown(XboxButton.B))
+                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
     }
 
     /// <summary>
@@ -199,6 +208,13 @@ public class GameStateManager : MonoBehaviour
     private IEnumerator Victory(int player)
     {
         m_currentGameState = GameState.Victory;
+        
+        if (player == 0)
+            m_player1wins.SetActive(true);
+        else
+            m_player2wins.SetActive(true);
+
+        m_victoryPanel.SetActive(true);
 
         Vector3 startPos = CameraMovement.activeCamera.transform.position;
 
@@ -208,12 +224,5 @@ public class GameStateManager : MonoBehaviour
 
             yield return null;
         }
-
-        if (player == 0)
-            m_player1wins.SetActive(true);
-        else
-            m_player2wins.SetActive(true);
-
-        m_victoryPanel.SetActive(true);
     }
 }
