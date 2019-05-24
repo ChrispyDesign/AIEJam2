@@ -20,7 +20,6 @@ public delegate void VoidEvent();
 [RequireComponent(typeof(CharacterController))]
 public class PlayerController : MonoBehaviour
 {
-    public int m_playerNumber;
     public Team m_team;
     public XboxController m_controller;
     public int m_maxHealth;    
@@ -47,6 +46,7 @@ public class PlayerController : MonoBehaviour
     public Renderer m_playerRenderer;
     public Renderer m_swordRenderer;
     public Renderer m_hairRenderer;
+    public Renderer m_hitBoxRenderer;
 
     [Header("Particles")]
     public ParticleSystem m_bloodSpray;
@@ -324,12 +324,15 @@ public class PlayerController : MonoBehaviour
             m_swordHurtBox.m_damage = m_defaultSwordDamage;
             m_swordHurtBox.transform.localScale = new Vector3(1, 1, 1);
         }
+
+        m_hitBoxRenderer.enabled = true;
         m_animator.SetTrigger("Attack");
     }
 
     public void AttackEnd()
     {
         m_canAttack = true;
+        m_hitBoxRenderer.enabled = false;
         //m_swordHurtBox.m_damage = m_swordDamage;
         //m_swordHurtBox.transform.localScale = new Vector3(0.2f, 0.2f, 1);
         //m_swordHurtBox.transform.localPosition = new Vector3(0, 0, 0.5f);

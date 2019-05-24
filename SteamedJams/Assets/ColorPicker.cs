@@ -21,6 +21,9 @@ public class ColorPicker : MonoBehaviour
 
             if (player)
             {
+                AudioManager am = AudioManager.GetInstance();
+                am.SetPlayerColours(m_color, (int)player.m_team);
+
                 if (player.m_bloodSpray)
                 {
                     ParticleSystem.MainModule main = player.m_bloodSpray.main;
