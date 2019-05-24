@@ -25,6 +25,7 @@ public class PlayerController : MonoBehaviour
     public XboxController m_controller;
     public int m_maxHealth;
     public ParticleSystem m_bloodSpray;
+    public Animator m_animator;
 
     [Header("Attack")]
     public int m_swordDamage;
@@ -45,7 +46,6 @@ public class PlayerController : MonoBehaviour
 
     AudioManager m_audioManager;
 
-    Animator m_animator;
     bool m_canAttack = true;
 
     CharacterController m_characterController;
@@ -119,7 +119,6 @@ public class PlayerController : MonoBehaviour
         //m_defaultColour = m_renderer.material.color;
 
         m_health = m_maxHealth;
-        m_animator = GetComponent<Animator>();
         m_characterController = GetComponent<CharacterController>();
 
         m_swordHurtBox.m_damage = m_swordDamage;
@@ -178,6 +177,8 @@ public class PlayerController : MonoBehaviour
         m_velocity += movement * m_speed * Time.deltaTime;
         //m_velocity += m_gravity * Time.deltaTime;
 
+        m_animator.SetFloat("Speed", m_velocity.magnitude);
+
         m_characterController.Move(m_velocity * m_speedMultiplier * Time.deltaTime);
 
         m_velocity -= m_velocity * m_drag * Time.deltaTime;
@@ -199,14 +200,9 @@ public class PlayerController : MonoBehaviour
 
         if (m_useController)
         {
-            if (XCI.GetButtonDown(XboxButton.B, m_controller) && m_dashCooldownTimer <= 0)
+            if (XCI.GetButtonDown(XboxButton.B, m_controller) && m_dashCooldownTimer <= 0 && m_canAttack)
             {
-                if (!m_canAttack && !m_swordHurtBox.Collider.enabled)
-                {
-                    AnimatorStateInfo currentAnim = m_animator.GetCurrentAnimatorStateInfo(0);
-                    m_animator.Play("ReverseAttack", 0, 1 - currentAnim.normalizedTime);
-                    m_canAttack = true;
-                }
+                m_animator.SetTrigger("Dash");
 
                 m_dashHurtBox.Collider.enabled = true;
                 m_dashDirection = transform.forward;
