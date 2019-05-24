@@ -60,18 +60,80 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\HealthUI.cs" />
+    <Compile Include="Assets\ColorPicker.cs" />
+    <Compile Include="Assets\OBJExport\OBJExporter.cs" />
+    <Compile Include="Assets\PostProcessing-2\PostProcessing\Runtime\Attributes\DisplayNameAttribute.cs" />
+    <Compile Include="Assets\PostProcessing-2\PostProcessing\Runtime\Attributes\MaxAttribute.cs" />
+    <Compile Include="Assets\PostProcessing-2\PostProcessing\Runtime\Attributes\MinAttribute.cs" />
+    <Compile Include="Assets\PostProcessing-2\PostProcessing\Runtime\Attributes\MinMaxAttribute.cs" />
+    <Compile Include="Assets\PostProcessing-2\PostProcessing\Runtime\Attributes\PostProcessAttribute.cs" />
+    <Compile Include="Assets\PostProcessing-2\PostProcessing\Runtime\Attributes\TrackballAttribute.cs" />
+    <Compile Include="Assets\PostProcessing-2\PostProcessing\Runtime\Effects\AmbientOcclusion.cs" />
+    <Compile Include="Assets\PostProcessing-2\PostProcessing\Runtime\Effects\AutoExposure.cs" />
+    <Compile Include="Assets\PostProcessing-2\PostProcessing\Runtime\Effects\Bloom.cs" />
+    <Compile Include="Assets\PostProcessing-2\PostProcessing\Runtime\Effects\ChromaticAberration.cs" />
+    <Compile Include="Assets\PostProcessing-2\PostProcessing\Runtime\Effects\ColorGrading.cs" />
+    <Compile Include="Assets\PostProcessing-2\PostProcessing\Runtime\Effects\DepthOfField.cs" />
+    <Compile Include="Assets\PostProcessing-2\PostProcessing\Runtime\Effects\Dithering.cs" />
+    <Compile Include="Assets\PostProcessing-2\PostProcessing\Runtime\Effects\FastApproximateAntialiasing.cs" />
+    <Compile Include="Assets\PostProcessing-2\PostProcessing\Runtime\Effects\Fog.cs" />
+    <Compile Include="Assets\PostProcessing-2\PostProcessing\Runtime\Effects\Grain.cs" />
+    <Compile Include="Assets\PostProcessing-2\PostProcessing\Runtime\Effects\LensDistortion.cs" />
+    <Compile Include="Assets\PostProcessing-2\PostProcessing\Runtime\Effects\MotionBlur.cs" />
+    <Compile Include="Assets\PostProcessing-2\PostProcessing\Runtime\Effects\MultiScaleVO.cs" />
+    <Compile Include="Assets\PostProcessing-2\PostProcessing\Runtime\Effects\ScalableAO.cs" />
+    <Compile Include="Assets\PostProcessing-2\PostProcessing\Runtime\Effects\ScreenSpaceReflections.cs" />
+    <Compile Include="Assets\PostProcessing-2\PostProcessing\Runtime\Effects\SubpixelMorphologicalAntialiasing.cs" />
+    <Compile Include="Assets\PostProcessing-2\PostProcessing\Runtime\Effects\TemporalAntialiasing.cs" />
+    <Compile Include="Assets\PostProcessing-2\PostProcessing\Runtime\Effects\Vignette.cs" />
+    <Compile Include="Assets\PostProcessing-2\PostProcessing\Runtime\Monitors\HistogramMonitor.cs" />
+    <Compile Include="Assets\PostProcessing-2\PostProcessing\Runtime\Monitors\LightMeterMonitor.cs" />
+    <Compile Include="Assets\PostProcessing-2\PostProcessing\Runtime\Monitors\Monitor.cs" />
+    <Compile Include="Assets\PostProcessing-2\PostProcessing\Runtime\Monitors\VectorscopeMonitor.cs" />
+    <Compile Include="Assets\PostProcessing-2\PostProcessing\Runtime\Monitors\WaveformMonitor.cs" />
+    <Compile Include="Assets\PostProcessing-2\PostProcessing\Runtime\ParameterOverride.cs" />
+    <Compile Include="Assets\PostProcessing-2\PostProcessing\Runtime\PostProcessBundle.cs" />
+    <Compile Include="Assets\PostProcessing-2\PostProcessing\Runtime\PostProcessDebug.cs" />
+    <Compile Include="Assets\PostProcessing-2\PostProcessing\Runtime\PostProcessDebugLayer.cs" />
+    <Compile Include="Assets\PostProcessing-2\PostProcessing\Runtime\PostProcessEffectRenderer.cs" />
+    <Compile Include="Assets\PostProcessing-2\PostProcessing\Runtime\PostProcessEffectSettings.cs" />
+    <Compile Include="Assets\PostProcessing-2\PostProcessing\Runtime\PostProcessEvent.cs" />
+    <Compile Include="Assets\PostProcessing-2\PostProcessing\Runtime\PostProcessLayer.cs" />
+    <Compile Include="Assets\PostProcessing-2\PostProcessing\Runtime\PostProcessManager.cs" />
+    <Compile Include="Assets\PostProcessing-2\PostProcessing\Runtime\PostProcessProfile.cs" />
+    <Compile Include="Assets\PostProcessing-2\PostProcessing\Runtime\PostProcessRenderContext.cs" />
+    <Compile Include="Assets\PostProcessing-2\PostProcessing\Runtime\PostProcessResources.cs" />
+    <Compile Include="Assets\PostProcessing-2\PostProcessing\Runtime\PostProcessVolume.cs" />
+    <Compile Include="Assets\PostProcessing-2\PostProcessing\Runtime\Utils\ColorUtilities.cs" />
+    <Compile Include="Assets\PostProcessing-2\PostProcessing\Runtime\Utils\HableCurve.cs" />
+    <Compile Include="Assets\PostProcessing-2\PostProcessing\Runtime\Utils\HaltonSeq.cs" />
+    <Compile Include="Assets\PostProcessing-2\PostProcessing\Runtime\Utils\LogHistogram.cs" />
+    <Compile Include="Assets\PostProcessing-2\PostProcessing\Runtime\Utils\MeshUtilities.cs" />
+    <Compile Include="Assets\PostProcessing-2\PostProcessing\Runtime\Utils\PropertySheet.cs" />
+    <Compile Include="Assets\PostProcessing-2\PostProcessing\Runtime\Utils\PropertySheetFactory.cs" />
+    <Compile Include="Assets\PostProcessing-2\PostProcessing\Runtime\Utils\RuntimeUtilities.cs" />
+    <Compile Include="Assets\PostProcessing-2\PostProcessing\Runtime\Utils\ShaderIDs.cs" />
+    <Compile Include="Assets\PostProcessing-2\PostProcessing\Runtime\Utils\Spline.cs" />
+    <Compile Include="Assets\PostProcessing-2\PostProcessing\Runtime\Utils\TargetPool.cs" />
+    <Compile Include="Assets\PostProcessing-2\PostProcessing\Runtime\Utils\TextureFormatUtilities.cs" />
+    <Compile Include="Assets\PostProcessing-2\PostProcessing\Runtime\Utils\TextureLerper.cs" />
+    <Compile Include="Assets\PostProcessing-2\PostProcessing\Runtime\Utils\XRSettings.cs" />
+    <Compile Include="Assets\PostProcessing-2\Tests\Runtime\PostProcessingRuntimeTests.cs" />
+    <Compile Include="Assets\PropCollider.cs" />
     <Compile Include="Assets\Scripts\AudioManager.cs" />
     <Compile Include="Assets\Scripts\AudioTrack.cs" />
     <Compile Include="Assets\Scripts\AudioUI.cs" />
     <Compile Include="Assets\Scripts\CameraMovement.cs" />
     <Compile Include="Assets\Scripts\Car.cs" />
     <Compile Include="Assets\Scripts\CarSpawner.cs" />
+    <Compile Include="Assets\Scripts\ColourSelect.cs" />
     <Compile Include="Assets\Scripts\Effects\DiscoBall.cs" />
     <Compile Include="Assets\Scripts\Effects\Effect.cs" />
     <Compile Include="Assets\Scripts\Effects\PickupShell.cs" />
     <Compile Include="Assets\Scripts\Effects\RestoreHealth.cs" />
     <Compile Include="Assets\Scripts\Effects\SpeedIncrease.cs" />
+    <Compile Include="Assets\Scripts\EnableOnStay.cs" />
+    <Compile Include="Assets\Scripts\FadeToDelete.cs" />
     <Compile Include="Assets\Scripts\FadeToScene.cs" />
     <Compile Include="Assets\Scripts\GameStateManager.cs" />
     <Compile Include="Assets\Scripts\HurtBox.cs" />
@@ -80,56 +142,141 @@
     <Compile Include="Assets\Scripts\MenuStart.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\PlayerManager.cs" />
+    <Compile Include="Assets\Scripts\PlayRandomAnimation.cs" />
+    <Compile Include="Assets\Scripts\PulseWithBeat.cs" />
+    <Compile Include="Assets\Scripts\SettingChange.cs" />
+    <Compile Include="Assets\Scripts\SpawnInsideArea.cs" />
     <Compile Include="Assets\Scripts\Teleporter.cs" />
     <Compile Include="Assets\Scripts\temp\tempMovement.cs" />
-    <Compile Include="Assets\WindowOfOpportunityTest.cs" />
+    <Compile Include="Assets\XInput\Plugins\XboxCtrlrInput.cs" />
+    <Compile Include="Assets\XInput\Plugins\XboxCtrlrInput_Helpers\XciAxisDeadzoneData.cs" />
+    <Compile Include="Assets\XInput\Plugins\XboxCtrlrInput_Helpers\XciInputManagerClone.cs" />
+    <Compile Include="Assets\XInput\Plugins\XboxCtrlrInput_Helpers\XciInputManagerReader.cs" />
+    <Compile Include="Assets\XInput\XboxCtrlrInputExample\MoveLaser.cs" />
+    <Compile Include="Assets\XInput\XboxCtrlrInputExample\MovePlayer.cs" />
+    <Compile Include="Assets\XInput\XInputDotNet\Examples\XInputTestCS.cs" />
+    <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Builtins\Distortion.hlsl" />
     <None Include="Assets\Prefabs\Player\delete me.txt" />
+    <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\API\Vulkan.hlsl" />
+    <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Builtins\ExposureHistogram.hlsl" />
+    <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Builtins\Fog.hlsl" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
+    <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Builtins\Texture2DLerp.shader" />
+    <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Builtins\SubpixelMorphologicalAntialiasing.hlsl" />
+    <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Builtins\Lut3DBaker.compute" />
+    <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Builtins\Uber.shader" />
+    <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\API\OpenGL.hlsl" />
+    <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Builtins\ScreenSpaceReflections.hlsl" />
+    <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Builtins\ScalableAO.shader" />
+    <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\API\Switch.hlsl" />
+    <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Builtins\ScreenSpaceReflections.shader" />
+    <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Builtins\SubpixelMorphologicalAntialiasingBridge.hlsl" />
+    <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Builtins\MotionBlur.shader" />
+    <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\API\D3D11.hlsl" />
+    <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Builtins\Dithering.hlsl" />
+    <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Debug\Vectorscope.shader" />
+    <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Builtins\DiscardAlpha.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
+    <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Builtins\CopyStdFromTexArray.shader" />
+    <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Debug\LightMeter.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
+    <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Builtins\ExposureHistogram.compute" />
+    <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Builtins\GrainBaker.shader" />
+    <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Debug\Waveform.shader" />
+    <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Builtins\DeferredFog.shader" />
+    <None Include="Assets\XInput\XInputDotNet\MITLicense.txt" />
+    <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\API\D3D9.hlsl" />
+    <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Builtins\MultiScaleVODownsample2.compute" />
+    <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Builtins\Texture3DLerp.compute" />
+    <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Builtins\DepthOfField.hlsl" />
+    <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Debug\Waveform.compute" />
+    <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Debug\Overlays.shader" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Masking.shader" />
-    <None Include="Assets\Animations\delete me.txt" />
+    <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\StdLib.hlsl" />
+    <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Debug\Histogram.shader" />
+    <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Debug\Histogram.compute" />
+    <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Builtins\AutoExposure.compute" />
+    <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Builtins\Bloom.shader" />
+    <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\API\XboxOne.hlsl" />
+    <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Builtins\Copy.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Mobile.shader" />
+    <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Builtins\SubpixelMorphologicalAntialiasing.shader" />
+    <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Builtins\GaussianDownsample.compute" />
+    <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Builtins\MultiScaleVODownsample1.compute" />
+    <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\xRLib.hlsl" />
+    <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Builtins\CopyStdFromDoubleWide.shader" />
+    <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\ACES.hlsl" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF Overlay.shader" />
+    <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Builtins\MultiScaleVO.shader" />
+    <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Debug\Vectorscope.compute" />
+    <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Builtins\TemporalAntialiasing.shader" />
+    <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Builtins\DiskKernels.hlsl" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Surface.cginc" />
+    <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Sampling.hlsl" />
+    <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Builtins\FinalPass.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
+    <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\API\D3D12.hlsl" />
+    <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Builtins\ScalableAO.hlsl" />
+    <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\API\PSSL.hlsl" />
+    <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Builtins\CopyStd.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
-    <None Include="Assets\Prefabs\Environment\delete me.txt" />
-    <None Include="Assets\Particles\delete me.txt" />
+    <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Colors.hlsl" />
+    <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Builtins\MultiScaleVORender.compute" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile.shader" />
+    <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\API\PSP2.hlsl" />
+    <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Builtins\DepthOfField.shader" />
+    <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Builtins\MultiScaleVOUpsample.compute" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
+    <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\API\Metal.hlsl" />
+    <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Builtins\Lut2DBaker.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
-    <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>C:/Users/s181203/Documents/SteamedJams/SteamedJams/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>C:/Users/s181203/Documents/SteamedJams/SteamedJams/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>C:/Users/s181203/Documents/SteamedJams/SteamedJams/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/Users/s181203/Documents/SteamedJams/SteamedJams/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
-    </Reference>
+    <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Builtins\FastApproximateAntialiasing.hlsl" />
     <Reference Include="Unity.RenderPipelines.Core.Editor">
-      <HintPath>C:/Users/s181203/Documents/SteamedJams/SteamedJams/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
+      <HintPath>C:/Users/s181313/Documents/Steamed Jams/SamuraiAerobicsSVN/trunk/SteamedJams/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProBuilder.AssetIdRemapUtility">
+      <HintPath>C:/Users/s181313/Documents/Steamed Jams/SamuraiAerobicsSVN/trunk/SteamedJams/Library/ScriptAssemblies/Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.Runtime">
-      <HintPath>C:/Users/s181203/Documents/SteamedJams/SteamedJams/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll</HintPath>
+      <HintPath>C:/Users/s181313/Documents/Steamed Jams/SamuraiAerobicsSVN/trunk/SteamedJams/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
-      <HintPath>C:/Users/s181203/Documents/SteamedJams/SteamedJams/Library/ScriptAssemblies/Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
+    <Reference Include="Unity.TextMeshPro.Editor">
+      <HintPath>C:/Users/s181313/Documents/Steamed Jams/SamuraiAerobicsSVN/trunk/SteamedJams/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Lightweight.Runtime">
+      <HintPath>C:/Users/s181313/Documents/Steamed Jams/SamuraiAerobicsSVN/trunk/SteamedJams/Library/ScriptAssemblies/Unity.RenderPipelines.Lightweight.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Lightweight.Editor">
+      <HintPath>C:/Users/s181313/Documents/Steamed Jams/SamuraiAerobicsSVN/trunk/SteamedJams/Library/ScriptAssemblies/Unity.RenderPipelines.Lightweight.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.PackageManagerUI.Editor">
+      <HintPath>C:/Users/s181313/Documents/Steamed Jams/SamuraiAerobicsSVN/trunk/SteamedJams/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.CollabProxy.Editor">
+      <HintPath>C:/Users/s181313/Documents/Steamed Jams/SamuraiAerobicsSVN/trunk/SteamedJams/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Postprocessing.Editor">
-      <HintPath>C:/Users/s181203/Documents/SteamedJams/SteamedJams/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
+      <HintPath>C:/Users/s181313/Documents/Steamed Jams/SamuraiAerobicsSVN/trunk/SteamedJams/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Postprocessing.Runtime">
-      <HintPath>C:/Users/s181203/Documents/SteamedJams/SteamedJams/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
+      <HintPath>C:/Users/s181313/Documents/Steamed Jams/SamuraiAerobicsSVN/trunk/SteamedJams/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProBuilder.AddOns.Editor">
+      <HintPath>C:/Users/s181313/Documents/Steamed Jams/SamuraiAerobicsSVN/trunk/SteamedJams/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ShaderGraph.Editor">
+      <HintPath>C:/Users/s181313/Documents/Steamed Jams/SamuraiAerobicsSVN/trunk/SteamedJams/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
+      <HintPath>C:/Users/s181313/Documents/Steamed Jams/SamuraiAerobicsSVN/trunk/SteamedJams/Library/ScriptAssemblies/Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>C:/Users/s181313/Documents/Steamed Jams/SamuraiAerobicsSVN/trunk/SteamedJams/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity 2018.3.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -331,6 +478,9 @@
     </Reference>
     <Reference Include="UnityEngine.SpatialTracking">
       <HintPath>C:/Program Files/Unity 2018.3.8f1/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
+    </Reference>
+    <Reference Include="XInputDotNetPure">
+      <HintPath>C:/Users/s181313/Documents/Steamed Jams/SamuraiAerobicsSVN/trunk/SteamedJams/Assets/XInput/Plugins/x86_64/XInputDotNetPure.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:/Program Files/Unity 2018.3.8f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
