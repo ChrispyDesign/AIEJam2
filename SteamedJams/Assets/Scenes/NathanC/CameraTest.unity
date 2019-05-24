@@ -34163,6 +34163,11 @@ PrefabInstance:
       propertyPath: m_lerpStepSize
       value: 0.1
       objectReference: {fileID: 0}
+    - target: {fileID: 6371215997594947146, guid: e470df9d4b2d569449439addadc016ab,
+        type: 3}
+      propertyPath: m_defaultRoundTime
+      value: 100
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e470df9d4b2d569449439addadc016ab, type: 3}
 --- !u!1 &1407324371

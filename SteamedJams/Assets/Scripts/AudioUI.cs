@@ -74,7 +74,7 @@ public class AudioUI : MonoBehaviour
     {
         GameObject tick1 = m_tickPool.Dequeue();
         GameObject tick2 = m_tickPool.Dequeue();
-
+        
         Vector3 tick1start = tick1.transform.position = m_barAnchorLeft.transform.position;
         Vector3 tick2start = tick2.transform.position = m_barAnchorRight.transform.position;
 
@@ -110,6 +110,7 @@ public class AudioUI : MonoBehaviour
         Text feedbackTextUI = feedbackText.GetComponent<Text>();
         feedbackTextUI.text = feedbackMessage;
         
+
         float timer = 0;
         Transform textAnchor;
 
@@ -147,6 +148,8 @@ public class AudioUI : MonoBehaviour
 
         feedbackIcon.SetActive(false);
         feedbackText.SetActive(false);
+        
+
         m_feedbackIconPool.Enqueue(feedbackIcon);
         m_feedbackTextPool.Enqueue(feedbackText);
     }

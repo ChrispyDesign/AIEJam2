@@ -12,6 +12,11 @@ public class HealthBar : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Invoke("LateStart", 0.1f);
+    }
+
+    void LateStart()
+    {
         m_playerManager = PlayerManager.Instance;
         m_p1Scroll.maxValue = m_playerManager.m_players[0].m_maxHealth;
         m_p2Scroll.maxValue = m_playerManager.m_players[1].m_maxHealth;

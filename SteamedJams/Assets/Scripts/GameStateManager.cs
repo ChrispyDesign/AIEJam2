@@ -82,9 +82,16 @@ public class GameStateManager : MonoBehaviour
         else if (m_currentGameState == GameState.Victory)
         {
             if (XCI.GetButtonDown(XboxButton.A))
+            {
+                ResetUIElements();
                 StartRound();
+            }
             else if (XCI.GetButtonDown(XboxButton.B))
+            {
+                Time.timeScale = 1;
+
                 SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            }
         }
     }
 
@@ -94,9 +101,15 @@ public class GameStateManager : MonoBehaviour
         m_player2wins.SetActive(false);
         m_draw.SetActive(false);
 
-        //for (int i = 0; i < )
-        //m_player1rounds
-        //m_player2rounds
+        m_victoryPanel.SetActive(false);
+
+        m_player1score = m_player2score = 0;
+
+        for (int i = 0; i < m_player1rounds.Length; i++)
+            m_player1rounds[i].color = new Color(1, 1, 1, 1);
+        for (int i = 0; i < m_player2rounds.Length; i++)
+            m_player2rounds[i].color = new Color(1, 1, 1, 1);
+
     }
 
     /// <summary>
@@ -168,14 +181,14 @@ public class GameStateManager : MonoBehaviour
             m_draw.SetActive(true);
             StartCoroutine(RoundEnd());
         }
-        else if (m_player1.Health < 0)
+        else if (m_player2.Health < 0)
         {
             m_player1rounds[m_player1score].color = Color.yellow;
             m_player1score++; // player 1 won
             m_player1wins.SetActive(true);
             StartCoroutine(RoundEnd());
         }
-        else if (m_player2.Health < 0)
+        else if (m_player1.Health < 0)
         {
             m_player2rounds[m_player2score].color = Color.yellow;
             m_player2score++; // player 2 won

@@ -35,6 +35,7 @@ public class AudioManager : MonoBehaviour
     private float m_window;
     private float m_opportunityScalar;
     private bool m_isInWindow = false;
+    
 
     #region getters
 
