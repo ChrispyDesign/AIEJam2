@@ -360,7 +360,7 @@
       <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/15.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
     <Reference Include="XInputDotNetPure">
-      <HintPath>C:/Users/s181313/Documents/Steamed Jams/SamuraiAerobicsSVN/trunk/SteamedJams/Assets/XInput/Plugins/x86_64/XInputDotNetPure.dll</HintPath>
+      <HintPath>C:/Users/s181319/Documents/SVN/SamuraiAerobicsGirl/SteamedJams/Assets/XInput/Plugins/x86_64/XInputDotNetPure.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:/Program Files/Unity 2018.3.8f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
