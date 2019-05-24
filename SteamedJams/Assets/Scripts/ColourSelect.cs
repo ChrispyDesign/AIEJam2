@@ -24,9 +24,11 @@ public class ColourSelect : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
+        /*
         if (other.tag == "Player")
         {
             other.GetComponent<Renderer>().material.color = colorSel;
         }
+        */
     }
 }

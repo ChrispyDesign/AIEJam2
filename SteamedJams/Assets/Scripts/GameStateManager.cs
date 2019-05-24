@@ -40,10 +40,6 @@ public class GameStateManager : MonoBehaviour
     [SerializeField] private GameObject m_player1wins;
     [SerializeField] private GameObject m_player2wins;
     [SerializeField] private GameObject m_draw;
-
-    [Header("Victory Screen")]
-    [SerializeField] private Transform m_victoryCameraTransform;
-    [SerializeField] private float m_lerpStepSize;
  
     private PlayerController m_player1;
     private PlayerController m_player2;
@@ -67,6 +63,10 @@ public class GameStateManager : MonoBehaviour
     {
         m_instance = this;
 
+        Invoke("LateStart", 0.001f);
+    }
+    void LateStart ()
+    {
         PlayerController[] players = PlayerManager.Instance.m_players;
         m_player1 = players[0];
         m_player2 = players[1];
@@ -86,6 +86,17 @@ public class GameStateManager : MonoBehaviour
             else if (XCI.GetButtonDown(XboxButton.B))
                 SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
+    }
+
+    private void ResetUIElements()
+    {
+        m_player1wins.SetActive(false);
+        m_player2wins.SetActive(false);
+        m_draw.SetActive(false);
+
+        //for (int i = 0; i < )
+        //m_player1rounds
+        //m_player2rounds
     }
 
     /// <summary>
@@ -154,21 +165,21 @@ public class GameStateManager : MonoBehaviour
             m_player2rounds[m_player2score].color = Color.yellow;
             m_player1score++;
             m_player2score++;
-            m_player1wins.SetActive(true);
+            m_draw.SetActive(true);
             StartCoroutine(RoundEnd());
         }
         else if (m_player1.Health < 0)
         {
             m_player1rounds[m_player1score].color = Color.yellow;
             m_player1score++; // player 1 won
-            m_player2wins.SetActive(true);
+            m_player1wins.SetActive(true);
             StartCoroutine(RoundEnd());
         }
         else if (m_player2.Health < 0)
         {
             m_player2rounds[m_player2score].color = Color.yellow;
             m_player2score++; // player 2 won
-            m_draw.SetActive(true);
+            m_player2wins.SetActive(true);
             StartCoroutine(RoundEnd());
         }
     }
@@ -186,6 +197,9 @@ public class GameStateManager : MonoBehaviour
         yield return new WaitForSecondsRealtime(3);
 
         CameraMovement.activeCamera.zoomMax = oldMaxZoom;
+
+        m_player1.Health = 100;
+        m_player2.Health = 100;
 
         if (m_player1score > 1)
             Victory(0);
@@ -205,7 +219,7 @@ public class GameStateManager : MonoBehaviour
     /// 
     /// </summary>
     /// <param name="player"></param>
-    private IEnumerator Victory(int player)
+    private void Victory(int player)
     {
         m_currentGameState = GameState.Victory;
         
@@ -215,14 +229,5 @@ public class GameStateManager : MonoBehaviour
             m_player2wins.SetActive(true);
 
         m_victoryPanel.SetActive(true);
-
-        Vector3 startPos = CameraMovement.activeCamera.transform.position;
-
-        while (CameraMovement.activeCamera.transform.position != m_victoryCameraTransform.position)
-        {
-            CameraMovement.activeCamera.transform.position = Vector3.Lerp(startPos, m_victoryCameraTransform.position, m_lerpStepSize);
-
-            yield return null;
-        }
     }
 }

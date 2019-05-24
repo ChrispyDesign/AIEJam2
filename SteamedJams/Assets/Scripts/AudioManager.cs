@@ -78,6 +78,9 @@ public class AudioManager : MonoBehaviour
 
         for (int i = 0; i < m_materials.Length; i++)
             m_materials[i].SetFloat("_BPM", 0);
+
+        if (m_audioUI == null)
+            m_audioUI = GetComponent<AudioUI>();
     }
 
     private void Update()

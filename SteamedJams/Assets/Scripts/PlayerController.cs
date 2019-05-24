@@ -221,13 +221,13 @@ public class PlayerController : MonoBehaviour
 
                 if (m_audioManager && !m_audioManager.IsInWindowOfOpportunity())
                 {
-                    m_audioManager.StartFeedbackTextRoutine((int)m_team);
-
                     m_dashTimer = m_dashLength;
                     m_dashSpeed = m_defaultDashSpeed;
                 }
                 else
                 {
+                    m_audioManager.StartFeedbackTextRoutine((int)m_team);
+
                     m_dashTimer = m_dashLength;
                     m_dashSpeed = m_boostedDashSpeed;
                 }

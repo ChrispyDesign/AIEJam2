@@ -51,6 +51,10 @@ public class ColorPicker : MonoBehaviour
                 {
                     player.m_hairRenderer.material.SetColor("_PlayerColour", m_color);
                 }
+                if (player.m_hitBoxRenderer)
+                {
+                    player.m_hitBoxRenderer.material.SetColor("_PlayerColour", new Color(m_color.r, m_color.g, m_color.b, 0.5f));
+                }
 
             }
         }
