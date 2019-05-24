@@ -80,6 +80,11 @@ public class PlayerController : MonoBehaviour
         get { return m_characterController; }
     }
 
+    public Vector3 Velocity
+    {
+        get { return m_velocity; }
+    }
+
     public int Health
     {
         get { return m_health; }
@@ -358,7 +363,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    private void FixedUpdate()
+    private void LateUpdate()
     {
         transform.position = new Vector3(transform.position.x, m_setHeight, transform.position.z);
     }
