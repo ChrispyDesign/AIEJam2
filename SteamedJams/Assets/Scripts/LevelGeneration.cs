@@ -102,6 +102,7 @@ public class LevelGeneration : MonoBehaviour
     {
         if (!m_firstRun)
         {
+            freeBasePropHolders.Clear();
             for (int i = 0; i < transform.childCount; i++)
             {
                 Transform tmp = transform.GetChild(i).GetChild(0);

@@ -60,6 +60,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_damage: 10
   m_team: 0
+  m_player: {fileID: 0}
 --- !u!1 &2479756261525055066
 GameObject:
   m_ObjectHideFlags: 0
@@ -166,6 +167,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_damage: 0
   m_team: 0
+  m_player: {fileID: 0}
 --- !u!1 &5806372148290907508
 GameObject:
   m_ObjectHideFlags: 0
@@ -308,9 +310,9 @@ CharacterController:
   serializedVersion: 2
   m_Height: 2
   m_Radius: 0.5
-  m_SlopeLimit: 45
-  m_StepOffset: 0.3
-  m_SkinWidth: 0.08
+  m_SlopeLimit: 0
+  m_StepOffset: 0
+  m_SkinWidth: 0.04
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &9115953796058831496
@@ -329,6 +331,7 @@ MonoBehaviour:
   m_team: 0
   m_controller: 0
   m_maxHealth: 100
+  m_bloodSpray: {fileID: 0}
   m_swordDamage: 20
   m_swordHurtBox: {fileID: 489954460586375141}
   m_speed: 50
@@ -338,11 +341,12 @@ MonoBehaviour:
   m_dashHurtBox: {fileID: 2378538365099729355}
   m_dashDamage: 10
   m_dashCooldown: 1
-  m_dodgeLength: 2
   m_dashSpeed: 30
   m_health: 0
   m_renderer: {fileID: 9115953796058831501}
   m_effects: []
+  m_useController: 0
+  m_setHeight: 1.04
 --- !u!136 &9115953796058831490
 CapsuleCollider:
   m_ObjectHideFlags: 0

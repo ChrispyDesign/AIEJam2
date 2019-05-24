@@ -27,7 +27,14 @@ public class Teleporter : MonoBehaviour
         if (other.tag == "Player")
         {
             int portalDestination = Random.Range(0, LevelGeneration.activeManager.freeBasePropHolders.Count);
-            other.transform.position = LevelGeneration.activeManager.freeBasePropHolders[portalDestination].position;
+
+            PlayerController player = other.GetComponent<PlayerController>();
+            if (player)
+            {
+                player.CharacterController.enabled = false;
+                other.transform.position = LevelGeneration.activeManager.freeBasePropHolders[portalDestination].position;
+                player.CharacterController.enabled = true;
+            }
             Instantiate(teleportParticles, LevelGeneration.activeManager.freeBasePropHolders[portalDestination]);
             CameraMovement.shakeTimer = 0;
         }

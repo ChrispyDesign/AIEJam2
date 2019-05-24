@@ -69,10 +69,16 @@ public class PlayerController : MonoBehaviour
     public List<Effect> m_effects;
     Color m_defaultColour;
     public bool m_useController;
+    public float m_setHeight;
 
     event VoidEvent OnDamageTaken;
 
     #region Getters/Setters
+
+    public CharacterController CharacterController
+    {
+        get { return m_characterController; }
+    }
 
     public int Health
     {
@@ -350,5 +356,25 @@ public class PlayerController : MonoBehaviour
                 Destroy(effect.gameObject);
             }
         }
+    }
+
+    private void FixedUpdate()
+    {
+        transform.position = new Vector3(transform.position.x, m_setHeight, transform.position.z);
+    }
+
+    private void OnControllerColliderHit(ControllerColliderHit hit)
+    {
+        if (hit.rigidbody)
+        {
+            if (hit.moveDirection.y >= -0.3)
+            {
+                hit.rigidbody.velocity = new Vector3(m_velocity.x, 0, m_velocity.z);
+            }
+        }
+        //if (hit.normal.y > 0)
+        //{
+        //    transform.position = new Vector3(transform.position.x, 1.1f, transform.position.z);    
+        //}
     }
 }
