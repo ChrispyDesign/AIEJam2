@@ -16,5 +16,6 @@ public class RestoreHealth : Effect
         base.OnPickup();
 
         m_player.Health += m_healthIncrease;
+        m_player.m_healing.Play();
     }
 }

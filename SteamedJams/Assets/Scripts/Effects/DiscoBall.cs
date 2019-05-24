@@ -14,12 +14,14 @@ public class DiscoBall : Effect
         base.OnPickup();
 
         m_player.Invulnerable = true;
+        m_player.m_godMode.Play();
     }
     public override void OnEffectEnd()
     {
         base.OnEffectEnd();
 
         m_player.Invulnerable = false;
+        m_player.m_godMode.Stop();
     }
 
 }

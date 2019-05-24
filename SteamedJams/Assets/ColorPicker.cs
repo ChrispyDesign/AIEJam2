@@ -10,12 +10,12 @@ public class ColorPicker : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            Renderer renderer = other.gameObject.GetComponent<Renderer>();
+            //Renderer renderer = other.gameObject.GetComponent<Renderer>();
 
-            if (renderer)
-            {
-                renderer.material.SetColor("_PlayerColour", m_color);
-            }
+            //if (renderer)
+            //{
+            //    renderer.material.SetColor("_PlayerColour", m_color);
+            //}
 
             PlayerController player = other.gameObject.GetComponent<PlayerController>();
 
@@ -26,6 +26,19 @@ public class ColorPicker : MonoBehaviour
                     ParticleSystem.MainModule main = player.m_bloodSpray.main;
                     main.startColor = m_color;
                 }
+                if (player.m_playerRenderer)
+                {
+                    player.m_playerRenderer.materials[1].SetColor("_PlayerColour", m_color);
+                }
+                if (player.m_swordRenderer)
+                {
+                    player.m_swordRenderer.material.SetColor("_PlayerColour", m_color);
+                }
+                if (player.m_hairRenderer)
+                {
+                    player.m_hairRenderer.material.SetColor("_PlayerColour", m_color);
+                }
+
             }
         }
     }

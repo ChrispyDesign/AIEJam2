@@ -16,11 +16,13 @@ public class SpeedIncrease : Effect
         base.OnPickup();
 
         m_player.SpeedMultiplier += m_speedIncrease;
+        m_player.m_playerTrail.Play();
     }
     public override void OnEffectEnd()
     {
         base.OnEffectEnd();
 
         m_player.SpeedMultiplier -= m_speedIncrease;
+        m_player.m_playerTrail.Stop();
     }
 }

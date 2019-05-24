@@ -5,7 +5,7 @@ using XboxCtrlrInput;
 
 public enum Team
 {
-    One,
+    One = 1,
     Two
 };
 
@@ -23,12 +23,12 @@ public class PlayerController : MonoBehaviour
     public int m_playerNumber;
     public Team m_team;
     public XboxController m_controller;
-    public int m_maxHealth;
-    public ParticleSystem m_bloodSpray;
-    public Animator m_animator;
+    public int m_maxHealth;    
+    public Animator m_animator;    
 
     [Header("Attack")]
-    public int m_swordDamage;
+    public int m_defaultSwordDamage = 5;
+    public int m_boostedSwordDamage = 15;
     public HurtBox m_swordHurtBox;
 
     [Header("Movement")]
@@ -38,9 +38,21 @@ public class PlayerController : MonoBehaviour
     [Header("Dash")]
     public float m_dashLength;
     public float m_defaultDashSpeed;
+    public float m_boostedDashSpeed;
     public HurtBox m_dashHurtBox;
     public int m_dashDamage;
     public float m_dashCooldown;
+
+    [Header("Renderers")]
+    public Renderer m_playerRenderer;
+    public Renderer m_swordRenderer;
+    public Renderer m_hairRenderer;
+
+    [Header("Particles")]
+    public ParticleSystem m_bloodSpray;
+    public ParticleSystem m_healing;
+    public ParticleSystem m_playerTrail;
+    public ParticleSystem m_godMode;
 
     PlayerState m_currentState = PlayerState.Base;
 
@@ -65,7 +77,6 @@ public class PlayerController : MonoBehaviour
     [Header("Debug")]
     [SerializeField]
     int m_health;
-    public Renderer m_renderer;
     public List<Effect> m_effects;
     Color m_defaultColour;
     public bool m_useController;
@@ -121,7 +132,7 @@ public class PlayerController : MonoBehaviour
         m_health = m_maxHealth;
         m_characterController = GetComponent<CharacterController>();
 
-        m_swordHurtBox.m_damage = m_swordDamage;
+        m_swordHurtBox.m_damage = m_defaultSwordDamage;
         m_swordHurtBox.m_team = m_team;
         m_swordHurtBox.m_player = this;
 
@@ -206,15 +217,18 @@ public class PlayerController : MonoBehaviour
 
                 m_dashHurtBox.Collider.enabled = true;
                 m_dashDirection = transform.forward;
+
                 if (m_audioManager && !m_audioManager.IsInWindowOfOpportunity())
                 {
+                    m_audioManager.StartFeedbackTextRoutine((int)m_team);
+
                     m_dashTimer = m_dashLength;
                     m_dashSpeed = m_defaultDashSpeed;
                 }
                 else
                 {
-                    m_dashTimer = m_dashLength / 2;
-                    m_dashSpeed = m_defaultDashSpeed * 2;
+                    m_dashTimer = m_dashLength;
+                    m_dashSpeed = m_boostedDashSpeed;
                 }
 
                 m_dashCooldownTimer = m_dashCooldown;
@@ -299,15 +313,15 @@ public class PlayerController : MonoBehaviour
         m_canAttack = false;
         if (m_audioManager && m_audioManager.IsInWindowOfOpportunity())
         {
-            m_swordHurtBox.m_damage = m_swordDamage * 2;
-            m_swordHurtBox.transform.localScale = new Vector3(0.2f, 0.2f, 2);
-            m_swordHurtBox.transform.localPosition = new Vector3(0, 0, 1);
+            m_audioManager.StartFeedbackTextRoutine((int)m_team);
+
+            m_swordHurtBox.m_damage = m_boostedSwordDamage;
+            m_swordHurtBox.transform.localScale = new Vector3(2, 1, 2);
         }
         else
         {
-            m_swordHurtBox.m_damage = m_swordDamage;
-            m_swordHurtBox.transform.localScale = new Vector3(0.2f, 0.2f, 1);
-            m_swordHurtBox.transform.localPosition = new Vector3(0, 0, 0.5f);
+            m_swordHurtBox.m_damage = m_defaultSwordDamage;
+            m_swordHurtBox.transform.localScale = new Vector3(1, 1, 1);
         }
         m_animator.SetTrigger("Attack");
     }
@@ -315,9 +329,9 @@ public class PlayerController : MonoBehaviour
     public void AttackEnd()
     {
         m_canAttack = true;
-        m_swordHurtBox.m_damage = m_swordDamage;
-        m_swordHurtBox.transform.localScale = new Vector3(0.2f, 0.2f, 1);
-        m_swordHurtBox.transform.localPosition = new Vector3(0, 0, 0.5f);
+        //m_swordHurtBox.m_damage = m_swordDamage;
+        //m_swordHurtBox.transform.localScale = new Vector3(0.2f, 0.2f, 1);
+        //m_swordHurtBox.transform.localPosition = new Vector3(0, 0, 0.5f);
     }
 
     public void AddEffect(Effect effect)
