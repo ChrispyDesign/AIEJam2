@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4450134230941501657}
   - component: {fileID: 3479735548929533445}
   m_Layer: 0
-  m_Name: OBS_Speakers_BIG
+  m_Name: OBS_Speakers_BIG01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -56,6 +56,7 @@ GameObject:
   - component: {fileID: 4450134230941501659}
   - component: {fileID: 4450134230942828795}
   - component: {fileID: 4450134230943795771}
+  - component: {fileID: 4639710997340244064}
   m_Layer: 0
   m_Name: Speaker_Large
   m_TagString: Untagged
@@ -102,8 +103,8 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b342eda8b4016f24ba154cb7e503280b, type: 2}
-  - {fileID: 2100000, guid: b342eda8b4016f24ba154cb7e503280b, type: 2}
+  - {fileID: 2100000, guid: deb564ba391aeb644a2e18ac72880c38, type: 2}
+  - {fileID: 2100000, guid: deb564ba391aeb644a2e18ac72880c38, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -123,3 +124,22 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &4639710997340244064
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4450134230941603067}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b860b6db87e4874389423ec1dadeeda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sizeChangeStyle: 2
+  colourChangeStyle: 0
+  colourChangeType: 1
+  sizeMin: 1
+  sizeMax: 1.2
+  One: {r: 0, g: 0.26012278, b: 1, a: 0}
+  Two: {r: 0.061807394, g: 1, b: 0, a: 1}

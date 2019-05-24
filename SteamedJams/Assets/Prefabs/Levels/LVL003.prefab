@@ -170,11 +170,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1635372363928112985}
     m_Modifications:
-    - target: {fileID: 654918237610546952, guid: 468fc7fa7fd16c94cb2b4ce7126925af,
-        type: 3}
-      propertyPath: m_Name
-      value: OBS_Speakers_MED (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 654918237610576680, guid: 468fc7fa7fd16c94cb2b4ce7126925af,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -228,6 +223,16 @@ PrefabInstance:
     - target: {fileID: 654918237610576680, guid: 468fc7fa7fd16c94cb2b4ce7126925af,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 654918237610546952, guid: 468fc7fa7fd16c94cb2b4ce7126925af,
+        type: 3}
+      propertyPath: m_Name
+      value: OBS_Speakers_MED (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 654918237610546952, guid: 468fc7fa7fd16c94cb2b4ce7126925af,
+        type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -320,11 +325,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1635372363928112985}
     m_Modifications:
-    - target: {fileID: 4197434470647908074, guid: 4e874c3fe3d2a814ea35991f74646d98,
-        type: 3}
-      propertyPath: m_Name
-      value: OBS_WeightsLarge
-      objectReference: {fileID: 0}
     - target: {fileID: 4197434470648077002, guid: 4e874c3fe3d2a814ea35991f74646d98,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -380,6 +380,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4197434470647908074, guid: 4e874c3fe3d2a814ea35991f74646d98,
+        type: 3}
+      propertyPath: m_Name
+      value: OBS_WeightsLarge
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4e874c3fe3d2a814ea35991f74646d98, type: 3}
 --- !u!4 &8374387368010898071 stripped
@@ -395,11 +400,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1635372363928112985}
     m_Modifications:
-    - target: {fileID: 654918237610546952, guid: 468fc7fa7fd16c94cb2b4ce7126925af,
-        type: 3}
-      propertyPath: m_Name
-      value: OBS_Speakers_MED
-      objectReference: {fileID: 0}
     - target: {fileID: 654918237610576680, guid: 468fc7fa7fd16c94cb2b4ce7126925af,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -455,6 +455,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 654918237610546952, guid: 468fc7fa7fd16c94cb2b4ce7126925af,
+        type: 3}
+      propertyPath: m_Name
+      value: OBS_Speakers_MED
+      objectReference: {fileID: 0}
+    - target: {fileID: 654918237610546952, guid: 468fc7fa7fd16c94cb2b4ce7126925af,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 468fc7fa7fd16c94cb2b4ce7126925af, type: 3}
 --- !u!4 &6912806412968768746 stripped
@@ -470,11 +480,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1635372363928112985}
     m_Modifications:
-    - target: {fileID: 8648761781906382060, guid: c636319ce8c91ce4d857c796dbdb9e6c,
-        type: 3}
-      propertyPath: m_Name
-      value: OBS_PunchingBag
-      objectReference: {fileID: 0}
     - target: {fileID: 8648761781906735308, guid: c636319ce8c91ce4d857c796dbdb9e6c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -530,6 +535,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8648761781906382060, guid: c636319ce8c91ce4d857c796dbdb9e6c,
+        type: 3}
+      propertyPath: m_Name
+      value: OBS_PunchingBag
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c636319ce8c91ce4d857c796dbdb9e6c, type: 3}
 --- !u!4 &624646638001346145 stripped
@@ -549,6 +559,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: OBS_Speakers_BIG
+      objectReference: {fileID: 0}
+    - target: {fileID: 4450134230941603065, guid: b213d4729c5f96e448cfbbe3a0263c93,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4450134230941501657, guid: b213d4729c5f96e448cfbbe3a0263c93,
         type: 3}
@@ -695,11 +710,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1635372363928112985}
     m_Modifications:
-    - target: {fileID: 4197434470647908074, guid: 4e874c3fe3d2a814ea35991f74646d98,
-        type: 3}
-      propertyPath: m_Name
-      value: OBS_WeightsLarge (2)
-      objectReference: {fileID: 0}
     - target: {fileID: 4197434470648077002, guid: 4e874c3fe3d2a814ea35991f74646d98,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -755,6 +765,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4197434470647908074, guid: 4e874c3fe3d2a814ea35991f74646d98,
+        type: 3}
+      propertyPath: m_Name
+      value: OBS_WeightsLarge (2)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4e874c3fe3d2a814ea35991f74646d98, type: 3}
 --- !u!4 &5073452996912884035 stripped
@@ -770,11 +785,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1635372363928112985}
     m_Modifications:
-    - target: {fileID: 4197434470647908074, guid: 4e874c3fe3d2a814ea35991f74646d98,
-        type: 3}
-      propertyPath: m_Name
-      value: OBS_WeightsLarge (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 4197434470648077002, guid: 4e874c3fe3d2a814ea35991f74646d98,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -829,6 +839,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4197434470647908074, guid: 4e874c3fe3d2a814ea35991f74646d98,
+        type: 3}
+      propertyPath: m_Name
+      value: OBS_WeightsLarge (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4e874c3fe3d2a814ea35991f74646d98, type: 3}

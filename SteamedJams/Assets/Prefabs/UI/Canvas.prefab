@@ -215,6 +215,7 @@ GameObject:
   - component: {fileID: 4273225387943391067}
   - component: {fileID: 4273225387943391061}
   - component: {fileID: 4273225387943391060}
+  - component: {fileID: 537449160978164162}
   m_Layer: 5
   m_Name: Game Screen
   m_TagString: Untagged
@@ -281,6 +282,25 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
+--- !u!114 &537449160978164162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4273225387943391066}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b860b6db87e4874389423ec1dadeeda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sizeChangeStyle: 0
+  colourChangeStyle: 2
+  colourChangeType: 0
+  sizeMin: 1
+  sizeMax: 1
+  One: {r: 0, g: 0, b: 0, a: 0}
+  Two: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &4273225388122294341
 GameObject:
   m_ObjectHideFlags: 0
@@ -292,6 +312,7 @@ GameObject:
   - component: {fileID: 4273225388122294342}
   - component: {fileID: 4273225388122294336}
   - component: {fileID: 4273225388122294343}
+  - component: {fileID: 8966219297759909748}
   m_Layer: 5
   m_Name: Time Metre
   m_TagString: Untagged
@@ -359,6 +380,25 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
+--- !u!114 &8966219297759909748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4273225388122294341}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b860b6db87e4874389423ec1dadeeda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sizeChangeStyle: 0
+  colourChangeStyle: 2
+  colourChangeType: 0
+  sizeMin: 1
+  sizeMax: 1.2
+  One: {r: 0, g: 0, b: 0, a: 0}
+  Two: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &4273225388175696431
 GameObject:
   m_ObjectHideFlags: 0
@@ -958,6 +998,7 @@ GameObject:
   - component: {fileID: 4273225388829564296}
   - component: {fileID: 4273225388829564298}
   - component: {fileID: 4273225388829564297}
+  - component: {fileID: 2102431415952561284}
   - component: {fileID: 4273225388829564299}
   m_Layer: 5
   m_Name: Countdown
@@ -1027,6 +1068,25 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: 99
+--- !u!114 &2102431415952561284
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4273225388829564303}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b860b6db87e4874389423ec1dadeeda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sizeChangeStyle: 0
+  colourChangeStyle: 2
+  colourChangeType: 0
+  sizeMin: 1
+  sizeMax: 1.2
+  One: {r: 1, g: 1, b: 1, a: 0}
+  Two: {r: 1, g: 0.6462264, b: 0.86325186, a: 0}
 --- !u!114 &4273225388829564299
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1128,6 +1188,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4273225388973277454}
   - component: {fileID: 4273225388973277455}
+  - component: {fileID: 5821529558807104036}
   m_Layer: 5
   m_Name: Player 1 Health
   m_TagString: Untagged
@@ -1206,6 +1267,25 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.Slider+SliderEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &5821529558807104036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4273225388973277453}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b860b6db87e4874389423ec1dadeeda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sizeChangeStyle: 0
+  colourChangeStyle: 0
+  colourChangeType: 0
+  sizeMin: 1
+  sizeMax: 1.2
+  One: {r: 0, g: 0, b: 0, a: 0}
+  Two: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &4273225389023431380
 GameObject:
   m_ObjectHideFlags: 0

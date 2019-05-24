@@ -9,7 +9,12 @@ public class ColourSelect : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        this.GetComponent<Renderer>().material.color = colorSel;
+        for (int i = 0; i < this.GetComponentsInChildren<Renderer>().Length; i++)
+        {
+            this.GetComponentsInChildren<Renderer>()[i].material.color = colorSel;
+            GetComponent<Renderer>().material.SetColor("_EmissionColor", colorSel);
+        }
+        
     }
 
     // Update is called once per frame

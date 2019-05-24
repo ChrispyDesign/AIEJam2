@@ -199,11 +199,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1635372363928112985}
     m_Modifications:
-    - target: {fileID: 654918237610546952, guid: 468fc7fa7fd16c94cb2b4ce7126925af,
-        type: 3}
-      propertyPath: m_Name
-      value: OBS_Speakers_MED
-      objectReference: {fileID: 0}
     - target: {fileID: 654918237610576680, guid: 468fc7fa7fd16c94cb2b4ce7126925af,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -259,6 +254,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 654918237610546952, guid: 468fc7fa7fd16c94cb2b4ce7126925af,
+        type: 3}
+      propertyPath: m_Name
+      value: OBS_Speakers_MED
+      objectReference: {fileID: 0}
+    - target: {fileID: 654918237610546952, guid: 468fc7fa7fd16c94cb2b4ce7126925af,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 468fc7fa7fd16c94cb2b4ce7126925af, type: 3}
 --- !u!4 &3164334995568779503 stripped
@@ -274,11 +279,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1635372363928112985}
     m_Modifications:
-    - target: {fileID: 8611807504320309531, guid: de12a60b5d4f2594888ddb98ee241e7f,
-        type: 3}
-      propertyPath: m_Name
-      value: PRO_YogaMat
-      objectReference: {fileID: 0}
     - target: {fileID: 8611807504320017723, guid: de12a60b5d4f2594888ddb98ee241e7f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -334,6 +334,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8611807504320309531, guid: de12a60b5d4f2594888ddb98ee241e7f,
+        type: 3}
+      propertyPath: m_Name
+      value: PRO_YogaMat
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de12a60b5d4f2594888ddb98ee241e7f, type: 3}
 --- !u!4 &6909030202618519820 stripped
@@ -349,11 +354,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1635372363928112985}
     m_Modifications:
-    - target: {fileID: 1494952490976275281, guid: 77e54c1c1c9c9234cacf21a16ff48167,
-        type: 3}
-      propertyPath: m_Name
-      value: PRO_ExcerciseBall
-      objectReference: {fileID: 0}
     - target: {fileID: 1494952490976573297, guid: 77e54c1c1c9c9234cacf21a16ff48167,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -409,6 +409,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1494952490976275281, guid: 77e54c1c1c9c9234cacf21a16ff48167,
+        type: 3}
+      propertyPath: m_Name
+      value: PRO_ExcerciseBall
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 77e54c1c1c9c9234cacf21a16ff48167, type: 3}
 --- !u!4 &6357666979077583638 stripped
@@ -424,11 +429,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1635372363928112985}
     m_Modifications:
-    - target: {fileID: 654918237610546952, guid: 468fc7fa7fd16c94cb2b4ce7126925af,
-        type: 3}
-      propertyPath: m_Name
-      value: OBS_Speakers_MED (2)
-      objectReference: {fileID: 0}
     - target: {fileID: 654918237610576680, guid: 468fc7fa7fd16c94cb2b4ce7126925af,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -484,6 +484,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 654918237610546952, guid: 468fc7fa7fd16c94cb2b4ce7126925af,
+        type: 3}
+      propertyPath: m_Name
+      value: OBS_Speakers_MED (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 654918237610546952, guid: 468fc7fa7fd16c94cb2b4ce7126925af,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 468fc7fa7fd16c94cb2b4ce7126925af, type: 3}
 --- !u!4 &6851494647962336844 stripped
@@ -499,11 +509,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1635372363928112985}
     m_Modifications:
-    - target: {fileID: 8648761781906382060, guid: c636319ce8c91ce4d857c796dbdb9e6c,
-        type: 3}
-      propertyPath: m_Name
-      value: OBS_PunchingBag
-      objectReference: {fileID: 0}
     - target: {fileID: 8648761781906735308, guid: c636319ce8c91ce4d857c796dbdb9e6c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -558,6 +563,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8648761781906382060, guid: c636319ce8c91ce4d857c796dbdb9e6c,
+        type: 3}
+      propertyPath: m_Name
+      value: OBS_PunchingBag
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c636319ce8c91ce4d857c796dbdb9e6c, type: 3}
@@ -654,11 +664,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1635372363928112985}
     m_Modifications:
-    - target: {fileID: 654918237610546952, guid: 468fc7fa7fd16c94cb2b4ce7126925af,
-        type: 3}
-      propertyPath: m_Name
-      value: OBS_Speakers_MED (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 654918237610576680, guid: 468fc7fa7fd16c94cb2b4ce7126925af,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -712,6 +717,16 @@ PrefabInstance:
     - target: {fileID: 654918237610576680, guid: 468fc7fa7fd16c94cb2b4ce7126925af,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 654918237610546952, guid: 468fc7fa7fd16c94cb2b4ce7126925af,
+        type: 3}
+      propertyPath: m_Name
+      value: OBS_Speakers_MED (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 654918237610546952, guid: 468fc7fa7fd16c94cb2b4ce7126925af,
+        type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

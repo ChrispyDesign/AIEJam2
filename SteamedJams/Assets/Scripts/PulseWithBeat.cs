@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PulseWithBeat : MonoBehaviour
 {
-    public enum changeStyle { Raw, Clamped}
+    public enum changeStyle { Raw, Clamped, None}
     public changeStyle sizeChangeStyle;
     public changeStyle colourChangeStyle;
 
@@ -49,14 +49,14 @@ public class PulseWithBeat : MonoBehaviour
     }
     void ColourChange()
     {
-        if (sizeChangeStyle == changeStyle.Raw)
+        if (colourChangeStyle == changeStyle.Raw)
         {
             if (colourChangeType != colourStyle.emission)
                 GetComponent<Renderer>().material.color = Color.Lerp(One, Two, AudioManager.GetInstance().GetOpportunityScalarRaw());
             if (colourChangeType != colourStyle.albedo)
                 GetComponent<Renderer>().material.SetColor("_EmissionColor", Color.Lerp(One, Two, AudioManager.GetInstance().GetOpportunityScalarRaw()));
         }
-        if (sizeChangeStyle == changeStyle.Clamped)
+        if (colourChangeStyle == changeStyle.Clamped)
         {
             if (colourChangeType != colourStyle.emission)
                 GetComponent<Renderer>().material.color = Color.Lerp(One, Two, AudioManager.GetInstance().GetOpportunityScalarClamped());

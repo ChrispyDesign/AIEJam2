@@ -201,6 +201,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: OBS_Speakers_BIG
       objectReference: {fileID: 0}
+    - target: {fileID: 4450134230941603065, guid: b213d4729c5f96e448cfbbe3a0263c93,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4450134230941501657, guid: b213d4729c5f96e448cfbbe3a0263c93,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -271,11 +276,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1635372363928112985}
     m_Modifications:
-    - target: {fileID: 8648761781906382060, guid: c636319ce8c91ce4d857c796dbdb9e6c,
-        type: 3}
-      propertyPath: m_Name
-      value: OBS_PunchingBag
-      objectReference: {fileID: 0}
     - target: {fileID: 8648761781906735308, guid: c636319ce8c91ce4d857c796dbdb9e6c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -330,6 +330,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8648761781906382060, guid: c636319ce8c91ce4d857c796dbdb9e6c,
+        type: 3}
+      propertyPath: m_Name
+      value: OBS_PunchingBag
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c636319ce8c91ce4d857c796dbdb9e6c, type: 3}
@@ -421,11 +426,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1635372363928112985}
     m_Modifications:
-    - target: {fileID: 701967067538019692, guid: 983a9969abfadd0408bb106576e6e444,
-        type: 3}
-      propertyPath: m_Name
-      value: OBS_DumbbellRack_Long
-      objectReference: {fileID: 0}
     - target: {fileID: 1654455894044251310, guid: 983a9969abfadd0408bb106576e6e444,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -480,6 +480,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 701967067538019692, guid: 983a9969abfadd0408bb106576e6e444,
+        type: 3}
+      propertyPath: m_Name
+      value: OBS_DumbbellRack_Long
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 983a9969abfadd0408bb106576e6e444, type: 3}

@@ -199,6 +199,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: OBS_Speakers_BIG
       objectReference: {fileID: 0}
+    - target: {fileID: 4450134230941603065, guid: b213d4729c5f96e448cfbbe3a0263c93,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4450134230941501657, guid: b213d4729c5f96e448cfbbe3a0263c93,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -273,6 +278,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: OBS_Speakers_BIG (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4450134230941603065, guid: b213d4729c5f96e448cfbbe3a0263c93,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4450134230941501657, guid: b213d4729c5f96e448cfbbe3a0263c93,
         type: 3}
