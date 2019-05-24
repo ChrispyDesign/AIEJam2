@@ -93,8 +93,6 @@ public class GameStateManager : MonoBehaviour
     /// <returns></returns>
     private IEnumerator Countdown()
     {
-        Debug.Log(Time.time);
-        Debug.Log(Time.time - (int)Time.time);
         float countdown = 4 + (Time.time - (int)Time.time) - 0.5f;
         Text countdownText = m_countdownPanel.GetComponentInChildren<Text>();
 

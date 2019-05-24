@@ -36,9 +36,6 @@ public class AudioManager : MonoBehaviour
     private float m_opportunityScalar;
     private bool m_isInWindow = false;
 
-    [SerializeField] private Text m_songName;
-    [SerializeField] private Text m_songBPM;
-
     #region getters
 
     public static AudioManager GetInstance()
@@ -107,12 +104,6 @@ public class AudioManager : MonoBehaviour
         m_BPM = BPM;
         m_BGM = BGM;
 
-        m_songName.text = BGM.name;
-        m_songBPM.text = m_BPM.ToString();
-
-        for (int i = 0; i < m_materials.Length; i++)
-            m_materials[i].SetFloat("_BPM", m_BPM);
-
         StartMetronome();
     }
 
@@ -142,12 +133,23 @@ public class AudioManager : MonoBehaviour
         m_audioSource.Stop();
         m_audioSource.clip = m_BGM;
         m_audioSource.Play();
+        bool tick = false;
         
         while (true)
         {
             float beatTime = m_nextTime - Time.time;
             StartCoroutine(Window(beatTime));
             StartCoroutine(m_audioUI.Tick());
+
+            for (int i = 0; i < m_materials.Length; i++)
+            {
+                if (tick)
+                    m_materials[i].SetFloat("_Tick", 1);
+                else
+                    m_materials[i].SetFloat("_Tick", 0);
+            }
+
+            tick = !tick;
 
             yield return new WaitForSeconds(beatTime);
             
