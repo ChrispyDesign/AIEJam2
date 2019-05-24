@@ -53,6 +53,7 @@ public class PlayerController : MonoBehaviour
     public ParticleSystem m_healing;
     public ParticleSystem m_playerTrail;
     public ParticleSystem m_godMode;
+    public ParticleSystem m_swordTrail;
 
     PlayerState m_currentState = PlayerState.Base;
 
@@ -67,7 +68,7 @@ public class PlayerController : MonoBehaviour
     float m_dashTimer;
     float m_dashCooldownTimer;
     Vector3 m_dashDirection;
-    public float m_dashSpeed;
+    float m_dashSpeed;
 
     bool m_invulnerable;    
 

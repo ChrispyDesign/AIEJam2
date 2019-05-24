@@ -26,6 +26,16 @@ public class ColorPicker : MonoBehaviour
                     ParticleSystem.MainModule main = player.m_bloodSpray.main;
                     main.startColor = m_color;
                 }
+                if (player.m_playerTrail)
+                {
+                    ParticleSystem.TrailModule main = player.m_playerTrail.trails;
+                    main.colorOverLifetime = new Color(m_color.r, m_color.g, m_color.b, 90);
+                }
+                if (player.m_swordTrail)
+                {
+                    ParticleSystem.TrailModule main = player.m_swordTrail.trails;
+                    main.colorOverLifetime = new Color(m_color.r, m_color.g, m_color.b, 90);
+                }
                 if (player.m_playerRenderer)
                 {
                     player.m_playerRenderer.materials[1].SetColor("_PlayerColour", m_color);

@@ -472,9 +472,9 @@ MonoBehaviour:
   m_swordHurtBox: {fileID: 8376930089513596144}
   m_speed: 50
   m_drag: 10
-  m_dashLength: 1
-  m_defaultDashSpeed: 3
-  m_boostedDashSpeed: 6
+  m_dashLength: 0.125
+  m_defaultDashSpeed: 24
+  m_boostedDashSpeed: 48
   m_dashHurtBox: {fileID: 4840713951316051943}
   m_dashDamage: 0
   m_dashCooldown: 0
@@ -485,7 +485,8 @@ MonoBehaviour:
   m_healing: {fileID: 63110780552347712}
   m_playerTrail: {fileID: 6812400063188060810}
   m_godMode: {fileID: 5333182411463000900}
-  m_dashSpeed: 0
+  m_swordTrail: {fileID: 1240693439340582464}
+  m_dashSpeed: 48
   m_health: 0
   m_effects: []
   m_useController: 1
@@ -1755,15 +1756,15 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 2300000, guid: 39fc1186d1217b74fb707af452b37550, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 39fc1186d1217b74fb707af452b37550, type: 3}
---- !u!1 &4477094999000987848 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 100000, guid: 39fc1186d1217b74fb707af452b37550,
-    type: 3}
-  m_PrefabInstance: {fileID: 4477094999000890984}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4477094999001277672 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 39fc1186d1217b74fb707af452b37550,
+    type: 3}
+  m_PrefabInstance: {fileID: 4477094999000890984}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &4477094999000987848 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 39fc1186d1217b74fb707af452b37550,
     type: 3}
   m_PrefabInstance: {fileID: 4477094999000890984}
   m_PrefabAsset: {fileID: 0}
@@ -1943,6 +1944,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 6406811324460648394}
   m_PrefabAsset: {fileID: 0}
+--- !u!198 &1240693439340582464 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 5322767574941880714, guid: c19eb834e9cf66842810bbe0914ee337,
+    type: 3}
+  m_PrefabInstance: {fileID: 6406811324460648394}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8213591845729697624
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2027,15 +2034,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 26811e4bba208564f892e6defac9eadd, type: 3}
---- !u!4 &5333182411463000901 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4323402185827056669, guid: 26811e4bba208564f892e6defac9eadd,
-    type: 3}
-  m_PrefabInstance: {fileID: 8213591845729697624}
-  m_PrefabAsset: {fileID: 0}
 --- !u!198 &5333182411463000900 stripped
 ParticleSystem:
   m_CorrespondingSourceObject: {fileID: 4323402185827056668, guid: 26811e4bba208564f892e6defac9eadd,
+    type: 3}
+  m_PrefabInstance: {fileID: 8213591845729697624}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &5333182411463000901 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4323402185827056669, guid: 26811e4bba208564f892e6defac9eadd,
     type: 3}
   m_PrefabInstance: {fileID: 8213591845729697624}
   m_PrefabAsset: {fileID: 0}
