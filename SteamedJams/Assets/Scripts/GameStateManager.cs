@@ -23,18 +23,28 @@ public class GameStateManager : MonoBehaviour
     [SerializeField] private GameObject m_gamePanel;
     [SerializeField] private GameObject m_victoryPanel;
 
-    [Header("Round Time")]
+    [Header("Round Start")]
+    [SerializeField] private GameObject[] m_roundNumber;
+    [SerializeField] private Text m_roundCountdown;
+
+    [Header("Game")]
+    [SerializeField] private Image[] m_player1rounds;
+    [SerializeField] private Image[] m_player2rounds;
     [SerializeField] private Text m_countdown;
     [SerializeField] private float m_defaultRoundTime = 100;
     private float m_roundTimer;
 
-    [Header("Victory Screen")]
+    [Header("Round End")]
     [SerializeField] private GameObject m_player1wins;
     [SerializeField] private GameObject m_player2wins;
+    [SerializeField] private GameObject m_draw;
 
-    [Header("Player Score")]
-    [SerializeField] private Toggle m_player1toggle;
-    [SerializeField] private Toggle m_player2toggle;
+    [Header("Victory Screen")]
+    [SerializeField] private Transform m_victoryCameraTransform;
+    [SerializeField] private float m_lerpStepSize;
+ 
+    private PlayerController m_player1;
+    private PlayerController m_player2;
     private int m_player1score = 0;
     private int m_player2score = 0;
 
@@ -55,22 +65,18 @@ public class GameStateManager : MonoBehaviour
     {
         m_instance = this;
 
+        PlayerController[] players = PlayerManager.Instance.m_players;
+        m_player1 = players[0];
+        m_player2 = players[1];
+
         m_currentGameState = GameState.RoundStart;
     }
 
     // Update is called once per frame
     void Update()
     {
-        switch (m_currentGameState)
-        {
-            case GameState.MainMenu:
-                // do nothing? maybe?
-                break;
-
-            case GameState.Game:
-                UpdateGame();
-                break;
-        }
+        if (m_currentGameState == GameState.Game)
+            UpdateGame();
     }
 
     /// <summary>
@@ -94,13 +100,18 @@ public class GameStateManager : MonoBehaviour
     private IEnumerator Countdown()
     {
         float countdown = 4 + (Time.time - (int)Time.time) - 0.5f;
-        Text countdownText = m_countdownPanel.GetComponentInChildren<Text>();
+        int roundNumber = m_player1score + m_player2score;
 
-        while (countdown > 1)
+        m_roundNumber[roundNumber].SetActive(true);
+
+        while (countdown > 0)
         {
             countdown -= Time.deltaTime;
 
-            countdownText.text = ((int)countdown).ToString();
+            if (countdown > 1)
+                m_roundCountdown.text = ((int)countdown).ToString(); // 3 2 1 
+            else
+                m_roundCountdown.text = "FIGHT!"; // fight!
 
             yield return null;
         }
@@ -108,7 +119,8 @@ public class GameStateManager : MonoBehaviour
         AudioTrack randomTrack = m_audioTracks[Random.Range(0, m_audioTracks.Length - 1)];
         AudioManager audioManager = AudioManager.GetInstance();
         audioManager.SetBGM(randomTrack.m_AudioTrack, randomTrack.m_BPM);
-
+        
+        m_roundNumber[roundNumber].SetActive(false);
         m_countdownPanel.SetActive(false);
         m_gamePanel.SetActive(true);
         m_currentGameState = GameState.Game;
@@ -123,7 +135,31 @@ public class GameStateManager : MonoBehaviour
         m_countdown.text = ((int)m_roundTimer).ToString();
 
         if (m_roundTimer <= 0)
+            StartCoroutine(RoundEnd());
+        
+        // check highest health
+        if (m_player1.Health < 0 && m_player2.Health < 0)
         {
+            // draw/sudden death/no winner
+            m_player1rounds[m_player1score].color = Color.yellow;
+            m_player2rounds[m_player2score].color = Color.yellow;
+            m_player1score++;
+            m_player2score++;
+            m_player1wins.SetActive(true);
+            StartCoroutine(RoundEnd());
+        }
+        else if (m_player1.Health < 0)
+        {
+            m_player1rounds[m_player1score].color = Color.yellow;
+            m_player1score++; // player 1 won
+            m_player2wins.SetActive(true);
+            StartCoroutine(RoundEnd());
+        }
+        else if (m_player2.Health < 0)
+        {
+            m_player2rounds[m_player2score].color = Color.yellow;
+            m_player2score++; // player 2 won
+            m_draw.SetActive(true);
             StartCoroutine(RoundEnd());
         }
     }
@@ -137,55 +173,41 @@ public class GameStateManager : MonoBehaviour
         float oldMaxZoom = CameraMovement.activeCamera.zoomMax;
         CameraMovement.activeCamera.zoomMax = 4;
         Time.timeScale = 0.5f;
-
-        PlayerController[] players = PlayerManager.Instance.m_players;
-        PlayerController player1 = players[0];
-        PlayerController player2 = players[1];
-
-        // check highest health
-        if (player1.Health > player2.Health)
-        {
-            m_player1score++; // player 1 won
-            m_player2toggle.isOn = true;
-        }
-        else if (player1.Health < player2.Health)
-        {
-            m_player2score++; // player 2 won
-            m_player2toggle.isOn = true;
-        }
-        else
-        {
-            // both won
-            m_player1score++;
-            m_player2score++;
-            m_player1toggle.isOn = true;
-            m_player2toggle.isOn = true;
-        }
-
-        if (m_player1score > 1 && m_player2score > 1)
-        {
-            // draw/sudden death/no winner
-        }
-
+        
         yield return new WaitForSecondsRealtime(3);
+
+        CameraMovement.activeCamera.zoomMax = oldMaxZoom;
 
         if (m_player1score > 1)
             Victory(0);
         else if (m_player2score > 1)
             Victory(1);
         else
-            StartRound();
+        {
+            m_player1wins.SetActive(false);
+            m_player2wins.SetActive(false);
+            m_draw.SetActive(false);
 
-        CameraMovement.activeCamera.zoomMax = oldMaxZoom;
+            StartRound();
+        }
     }
 
     /// <summary>
     /// 
     /// </summary>
     /// <param name="player"></param>
-    private void Victory(int player)
+    private IEnumerator Victory(int player)
     {
         m_currentGameState = GameState.Victory;
+
+        Vector3 startPos = CameraMovement.activeCamera.transform.position;
+
+        while (CameraMovement.activeCamera.transform.position != m_victoryCameraTransform.position)
+        {
+            CameraMovement.activeCamera.transform.position = Vector3.Lerp(startPos, m_victoryCameraTransform.position, m_lerpStepSize);
+
+            yield return null;
+        }
 
         if (player == 0)
             m_player1wins.SetActive(true);
