@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: MAT_DumbbellRack
-  m_Shader: {fileID: 4800000, guid: 8c8d906ccbd58b344942517560daded4, type: 3}
+  m_Shader: {fileID: 4800000, guid: 8df22ae5bf4391f41894565d40290d3b, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -59,6 +59,7 @@ Material:
     - Vector1_29D3F50D: 0
     - Vector1_DFC93C14: 0.75
     - Vector1_E33D7D2F: 1
+    - _Alpha: 1
     - _AlphaClip: 0
     - _BPM: 60
     - _Blend: 0

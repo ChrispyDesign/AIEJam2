@@ -59,6 +59,7 @@ Material:
     - Vector1_29D3F50D: 0
     - Vector1_DFC93C14: 0.75
     - Vector1_E33D7D2F: 1
+    - _Alpha: 1
     - _AlphaClip: 0
     - _BPM: 60
     - _Blend: 0
