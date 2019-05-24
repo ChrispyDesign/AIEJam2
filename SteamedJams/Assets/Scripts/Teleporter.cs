@@ -35,6 +35,8 @@ public class Teleporter : MonoBehaviour
                 other.transform.position = LevelGeneration.activeManager.freeBasePropHolders[portalDestination].position;
                 player.CharacterController.enabled = true;
             }
+            else
+                other.transform.position = LevelGeneration.activeManager.freeBasePropHolders[portalDestination].position;
             Instantiate(teleportParticles, LevelGeneration.activeManager.freeBasePropHolders[portalDestination]);
             CameraMovement.shakeTimer = 0;
         }
