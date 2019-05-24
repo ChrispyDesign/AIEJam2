@@ -7641,24 +7641,7 @@ MonoBehaviour:
   m_player1toggle: {fileID: 1345007998}
   m_player2toggle: {fileID: 1345007998}
   m_audioTracks:
-  - {fileID: 11400000, guid: aa8c5204c900a724a9be342c3367952e, type: 2}
-  - {fileID: 11400000, guid: 16ae66aaa267fff4382a468fef6b24a0, type: 2}
-  - {fileID: 11400000, guid: 1046cb02b7dcba44c939af45731a552c, type: 2}
-  - {fileID: 11400000, guid: 9654bfafd90099144889d2bd9e479787, type: 2}
-  - {fileID: 11400000, guid: 8db5d5237ec5f734ab92eb1b950c6752, type: 2}
-  - {fileID: 11400000, guid: f3659a5f2fcea984cb1ae7cf99555e9e, type: 2}
-  - {fileID: 11400000, guid: d55bdb4ae68ec7b4d99d6ae5e400ff73, type: 2}
-  - {fileID: 11400000, guid: a9d966d46457d25469a3109356f9de1f, type: 2}
-  - {fileID: 11400000, guid: 206a73b086dbee847bb0bb2266b34fd6, type: 2}
-  - {fileID: 11400000, guid: 82019907e96bc6d4780641b2c98428da, type: 2}
-  - {fileID: 11400000, guid: 08ae685cc488cbf40bdc79037d6d81df, type: 2}
-  - {fileID: 11400000, guid: 3fa257923f009b64990d8142d73f34f4, type: 2}
-  - {fileID: 11400000, guid: 666c1c1da4ecc704eae708aadb749511, type: 2}
-  - {fileID: 11400000, guid: 7f0f41d79fc4e114886dae6a2ce54150, type: 2}
-  - {fileID: 11400000, guid: bc3256b8b52b07344a620068ed1e8d17, type: 2}
-  - {fileID: 11400000, guid: a92d303fc3f631142b231ff03056ebe7, type: 2}
-  - {fileID: 11400000, guid: d4809cb5778c44a488ef7695461e196d, type: 2}
-  - {fileID: 11400000, guid: 18051995a1238e3419d26dd04f8cf373, type: 2}
+  - {fileID: 11400000, guid: ab9ef25ddef795e4ea28eca084912e6b, type: 2}
 --- !u!4 &936475900
 Transform:
   m_ObjectHideFlags: 0
@@ -11928,7 +11911,7 @@ MonoBehaviour:
     type: 3}
   m_feedbackPoolSizes: 32
   m_feedbackDecayTime: 2
-  m_feedbackSpeed: 2
+  m_feedbackTextSpeed: 50
   m_tickPrefab: {fileID: 5551398035273130744, guid: 8bd14759dc3aa634fa2d916b6faefe84,
     type: 3}
   m_tickPoolSize: 32
@@ -11952,7 +11935,7 @@ MonoBehaviour:
   m_BPM: 128
   m_base: 4
   m_step: 4
-  m_windowOfOpportunity: 1
+  m_windowOfOpportunity: 0.5
   m_songName: {fileID: 2057960245}
   m_songBPM: {fileID: 344011038}
 --- !u!4 &1345252225

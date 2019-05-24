@@ -70,6 +70,7 @@ public class AudioManager : MonoBehaviour
     
     public void SetBPM(float BPM) { m_BPM = BPM; }
     public void SetWindowOfOpportunity(float windowOfOpportunity) { m_window = windowOfOpportunity; }
+    public void SetPlayerColours(Color player1, Color player2) { m_audioUI.SetPlayer1Colour(player1); m_audioUI.SetPlayer2Colour(player2); }
 
     #endregion
 

@@ -28,6 +28,10 @@ public class GameStateManager : MonoBehaviour
     [SerializeField] private float m_defaultRoundTime = 100;
     private float m_roundTimer;
 
+    [Header("Victory Screen")]
+    [SerializeField] private GameObject m_player1wins;
+    [SerializeField] private GameObject m_player2wins;
+
     [Header("Player Score")]
     [SerializeField] private Toggle m_player1toggle;
     [SerializeField] private Toggle m_player2toggle;
@@ -66,10 +70,6 @@ public class GameStateManager : MonoBehaviour
             case GameState.Game:
                 UpdateGame();
                 break;
-                
-            case GameState.Victory:
-                UpdateVictory();
-                break;
         }
     }
 
@@ -78,6 +78,8 @@ public class GameStateManager : MonoBehaviour
     /// </summary>
     public void StartRound()
     {
+        m_currentGameState = GameState.RoundStart;
+
         m_countdownPanel.SetActive(true);
         Time.timeScale = 1;
 
@@ -125,68 +127,73 @@ public class GameStateManager : MonoBehaviour
         if (m_roundTimer <= 0)
         {
             StartCoroutine(RoundEnd());
-            m_currentGameState = GameState.RoundEnd;
         }
     }
 
     private IEnumerator RoundEnd()
     {
         m_gamePanel.SetActive(false);
+        m_currentGameState = GameState.RoundEnd;
 
         // perform slow-mo zoom in
         float oldMaxZoom = CameraMovement.activeCamera.zoomMax;
         CameraMovement.activeCamera.zoomMax = 4;
         Time.timeScale = 0.5f;
 
-        //PlayerController[] players = PlayerManager.Instance.m_players;
-        //PlayerController player1 = players[0];
-        //PlayerController player2 = players[1];
+        PlayerController[] players = PlayerManager.Instance.m_players;
+        PlayerController player1 = players[0];
+        PlayerController player2 = players[1];
 
-        //// check highest health
-        //if (player1.Health > player2.Health)
-        //{
-        //    m_player1score++; // player 1 won
-        //    m_player2toggle.isOn = true;
-        //}
-        //else if (player1.Health < player2.Health)
-        //{
-        //    m_player2score++; // player 2 won
-        //    m_player2toggle.isOn = true;
-        //}
-        //else
-        //{
-        //    // both won
-        //    m_player1score++;
-        //    m_player2score++;
-        //    m_player1toggle.isOn = true;
-        //    m_player2toggle.isOn = true;
-        //}
+        // check highest health
+        if (player1.Health > player2.Health)
+        {
+            m_player1score++; // player 1 won
+            m_player2toggle.isOn = true;
+        }
+        else if (player1.Health < player2.Health)
+        {
+            m_player2score++; // player 2 won
+            m_player2toggle.isOn = true;
+        }
+        else
+        {
+            // both won
+            m_player1score++;
+            m_player2score++;
+            m_player1toggle.isOn = true;
+            m_player2toggle.isOn = true;
+        }
 
-        //if (m_player1score > 1 && m_player2score > 1)
-        //{
-        //    // draw/sudden death/no winner
-        //}
-
-        //if (m_player1score > 1)
-        //{
-        //    // player 1 wins
-        //}
-        //else if (m_player2score > 1)
-        //{
-        //    // player 2 wins
-        //}
+        if (m_player1score > 1 && m_player2score > 1)
+        {
+            // draw/sudden death/no winner
+        }
 
         yield return new WaitForSecondsRealtime(3);
 
+        if (m_player1score > 1)
+            Victory(0);
+        else if (m_player2score > 1)
+            Victory(1);
+        else
+            StartRound();
+
         CameraMovement.activeCamera.zoomMax = oldMaxZoom;
-        StartRound();
     }
 
     /// <summary>
     /// 
     /// </summary>
-    private void UpdateVictory()
+    /// <param name="player"></param>
+    private void Victory(int player)
     {
+        m_currentGameState = GameState.Victory;
 
+        if (player == 0)
+            m_player1wins.SetActive(true);
+        else
+            m_player2wins.SetActive(true);
+
+        m_victoryPanel.SetActive(true);
     }
 }

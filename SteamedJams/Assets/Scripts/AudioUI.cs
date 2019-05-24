@@ -7,6 +7,9 @@ public class AudioUI : MonoBehaviour
 {
     private AudioManager m_audioManager;
 
+    private Color m_player1colour;
+    private Color m_player2colour;
+
     [Header("UI Elements")]
     [SerializeField] private Image m_centreIcon;
     [SerializeField] private RectTransform m_bar;
@@ -28,6 +31,13 @@ public class AudioUI : MonoBehaviour
     [SerializeField] private GameObject m_tickPrefab;
     [SerializeField] private int m_tickPoolSize = 20;
     private Queue<GameObject> m_tickPool = new Queue<GameObject>();
+
+    #region setters
+
+    public void SetPlayer1Colour(Color player1) { m_player1colour = player1; }
+    public void SetPlayer2Colour(Color player2) { m_player2colour = player2; }
+
+    #endregion
 
     // Start is called before the first frame update
     void Start()
@@ -96,7 +106,7 @@ public class AudioUI : MonoBehaviour
         GameObject feedbackIcon = m_feedbackIconPool.Dequeue();
         GameObject feedbackText = m_feedbackTextPool.Dequeue();
         Image feedbackIconUI = feedbackIcon.GetComponent<Image>();
-        Color feedbackColour = Color.blue;
+        Color feedbackColour;
         Text feedbackTextUI = feedbackText.GetComponent<Text>();
         feedbackTextUI.text = feedbackMessage;
         
@@ -105,12 +115,12 @@ public class AudioUI : MonoBehaviour
 
         if (player == 1)
         {
-            feedbackColour = Color.blue;
+            feedbackColour = m_player1colour;
             textAnchor = m_textAnchorLeft;
         }
         else
         {
-            feedbackColour = Color.red;
+            feedbackColour = m_player2colour;
             textAnchor = m_textAnchorRight;
         }
 
